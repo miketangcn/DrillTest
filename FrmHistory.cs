@@ -241,7 +241,11 @@ namespace DrillTest
             dataGridView2.Height = dataGridView1.Height;
             dataGridView1.Width = dataGridView2.Width;
         }
-
+/// <summary>
+/// 选择变化
+/// </summary>
+/// <param name="sender"></param>
+/// <param name="e"></param>
         private void DataGridView1_SelectionChanged(object sender, EventArgs e)
         {
             if (dataGridView1.SelectedCells.Count>0)
