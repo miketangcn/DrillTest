@@ -242,7 +242,7 @@ namespace DrillTest
             dataGridView1.Width = dataGridView2.Width;
         }
 /// <summary>
-/// 选择变化
+/// 选择变化xxx
 /// </summary>
 /// <param name="sender"></param>
 /// <param name="e"></param>
