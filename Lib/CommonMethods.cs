@@ -111,10 +111,6 @@ namespace DrillTest.Lib
         {
             string FullFileName = Global.DateFilePath + Global.DateFileName1;
             //测试状态
-            //if (Global.Working1 & Global.SubWorking1)
-            //{
-            //    Global.lstPoint1.Add(point);
-            //}
             if (Global.Working1)
             {
                 if (Global.Point1.x >= Global.con_chek_x && Global.Point1.y >= Global.con_chek_y)//进入压洞状态

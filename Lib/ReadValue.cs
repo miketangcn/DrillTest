@@ -87,8 +87,6 @@ namespace DrillTest.Lib
         }
         private static void ThreadBackgroundRead1()
         {
-            //Global.i = 900;
-            //Global.j = 150;
             string address = "x=4;72";
             while (true)
             {
@@ -103,30 +101,10 @@ namespace DrillTest.Lib
                     if (result.IsSuccess)
                     {
                         Global.ConnectStatus1 = true;
-                        Point point = new Point();
-                        //Global.i = (short)(Global.i + 2);
-                        //if (Global.j > 400)
-                        //{
-                        //    Global.flag = true;
-                        //}
-                        //if (Global.flag)
-                        //{
-                        //    Global.j = (short)(Global.j - 8);
-                        //}
-                        //else
-                        //{
-                        //    Global.j++;
-                        //}
-                        //Global.Point1.x = Global.i;
-                        //Global.Point1.y = Global.j;
-                        //point.x = Global.i;
-                        //point.y = Global.j;
-                        //point.x = ModbusTcpNet1.ByteTransform.TransInt16(result.Content, 0);
-                        //point.y = ModbusTcpNet1.ByteTransform.TransInt16(result.Content, 1);
                         Global.Point1.x = ModbusTcpNet1.ByteTransform.TransInt16(result.Content, 0);
                         Global.Point1.y = ModbusTcpNet1.ByteTransform.TransInt16(result.Content, 2);
                         Global.ConnectStatus1 = true;
-                        CommonMethods.DateTreating1(point);
+                        CommonMethods.DateTreating1(Global.Point1);
                     }
                     else Global.ConnectStatus1 = false;
                 }
