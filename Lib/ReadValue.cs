@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using HslCommunication;
 using HslCommunication.ModBus;
+using HslCommunication.LogNet;
 using DrillTest.Model;
 using System.Threading;
 
@@ -14,6 +15,7 @@ namespace DrillTest.Lib
     {
         private static ModbusTcpNet ModbusTcpNet1 = new ModbusTcpNet(Global.IP2);
         private static ModbusTcpNet ModbusTcpNet2 = new ModbusTcpNet(Global.IP1);
+        public static ILogNet logNet = new LogNetFileSize(System .Windows.Forms.Application.StartupPath + "\\Logs", 2 * 1024 * 1024);
         private static System.Threading.Thread thread1 = new System.Threading.Thread(new System.Threading.ThreadStart(ThreadBackgroundRead1));
         private static System.Threading.Thread thread2 = new System.Threading.Thread(new System.Threading.ThreadStart(ThreadBackgroundRead2));
         public static async void  ConnnectPlc1()
@@ -92,6 +94,7 @@ namespace DrillTest.Lib
             {
                 if (!Global.ConnectStatus1)
                 {
+                    logNet.WriteWarn("#1压机通讯故障");
                     ModbusTcpNet1.ConnectServer();
                 }
                 try
@@ -142,6 +145,7 @@ namespace DrillTest.Lib
             {
                 if (!Global.ConnectStatus2)
                 {
+                    logNet.WriteWarn("#2压机通讯故障");
                     ModbusTcpNet2.ConnectServer();
                 }
                 try
