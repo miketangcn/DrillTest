@@ -35,6 +35,9 @@
             System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Title title2 = new System.Windows.Forms.DataVisualization.Charting.Title();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnReDo1 = new DevComponents.DotNetBar.ButtonX();
+            this.btnStop1 = new DevComponents.DotNetBar.ButtonX();
+            this.btnStart1 = new DevComponents.DotNetBar.ButtonX();
             this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -51,7 +54,10 @@
             this.txtHole1 = new System.Windows.Forms.TextBox();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btnReDo2 = new DevComponents.DotNetBar.ButtonX();
+            this.btnStop2 = new DevComponents.DotNetBar.ButtonX();
             this.label18 = new System.Windows.Forms.Label();
+            this.btnStart2 = new DevComponents.DotNetBar.ButtonX();
             this.lblToolTip2 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
@@ -66,12 +72,6 @@
             this.label11 = new System.Windows.Forms.Label();
             this.lblx2 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.btnStart1 = new DevComponents.DotNetBar.ButtonX();
-            this.btnStop1 = new DevComponents.DotNetBar.ButtonX();
-            this.btnReDo1 = new DevComponents.DotNetBar.ButtonX();
-            this.btnStart2 = new DevComponents.DotNetBar.ButtonX();
-            this.btnStop2 = new DevComponents.DotNetBar.ButtonX();
-            this.btnReDo2 = new DevComponents.DotNetBar.ButtonX();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -104,6 +104,49 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(415, 608);
             this.panel1.TabIndex = 0;
+            // 
+            // btnReDo1
+            // 
+            this.btnReDo1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnReDo1.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btnReDo1.Location = new System.Drawing.Point(189, 65);
+            this.btnReDo1.Name = "btnReDo1";
+            this.btnReDo1.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(5);
+            this.btnReDo1.Size = new System.Drawing.Size(88, 32);
+            this.btnReDo1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btnReDo1.TabIndex = 12;
+            this.btnReDo1.Text = "重压ReDo";
+            this.btnReDo1.Tooltip = "Stop";
+            this.btnReDo1.Click += new System.EventHandler(this.BtnRedo1_Click);
+            // 
+            // btnStop1
+            // 
+            this.btnStop1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnStop1.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btnStop1.Enabled = false;
+            this.btnStop1.Location = new System.Drawing.Point(97, 65);
+            this.btnStop1.Name = "btnStop1";
+            this.btnStop1.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(5);
+            this.btnStop1.Size = new System.Drawing.Size(88, 32);
+            this.btnStop1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btnStop1.TabIndex = 11;
+            this.btnStop1.Text = "结束Stop";
+            this.btnStop1.Tooltip = "Stop";
+            this.btnStop1.Click += new System.EventHandler(this.BtnStop1_Click);
+            // 
+            // btnStart1
+            // 
+            this.btnStart1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnStart1.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btnStart1.Location = new System.Drawing.Point(3, 65);
+            this.btnStart1.Name = "btnStart1";
+            this.btnStart1.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(5);
+            this.btnStart1.Size = new System.Drawing.Size(88, 32);
+            this.btnStart1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btnStart1.TabIndex = 10;
+            this.btnStart1.Text = "开始Start";
+            this.btnStart1.Tooltip = "Start";
+            this.btnStart1.Click += new System.EventHandler(this.BtnStart1_Click);
             // 
             // label4
             // 
@@ -293,6 +336,35 @@
             this.panel2.Size = new System.Drawing.Size(379, 608);
             this.panel2.TabIndex = 1;
             // 
+            // btnReDo2
+            // 
+            this.btnReDo2.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnReDo2.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btnReDo2.Location = new System.Drawing.Point(189, 65);
+            this.btnReDo2.Name = "btnReDo2";
+            this.btnReDo2.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(5);
+            this.btnReDo2.Size = new System.Drawing.Size(88, 32);
+            this.btnReDo2.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btnReDo2.TabIndex = 12;
+            this.btnReDo2.Text = "重压ReDo";
+            this.btnReDo2.Tooltip = "Stop";
+            this.btnReDo2.Click += new System.EventHandler(this.BtnReDo2_Click);
+            // 
+            // btnStop2
+            // 
+            this.btnStop2.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnStop2.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btnStop2.Enabled = false;
+            this.btnStop2.Location = new System.Drawing.Point(97, 65);
+            this.btnStop2.Name = "btnStop2";
+            this.btnStop2.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(5);
+            this.btnStop2.Size = new System.Drawing.Size(88, 32);
+            this.btnStop2.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btnStop2.TabIndex = 11;
+            this.btnStop2.Text = "结束Stop";
+            this.btnStop2.Tooltip = "Stop";
+            this.btnStop2.Click += new System.EventHandler(this.BtnStop2_Click);
+            // 
             // label18
             // 
             this.label18.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -301,6 +373,20 @@
             this.label18.Size = new System.Drawing.Size(87, 23);
             this.label18.TabIndex = 8;
             this.label18.Text = "洞数 Hole";
+            // 
+            // btnStart2
+            // 
+            this.btnStart2.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnStart2.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btnStart2.Location = new System.Drawing.Point(3, 65);
+            this.btnStart2.Name = "btnStart2";
+            this.btnStart2.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(5);
+            this.btnStart2.Size = new System.Drawing.Size(88, 32);
+            this.btnStart2.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btnStart2.TabIndex = 10;
+            this.btnStart2.Text = "开始Start";
+            this.btnStart2.Tooltip = "Start";
+            this.btnStart2.Click += new System.EventHandler(this.BtnStart2_Click);
             // 
             // lblToolTip2
             // 
@@ -451,90 +537,6 @@
             this.label12.Size = new System.Drawing.Size(64, 23);
             this.label12.TabIndex = 8;
             this.label12.Text = "Mpa";
-            // 
-            // btnStart1
-            // 
-            this.btnStart1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btnStart1.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btnStart1.Location = new System.Drawing.Point(3, 65);
-            this.btnStart1.Name = "btnStart1";
-            this.btnStart1.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(5);
-            this.btnStart1.Size = new System.Drawing.Size(88, 32);
-            this.btnStart1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btnStart1.TabIndex = 10;
-            this.btnStart1.Text = "开始Start";
-            this.btnStart1.Tooltip = "Start";
-            this.btnStart1.Click += new System.EventHandler(this.BtnStart1_Click);
-            // 
-            // btnStop1
-            // 
-            this.btnStop1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btnStop1.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btnStop1.Location = new System.Drawing.Point(97, 65);
-            this.btnStop1.Name = "btnStop1";
-            this.btnStop1.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(5);
-            this.btnStop1.Size = new System.Drawing.Size(88, 32);
-            this.btnStop1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btnStop1.TabIndex = 11;
-            this.btnStop1.Text = "结束Stop";
-            this.btnStop1.Tooltip = "Stop";
-            this.btnStop1.Click += new System.EventHandler(this.BtnStop1_Click);
-            // 
-            // btnReDo1
-            // 
-            this.btnReDo1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btnReDo1.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btnReDo1.Location = new System.Drawing.Point(189, 65);
-            this.btnReDo1.Name = "btnReDo1";
-            this.btnReDo1.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(5);
-            this.btnReDo1.Size = new System.Drawing.Size(88, 32);
-            this.btnReDo1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btnReDo1.TabIndex = 12;
-            this.btnReDo1.Text = "重压ReDo";
-            this.btnReDo1.Tooltip = "Stop";
-            this.btnReDo1.Click += new System.EventHandler(this.BtnRedo1_Click);
-            // 
-            // btnStart2
-            // 
-            this.btnStart2.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btnStart2.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btnStart2.Location = new System.Drawing.Point(3, 65);
-            this.btnStart2.Name = "btnStart2";
-            this.btnStart2.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(5);
-            this.btnStart2.Size = new System.Drawing.Size(88, 32);
-            this.btnStart2.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btnStart2.TabIndex = 10;
-            this.btnStart2.Text = "开始Start";
-            this.btnStart2.Tooltip = "Start";
-            this.btnStart2.Click += new System.EventHandler(this.BtnStart2_Click);
-            // 
-            // btnStop2
-            // 
-            this.btnStop2.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btnStop2.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btnStop2.Location = new System.Drawing.Point(97, 65);
-            this.btnStop2.Name = "btnStop2";
-            this.btnStop2.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(5);
-            this.btnStop2.Size = new System.Drawing.Size(88, 32);
-            this.btnStop2.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btnStop2.TabIndex = 11;
-            this.btnStop2.Text = "结束Stop";
-            this.btnStop2.Tooltip = "Stop";
-            this.btnStop2.Click += new System.EventHandler(this.BtnStop2_Click);
-            // 
-            // btnReDo2
-            // 
-            this.btnReDo2.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btnReDo2.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btnReDo2.Location = new System.Drawing.Point(189, 65);
-            this.btnReDo2.Name = "btnReDo2";
-            this.btnReDo2.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(5);
-            this.btnReDo2.Size = new System.Drawing.Size(88, 32);
-            this.btnReDo2.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btnReDo2.TabIndex = 12;
-            this.btnReDo2.Text = "重压ReDo";
-            this.btnReDo2.Tooltip = "Stop";
-            this.btnReDo2.Click += new System.EventHandler(this.BtnReDo2_Click);
             // 
             // FrmTest
             // 
