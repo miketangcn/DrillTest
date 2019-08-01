@@ -231,7 +231,7 @@ namespace DrillTest.Lib
         }
         #endregion
 
-        #region list对象序列化和反序列化
+        #region list对象序列化到字符串和字符串反序列化 两种方法
 
         public static string SerializeList(List<object> list)
         {
@@ -240,48 +240,54 @@ namespace DrillTest.Lib
             {
                 bf.Serialize(stream, list);
                 stream.Position = 0;
-                byte[] bytes=stream.GetBuffer();
-                return Encoding.ASCII.GetString(bytes,0,bytes.Length);
+                byte[] bytes = new byte[stream.Length];
+                stream.Read(bytes, 0, bytes.Length);
+                stream.Flush();
+                stream.Close();
+                return Convert.ToBase64String(bytes);
+                //byte[] bytes=stream.GetBuffer();
+                //return Encoding.ASCII.GetString(bytes,0,bytes.Length);
             }
         }
-
+        public static string ToBinary(List<object> list)
+        {
+            BinaryFormatter bf = new BinaryFormatter();
+            using (var stream = new MemoryStream())
+            {
+                bf.Serialize(stream, list);
+                stream.Position = 0;
+                byte[] bytes = stream.ToArray();
+                StringBuilder sb = new StringBuilder();
+                foreach (byte bt in bytes)
+                {
+                    sb.Append(string.Format("{0:X2}", bt));//转化为两个16进制数字的字符
+                }
+                return sb.ToString();
+            }
+        }
         public static List<object> DesirializeList(String data)
         {
             if (string.IsNullOrEmpty(data))
             return null;
             BinaryFormatter bf = new BinaryFormatter();
-            byte[] bytes = Encoding.ASCII.GetBytes(data);
+            byte[] bytes = Convert.FromBase64String(data);
+            //byte[] bytes = Encoding.ASCII.GetBytes(data);
 
             using (var stream = new MemoryStream())
             { 
                 stream.Write(bytes, 0, bytes.Length);
                 stream.Position = 0;
-                return bf.Deserialize(stream) as List<object> ;
-
+                List<object> list = bf.Deserialize(stream) as List<object>;
+                stream.Flush();
+                stream.Close();
+                return list ;
             }      
         }
-        public static string ToBinary (List<object> list)
-        {
-            BinaryFormatter formatter = new BinaryFormatter();
-            using (MemoryStream ms = new MemoryStream())
-            {
-                formatter.Serialize(ms, list);
-                ms.Position = 0;
-                byte[] bytes = ms.ToArray();
-                StringBuilder sb = new StringBuilder();
-                foreach (byte bt in bytes)
-                {
-                    sb.Append(string.Format("{0:X2}", bt));//转化为16进制的两个字符
-                }
-                return sb.ToString();
-            }
-        }
-
         /// <summary>
         /// BinaryFormatter反序列化
         /// </summary>
         /// <param name="str">字符串序列</param>
-        public static List<object> TFromBinary(string str)
+        public static List<object> FromBinary(string str)
         {
             int intLen = str.Length / 2;//序列化时一个byte变成了两个16进制的字符所以除以2
             byte[] bytes = new byte[intLen];
@@ -290,10 +296,10 @@ namespace DrillTest.Lib
                 int ibyte = Convert.ToInt32(str.Substring(i * 2, 2), 16);//将16进制的2个字符转化为int类型
                 bytes[i] = (byte)ibyte;
             }
-            BinaryFormatter formatter = new BinaryFormatter();
-            using (MemoryStream ms = new MemoryStream(bytes))
+            BinaryFormatter bf = new BinaryFormatter();
+            using (var stream = new MemoryStream(bytes))
             {
-                return formatter.Deserialize(ms) as List<object>;
+                return bf.Deserialize(stream) as List<object>;
             }
         }
         #endregion

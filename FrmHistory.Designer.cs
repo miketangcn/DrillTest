@@ -28,23 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Title title3 = new System.Windows.Forms.DataVisualization.Charting.Title();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Title title4 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Title title1 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Title title2 = new System.Windows.Forms.DataVisualization.Charting.Title();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.btnxQuery = new DevComponents.DotNetBar.ButtonX();
             this.BtnxDeleteWork = new DevComponents.DotNetBar.ButtonX();
@@ -110,18 +110,18 @@
             // 
             this.splitContainer1.Panel2.Controls.Add(this.panel2);
             this.splitContainer1.Panel2.Controls.Add(this.panel1);
-            this.splitContainer1.Size = new System.Drawing.Size(800, 450);
-            this.splitContainer1.SplitterDistance = 600;
+            this.splitContainer1.Size = new System.Drawing.Size(1904, 1041);
+            this.splitContainer1.SplitterDistance = 365;
             this.splitContainer1.TabIndex = 0;
             // 
             // btnxQuery
             // 
             this.btnxQuery.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btnxQuery.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btnxQuery.Location = new System.Drawing.Point(0, 155);
+            this.btnxQuery.Location = new System.Drawing.Point(0, 143);
             this.btnxQuery.Name = "btnxQuery";
             this.btnxQuery.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(5);
-            this.btnxQuery.Size = new System.Drawing.Size(80, 29);
+            this.btnxQuery.Size = new System.Drawing.Size(80, 27);
             this.btnxQuery.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.btnxQuery.TabIndex = 12;
             this.btnxQuery.Text = "查询";
@@ -132,10 +132,10 @@
             // 
             this.BtnxDeleteWork.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.BtnxDeleteWork.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.BtnxDeleteWork.Location = new System.Drawing.Point(85, 155);
+            this.BtnxDeleteWork.Location = new System.Drawing.Point(85, 143);
             this.BtnxDeleteWork.Name = "BtnxDeleteWork";
             this.BtnxDeleteWork.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(5);
-            this.BtnxDeleteWork.Size = new System.Drawing.Size(80, 29);
+            this.BtnxDeleteWork.Size = new System.Drawing.Size(80, 27);
             this.BtnxDeleteWork.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.BtnxDeleteWork.TabIndex = 11;
             this.BtnxDeleteWork.Text = "删除工件记录";
@@ -146,10 +146,10 @@
             // 
             this.btnxDeleteHole.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btnxDeleteHole.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btnxDeleteHole.Location = new System.Drawing.Point(170, 155);
+            this.btnxDeleteHole.Location = new System.Drawing.Point(170, 143);
             this.btnxDeleteHole.Name = "btnxDeleteHole";
             this.btnxDeleteHole.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(5);
-            this.btnxDeleteHole.Size = new System.Drawing.Size(80, 29);
+            this.btnxDeleteHole.Size = new System.Drawing.Size(80, 27);
             this.btnxDeleteHole.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.btnxDeleteHole.TabIndex = 10;
             this.btnxDeleteHole.Text = "删除洞记录";
@@ -160,10 +160,10 @@
             // 
             this.btnxExport.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btnxExport.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btnxExport.Location = new System.Drawing.Point(255, 155);
+            this.btnxExport.Location = new System.Drawing.Point(255, 143);
             this.btnxExport.Name = "btnxExport";
             this.btnxExport.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(5);
-            this.btnxExport.Size = new System.Drawing.Size(80, 29);
+            this.btnxExport.Size = new System.Drawing.Size(80, 27);
             this.btnxExport.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.btnxExport.TabIndex = 9;
             this.btnxExport.Text = "导出当前记录";
@@ -174,16 +174,16 @@
             // 
             this.dataGridView2.AllowUserToAddRows = false;
             this.dataGridView2.AllowUserToResizeRows = false;
-            dataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.dataGridView2.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle12;
-            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle13.BackColor = System.Drawing.SystemColors.ButtonFace;
-            dataGridViewCellStyle13.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle13.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.dataGridView2.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.ButtonFace;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column5,
@@ -192,19 +192,19 @@
             this.Column8});
             this.dataGridView2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.dataGridView2.EnableHeadersVisualStyles = false;
-            this.dataGridView2.Location = new System.Drawing.Point(0, 328);
+            this.dataGridView2.Location = new System.Drawing.Point(0, 928);
             this.dataGridView2.MultiSelect = false;
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowHeadersWidth = 82;
             this.dataGridView2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView2.Size = new System.Drawing.Size(596, 118);
+            this.dataGridView2.Size = new System.Drawing.Size(361, 109);
             this.dataGridView2.TabIndex = 4;
             this.dataGridView2.SelectionChanged += new System.EventHandler(this.DataGridView2_SelectionChanged);
             // 
             // Column5
             // 
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.Column5.DefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.Column5.DefaultCellStyle = dataGridViewCellStyle3;
             this.Column5.Frozen = true;
             this.Column5.HeaderText = "WorkSN";
             this.Column5.MinimumWidth = 10;
@@ -215,8 +215,8 @@
             // 
             // Column6
             // 
-            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.Column6.DefaultCellStyle = dataGridViewCellStyle15;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.Column6.DefaultCellStyle = dataGridViewCellStyle4;
             this.Column6.HeaderText = "HoleNumber";
             this.Column6.MinimumWidth = 10;
             this.Column6.Name = "Column6";
@@ -226,8 +226,8 @@
             // 
             // Column7
             // 
-            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.Column7.DefaultCellStyle = dataGridViewCellStyle16;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.Column7.DefaultCellStyle = dataGridViewCellStyle5;
             this.Column7.HeaderText = "MaxPressure";
             this.Column7.MinimumWidth = 10;
             this.Column7.Name = "Column7";
@@ -237,8 +237,8 @@
             // 
             // Column8
             // 
-            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.Column8.DefaultCellStyle = dataGridViewCellStyle17;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.Column8.DefaultCellStyle = dataGridViewCellStyle6;
             this.Column8.HeaderText = "TestTime";
             this.Column8.MinimumWidth = 10;
             this.Column8.Name = "Column8";
@@ -250,15 +250,15 @@
             // 
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToResizeRows = false;
-            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle18.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            dataGridViewCellStyle18.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle18.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle18;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
@@ -266,19 +266,19 @@
             this.Column3,
             this.Column4});
             this.dataGridView1.EnableHeadersVisualStyles = false;
-            this.dataGridView1.Location = new System.Drawing.Point(-17, 199);
+            this.dataGridView1.Location = new System.Drawing.Point(-17, 184);
             this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 82;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(253, 118);
+            this.dataGridView1.Size = new System.Drawing.Size(253, 109);
             this.dataGridView1.TabIndex = 3;
             this.dataGridView1.SelectionChanged += new System.EventHandler(this.DataGridView1_SelectionChanged);
             // 
             // Column1
             // 
-            dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.Column1.DefaultCellStyle = dataGridViewCellStyle19;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.Column1.DefaultCellStyle = dataGridViewCellStyle8;
             this.Column1.Frozen = true;
             this.Column1.HeaderText = "WorkSN";
             this.Column1.MinimumWidth = 10;
@@ -290,8 +290,8 @@
             // 
             // Column2
             // 
-            dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.Column2.DefaultCellStyle = dataGridViewCellStyle20;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.Column2.DefaultCellStyle = dataGridViewCellStyle9;
             this.Column2.Frozen = true;
             this.Column2.HeaderText = "Layer";
             this.Column2.MinimumWidth = 10;
@@ -303,8 +303,8 @@
             // 
             // Column3
             // 
-            dataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.Column3.DefaultCellStyle = dataGridViewCellStyle21;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.Column3.DefaultCellStyle = dataGridViewCellStyle10;
             this.Column3.Frozen = true;
             this.Column3.HeaderText = "HoleNumber";
             this.Column3.MinimumWidth = 10;
@@ -316,8 +316,8 @@
             // 
             // Column4
             // 
-            dataGridViewCellStyle22.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.Column4.DefaultCellStyle = dataGridViewCellStyle22;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.Column4.DefaultCellStyle = dataGridViewCellStyle11;
             this.Column4.Frozen = true;
             this.Column4.HeaderText = "TestTime";
             this.Column4.MinimumWidth = 10;
@@ -336,9 +336,9 @@
             this.查询Query.Controls.Add(this.txtSN);
             this.查询Query.Controls.Add(this.rdoDate);
             this.查询Query.Controls.Add(this.rdoSN);
-            this.查询Query.Location = new System.Drawing.Point(11, 11);
+            this.查询Query.Location = new System.Drawing.Point(11, 10);
             this.查询Query.Name = "查询Query";
-            this.查询Query.Size = new System.Drawing.Size(302, 135);
+            this.查询Query.Size = new System.Drawing.Size(302, 125);
             this.查询Query.TabIndex = 4;
             this.查询Query.TabStop = false;
             this.查询Query.Text = "查询";
@@ -346,48 +346,48 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(106, 83);
+            this.label2.Location = new System.Drawing.Point(106, 77);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(50, 13);
+            this.label2.Size = new System.Drawing.Size(47, 12);
             this.label2.TabIndex = 3;
             this.label2.Text = "结束End";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(106, 44);
+            this.label1.Location = new System.Drawing.Point(106, 41);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(53, 13);
+            this.label1.Size = new System.Drawing.Size(59, 12);
             this.label1.TabIndex = 5;
             this.label1.Text = "开始Start";
             // 
             // dateTimePicker2
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(106, 99);
+            this.dateTimePicker2.Location = new System.Drawing.Point(106, 91);
             this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(126, 20);
+            this.dateTimePicker2.Size = new System.Drawing.Size(126, 21);
             this.dateTimePicker2.TabIndex = 4;
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(106, 60);
+            this.dateTimePicker1.Location = new System.Drawing.Point(106, 55);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(127, 20);
+            this.dateTimePicker1.Size = new System.Drawing.Size(127, 21);
             this.dateTimePicker1.TabIndex = 3;
             // 
             // txtSN
             // 
-            this.txtSN.Location = new System.Drawing.Point(106, 18);
+            this.txtSN.Location = new System.Drawing.Point(106, 17);
             this.txtSN.Name = "txtSN";
-            this.txtSN.Size = new System.Drawing.Size(127, 20);
+            this.txtSN.Size = new System.Drawing.Size(127, 21);
             this.txtSN.TabIndex = 2;
             // 
             // rdoDate
             // 
             this.rdoDate.AutoSize = true;
-            this.rdoDate.Location = new System.Drawing.Point(10, 83);
+            this.rdoDate.Location = new System.Drawing.Point(10, 77);
             this.rdoDate.Name = "rdoDate";
-            this.rdoDate.Size = new System.Drawing.Size(72, 17);
+            this.rdoDate.Size = new System.Drawing.Size(71, 16);
             this.rdoDate.TabIndex = 1;
             this.rdoDate.Text = "日期Date";
             this.rdoDate.UseVisualStyleBackColor = true;
@@ -395,9 +395,9 @@
             // rdoSN
             // 
             this.rdoSN.AutoSize = true;
-            this.rdoSN.Location = new System.Drawing.Point(10, 21);
+            this.rdoSN.Location = new System.Drawing.Point(10, 19);
             this.rdoSN.Name = "rdoSN";
-            this.rdoSN.Size = new System.Drawing.Size(76, 17);
+            this.rdoSN.Size = new System.Drawing.Size(71, 16);
             this.rdoSN.TabIndex = 0;
             this.rdoSN.Text = "工件号SN";
             this.rdoSN.UseVisualStyleBackColor = true;
@@ -407,35 +407,36 @@
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.chart2);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel2.Location = new System.Drawing.Point(-73, 0);
+            this.panel2.Location = new System.Drawing.Point(1266, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(265, 446);
+            this.panel2.Size = new System.Drawing.Size(265, 1037);
             this.panel2.TabIndex = 1;
             // 
             // chart2
             // 
             this.chart2.BackColor = System.Drawing.Color.DarkGray;
-            chartArea3.AxisX.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash;
-            chartArea3.AxisX.Title = "位移Travel(mm)";
-            chartArea3.AxisY.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash;
-            chartArea3.AxisY.Title = "载荷Load(Mpa)";
-            chartArea3.BackColor = System.Drawing.Color.DarkGray;
-            chartArea3.CursorX.LineColor = System.Drawing.Color.Green;
-            chartArea3.CursorY.LineColor = System.Drawing.Color.Green;
-            chartArea3.Name = "ChartArea1";
-            this.chart2.ChartAreas.Add(chartArea3);
+            chartArea1.AxisX.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash;
+            chartArea1.AxisX.Title = "位移Travel(mm)";
+            chartArea1.AxisY.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash;
+            chartArea1.AxisY.Title = "载荷Load(Mpa)";
+            chartArea1.BackColor = System.Drawing.Color.DarkGray;
+            chartArea1.CursorX.LineColor = System.Drawing.Color.Green;
+            chartArea1.CursorY.LineColor = System.Drawing.Color.Green;
+            chartArea1.Name = "ChartArea1";
+            this.chart2.ChartAreas.Add(chartArea1);
             this.chart2.Dock = System.Windows.Forms.DockStyle.Fill;
-            legend3.Name = "Legend1";
-            this.chart2.Legends.Add(legend3);
+            legend1.Name = "Legend1";
+            this.chart2.Legends.Add(legend1);
             this.chart2.Location = new System.Drawing.Point(0, 0);
             this.chart2.Name = "chart2";
-            this.chart2.Size = new System.Drawing.Size(263, 444);
+            this.chart2.Size = new System.Drawing.Size(263, 1035);
             this.chart2.TabIndex = 8;
             this.chart2.Text = "chart2";
-            title3.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            title3.Name = "Title1";
-            title3.Text = "载荷位移特性曲线图Load-Travel Performance Curve";
-            this.chart2.Titles.Add(title3);
+            title1.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            title1.Name = "Title1";
+            title1.Text = "载荷位移特性曲线图Load-Travel Performance Curve";
+            this.chart2.Titles.Add(title1);
+            this.chart2.Click += new System.EventHandler(this.Chart2_Click);
             // 
             // panel1
             // 
@@ -445,7 +446,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(255, 446);
+            this.panel1.Size = new System.Drawing.Size(255, 1037);
             this.panel1.TabIndex = 0;
             // 
             // lblToolTip1
@@ -453,45 +454,46 @@
             this.lblToolTip1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblToolTip1.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblToolTip1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.lblToolTip1.Location = new System.Drawing.Point(50, 163);
+            this.lblToolTip1.Location = new System.Drawing.Point(50, 150);
             this.lblToolTip1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblToolTip1.Name = "lblToolTip1";
-            this.lblToolTip1.Size = new System.Drawing.Size(134, 40);
+            this.lblToolTip1.Size = new System.Drawing.Size(134, 37);
             this.lblToolTip1.TabIndex = 8;
             this.lblToolTip1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // chart1
             // 
             this.chart1.BackColor = System.Drawing.Color.DarkGray;
-            chartArea4.AxisX.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash;
-            chartArea4.AxisX.Title = "位移Travel(mm)";
-            chartArea4.AxisY.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash;
-            chartArea4.AxisY.Title = "载荷Load(Mpa)";
-            chartArea4.BackColor = System.Drawing.Color.DarkGray;
-            chartArea4.CursorX.LineColor = System.Drawing.Color.Green;
-            chartArea4.CursorY.LineColor = System.Drawing.Color.Green;
-            chartArea4.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea4);
+            chartArea2.AxisX.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash;
+            chartArea2.AxisX.Title = "位移Travel(mm)";
+            chartArea2.AxisY.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash;
+            chartArea2.AxisY.Title = "载荷Load(Mpa)";
+            chartArea2.BackColor = System.Drawing.Color.DarkGray;
+            chartArea2.CursorX.LineColor = System.Drawing.Color.Green;
+            chartArea2.CursorY.LineColor = System.Drawing.Color.Green;
+            chartArea2.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea2);
             this.chart1.Dock = System.Windows.Forms.DockStyle.Fill;
-            legend4.Name = "Legend1";
-            this.chart1.Legends.Add(legend4);
+            legend2.Name = "Legend1";
+            this.chart1.Legends.Add(legend2);
             this.chart1.Location = new System.Drawing.Point(0, 0);
             this.chart1.Name = "chart1";
-            this.chart1.Size = new System.Drawing.Size(253, 444);
+            this.chart1.Size = new System.Drawing.Size(253, 1035);
+            this.chart1.SuppressExceptions = true;
             this.chart1.TabIndex = 1;
             this.chart1.Text = "chart1";
-            title4.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            title4.Name = "Title1";
-            title4.Text = "载荷位移特性曲线图Load-Travel Performance Curve";
-            this.chart1.Titles.Add(title4);
+            title2.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            title2.Name = "Title1";
+            title2.Text = "载荷位移特性曲线图Load-Travel Performance Curve";
+            this.chart1.Titles.Add(title2);
             this.chart1.MouseLeave += new System.EventHandler(this.Chart1_MouseLeave);
             this.chart1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Chart1_MouseMove);
             // 
             // FrmHistory
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1904, 1041);
             this.Controls.Add(this.splitContainer1);
             this.Name = "FrmHistory";
             this.Text = "FrmHistory";

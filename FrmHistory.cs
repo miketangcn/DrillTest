@@ -102,19 +102,18 @@ namespace DrillTest
             await task;
 
         }
-        private  void QueryWorkByDate(DateTime t1, DateTime t2)
+        private void QueryWorkByDate(DateTime t1, DateTime t2)
         {
             string sql="";
-
-                  sql = "Select * from Work where LastTime Between '{0}' and '{1}' order by LastTime desc";
-                  sql = string.Format(sql, t1, t2);
-                  Invoke(new Action(() =>
-                  {
-                      dataGridView1.DataSource = SQLHelper.GetDataSet(sql).Tables[0];
-                  }));
-                  Global.LastQueryMode = false;
-                  Global.LastQueryTFrom = t1;
-                  Global.LastQueryTTo = t2;
+            sql = "Select * from Work where LastTime Between '{0}' and '{1}' order by LastTime desc";
+            sql = string.Format(sql, t1, t2);
+            Invoke(new Action(() =>
+               {
+                 dataGridView1.DataSource = SQLHelper.GetDataSet(sql).Tables[0];
+               }));
+            Global.LastQueryMode = false;
+            Global.LastQueryTFrom = t1;
+            Global.LastQueryTTo = t2;
         }
         private void QueryWorkBySN( string Id)
         {
@@ -174,7 +173,7 @@ namespace DrillTest
                           List<float> y = new List<float>();
                           var lstSingleCurve = new List<Model.Point>();
                           string strings = ds.Tables[0].Rows[k]["Data"].ToString();
-                          lstSingleCurve = CommonMethods.TFromBinary(strings).ConvertAll(s => (Model.Point)s);
+                          lstSingleCurve = CommonMethods.FromBinary(strings).ConvertAll(s => (Model.Point)s);
                           x.Clear();
                           y.Clear();
                           if (lstSingleCurve.Count > 0)
@@ -207,7 +206,10 @@ namespace DrillTest
             List<float> y = new List<float>();
             var lstSingleCurve = new List<Model.Point>();
             string strings = ds.Tables[0].Rows[index]["Data"].ToString();
-            lstSingleCurve = CommonMethods.TFromBinary(strings).ConvertAll(s=>(Model.Point)s);
+            lstSingleCurve = CommonMethods.FromBinary(strings).ConvertAll(s=>(Model.Point)s);
+            string test= CommonMethods.SerializeList(lstSingleCurve.ConvertAll(s => (object)s));
+            var testlst = new List<Model.Point>();
+            testlst = CommonMethods.DesirializeList(test).ConvertAll(s => (Model.Point)s);
             x.Clear();
             y.Clear();
             if (lstSingleCurve.Count > 0)
@@ -385,7 +387,7 @@ namespace DrillTest
                             int k = i + 1;
                             var lstSingleCurve = new List<Model.Point>();
                             string strings = ds.Tables[0].Rows[i]["Data"].ToString();
-                            lstSingleCurve = CommonMethods.TFromBinary(strings).ConvertAll(s => (Model.Point)s);
+                            lstSingleCurve = CommonMethods.FromBinary(strings).ConvertAll(s => (Model.Point)s);
                             NopiExcelHelper<Model.Point>.AddExcel(lstSingleCurve, dialog.FileName, "hole" + k.ToString());
                         }
                         
@@ -394,6 +396,11 @@ namespace DrillTest
                 }
                 
             }
+
+        }
+
+        private void Chart2_Click(object sender, EventArgs e)
+        {
 
         }
     }
