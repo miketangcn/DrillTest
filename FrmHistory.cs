@@ -206,7 +206,7 @@ namespace DrillTest
             List<float> y = new List<float>();
             var lstSingleCurve = new List<Model.Point>();
             string strings = ds.Tables[0].Rows[index]["Data"].ToString();
-            //lstSingleCurve = CommonMethods.FromBinary(strings).ConvertAll(s=>(Model.Point)s);
+            lstSingleCurve = CommonMethods.FromBinary(strings).ConvertAll(s=>(Model.Point)s);
             //string test= CommonMethods.SerializeList(lstSingleCurve.ConvertAll(s => (object)s));
             //var testlst = new List<Model.Point>();
             //testlst = CommonMethods.DesirializeList(test).ConvertAll(s => (Model.Point)s);
