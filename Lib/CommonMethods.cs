@@ -116,10 +116,10 @@ namespace DrillTest.Lib
                 if (Global.Point1.x >= Global.con_chek_x && Global.Point1.y >= Global.con_chek_y)//进入压洞状态
                 {
                     Global.SubWorking1 = true;
-                    FrmTest.frmtest.SetRedo1Ena(false);
+                    FrmTest.frmtest.SetRedo1Ena(false);        
                     Global.lstPoint1.Add(point);
                 }
-                if (Global.Point1.x <Global.con_chek_x || Global.Point1.y < Global.con_chek_y)//不在压洞状态
+                else if (Global.Point1.x <Global.con_chek_x || Global.Point1.y < Global.con_chek_y)//不在压洞状态
                 {
                     Global.SubWorking1 = false;
                 }
@@ -141,6 +141,9 @@ namespace DrillTest.Lib
                     }
                     FrmTest.frmtest.SetRedo1Ena(true);
                     Global.HoleNumber1++;
+                    ReadValue.Distance = 50;
+                    ReadValue.Pressure = 350;
+                    ReadValue.IsMax = false;
                     //Global.i = 800;
                     //Global.j = 120;
                     //Global.flag = false;
@@ -208,6 +211,7 @@ namespace DrillTest.Lib
         #endregion
 
         #region 数据库及数据文件处理
+
         private static void WorkTableUpdate(WorkRecord workRecord)
         {
             string sql = @"MERGE Work AS target USING (SELECT @SerialNO as SerialNO, @Layer as Layer, @HoleCount as HoleCount, 

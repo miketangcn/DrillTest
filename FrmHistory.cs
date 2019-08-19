@@ -77,7 +77,7 @@ namespace DrillTest
             dataGridView2.RowHeadersVisible = false;
             dataGridView2.Width = splitContainer1.Panel1.Width;
             rdoDate.Select();
-            this.chart1.ChartAreas[0].AxisX.Minimum = 200;
+            this.chart1.ChartAreas[0].AxisX.Minimum =180;
             this.chart1.ChartAreas[0].AxisX.Maximum = 350;
             this.chart1.ChartAreas[0].AxisX.Interval = 10;
             this.chart1.ChartAreas[0].AxisY.Interval = 1;
@@ -148,7 +148,7 @@ namespace DrillTest
                   Invoke(new Action(() =>
                   {
                       int n = ds.Tables[0].Rows.Count;
-                      this.chart2.ChartAreas[0].AxisX.Minimum = 200;
+                      this.chart2.ChartAreas[0].AxisX.Minimum = 180;
                       this.chart2.ChartAreas[0].AxisX.Maximum = 350;
                       this.chart2.ChartAreas[0].AxisX.Interval = 10;
                       this.chart2.ChartAreas[0].AxisY.Interval = 1;
@@ -200,17 +200,18 @@ namespace DrillTest
         }
         private async void ShowSingleCurve(int index)
         {
-          Task task=new Task(() =>
+
+            Task task=new Task(() =>
           {
             List<float> x = new List<float>();
             List<float> y = new List<float>();
-            var lstSingleCurve = new List<Model.Point>();
-            string strings = ds.Tables[0].Rows[index]["Data"].ToString();
-            lstSingleCurve = CommonMethods.FromBinary(strings).ConvertAll(s=>(Model.Point)s);
-            //string test= CommonMethods.SerializeList(lstSingleCurve.ConvertAll(s => (object)s));
-            //var testlst = new List<Model.Point>();
-            //testlst = CommonMethods.DesirializeList(test).ConvertAll(s => (Model.Point)s);
-            x.Clear();
+              var lstSingleCurve = new List<Model.Point>();
+              string strings = ds.Tables[0].Rows[index]["Data"].ToString();
+              lstSingleCurve = CommonMethods.FromBinary(strings).ConvertAll(s => (Model.Point)s);
+              //string test= CommonMethods.SerializeList(lstSingleCurve.ConvertAll(s => (object)s));
+              //var testlst = new List<Model.Point>();
+              //testlst = CommonMethods.DesirializeList(test).ConvertAll(s => (Model.Point)s);
+              x.Clear();
             y.Clear();
             if (lstSingleCurve.Count > 0)
             {

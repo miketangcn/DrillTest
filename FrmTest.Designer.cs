@@ -102,17 +102,17 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(415, 608);
+            this.panel1.Size = new System.Drawing.Size(415, 561);
             this.panel1.TabIndex = 0;
             // 
             // btnReDo1
             // 
             this.btnReDo1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btnReDo1.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btnReDo1.Location = new System.Drawing.Point(189, 65);
+            this.btnReDo1.Location = new System.Drawing.Point(189, 60);
             this.btnReDo1.Name = "btnReDo1";
             this.btnReDo1.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(5);
-            this.btnReDo1.Size = new System.Drawing.Size(88, 32);
+            this.btnReDo1.Size = new System.Drawing.Size(88, 30);
             this.btnReDo1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.btnReDo1.TabIndex = 12;
             this.btnReDo1.Text = "重压ReDo";
@@ -124,10 +124,10 @@
             this.btnStop1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btnStop1.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
             this.btnStop1.Enabled = false;
-            this.btnStop1.Location = new System.Drawing.Point(97, 65);
+            this.btnStop1.Location = new System.Drawing.Point(97, 60);
             this.btnStop1.Name = "btnStop1";
             this.btnStop1.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(5);
-            this.btnStop1.Size = new System.Drawing.Size(88, 32);
+            this.btnStop1.Size = new System.Drawing.Size(88, 30);
             this.btnStop1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.btnStop1.TabIndex = 11;
             this.btnStop1.Text = "结束Stop";
@@ -138,10 +138,10 @@
             // 
             this.btnStart1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btnStart1.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btnStart1.Location = new System.Drawing.Point(3, 65);
+            this.btnStart1.Location = new System.Drawing.Point(3, 60);
             this.btnStart1.Name = "btnStart1";
             this.btnStart1.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(5);
-            this.btnStart1.Size = new System.Drawing.Size(88, 32);
+            this.btnStart1.Size = new System.Drawing.Size(88, 30);
             this.btnStart1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.btnStart1.TabIndex = 10;
             this.btnStart1.Text = "开始Start";
@@ -151,27 +151,27 @@
             // label4
             // 
             this.label4.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(200, 7);
+            this.label4.Location = new System.Drawing.Point(200, 6);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(87, 23);
+            this.label4.Size = new System.Drawing.Size(87, 21);
             this.label4.TabIndex = 8;
             this.label4.Text = "洞数 Hole";
             // 
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(3, 7);
+            this.label1.Location = new System.Drawing.Point(3, 6);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(87, 23);
+            this.label1.Size = new System.Drawing.Size(87, 21);
             this.label1.TabIndex = 8;
             this.label1.Text = "工件号 S/N";
             // 
             // label3
             // 
             this.label3.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(121, 7);
+            this.label3.Location = new System.Drawing.Point(121, 6);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(87, 23);
+            this.label3.Size = new System.Drawing.Size(87, 21);
             this.label3.TabIndex = 8;
             this.label3.Text = "层数 Layer";
             // 
@@ -179,18 +179,18 @@
             // 
             this.lbly1.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.lbly1.ForeColor = System.Drawing.Color.Red;
-            this.lbly1.Location = new System.Drawing.Point(236, 113);
+            this.lbly1.Location = new System.Drawing.Point(236, 104);
             this.lbly1.Name = "lbly1";
-            this.lbly1.Size = new System.Drawing.Size(77, 23);
+            this.lbly1.Size = new System.Drawing.Size(77, 21);
             this.lbly1.TabIndex = 8;
             this.lbly1.Text = "0.00";
             // 
             // label8
             // 
             this.label8.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label8.Location = new System.Drawing.Point(198, 113);
+            this.label8.Location = new System.Drawing.Point(198, 104);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(32, 23);
+            this.label8.Size = new System.Drawing.Size(32, 21);
             this.label8.TabIndex = 8;
             this.label8.Text = "Y:";
             // 
@@ -198,9 +198,9 @@
             // 
             this.lblInformation1.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.lblInformation1.ForeColor = System.Drawing.Color.Red;
-            this.lblInformation1.Location = new System.Drawing.Point(282, 29);
+            this.lblInformation1.Location = new System.Drawing.Point(282, 27);
             this.lblInformation1.Name = "lblInformation1";
-            this.lblInformation1.Size = new System.Drawing.Size(126, 23);
+            this.lblInformation1.Size = new System.Drawing.Size(126, 21);
             this.lblInformation1.TabIndex = 8;
             this.lblInformation1.Text = "正在压制中！";
             this.lblInformation1.Visible = false;
@@ -209,18 +209,18 @@
             // 
             this.lblx1.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.lblx1.ForeColor = System.Drawing.Color.Red;
-            this.lblx1.Location = new System.Drawing.Point(52, 113);
+            this.lblx1.Location = new System.Drawing.Point(52, 104);
             this.lblx1.Name = "lblx1";
-            this.lblx1.Size = new System.Drawing.Size(90, 23);
+            this.lblx1.Size = new System.Drawing.Size(90, 21);
             this.lblx1.TabIndex = 8;
             this.lblx1.Text = "000.00";
             // 
             // label7
             // 
             this.label7.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label7.Location = new System.Drawing.Point(320, 113);
+            this.label7.Location = new System.Drawing.Point(320, 104);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(64, 23);
+            this.label7.Size = new System.Drawing.Size(64, 21);
             this.label7.TabIndex = 8;
             this.label7.Text = "Mpa";
             // 
@@ -229,26 +229,26 @@
             this.lblToolTip1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblToolTip1.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblToolTip1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.lblToolTip1.Location = new System.Drawing.Point(143, 504);
+            this.lblToolTip1.Location = new System.Drawing.Point(143, 465);
             this.lblToolTip1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblToolTip1.Name = "lblToolTip1";
-            this.lblToolTip1.Size = new System.Drawing.Size(134, 40);
+            this.lblToolTip1.Size = new System.Drawing.Size(134, 44);
             this.lblToolTip1.TabIndex = 6;
             this.lblToolTip1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label6
             // 
             this.label6.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label6.Location = new System.Drawing.Point(3, 113);
+            this.label6.Location = new System.Drawing.Point(3, 104);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(32, 23);
+            this.label6.Size = new System.Drawing.Size(32, 21);
             this.label6.TabIndex = 8;
             this.label6.Text = "X:";
             // 
             // txtSN1
             // 
             this.txtSN1.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSN1.Location = new System.Drawing.Point(3, 30);
+            this.txtSN1.Location = new System.Drawing.Point(3, 28);
             this.txtSN1.Name = "txtSN1";
             this.txtSN1.Size = new System.Drawing.Size(112, 24);
             this.txtSN1.TabIndex = 7;
@@ -256,16 +256,16 @@
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label2.Location = new System.Drawing.Point(136, 113);
+            this.label2.Location = new System.Drawing.Point(136, 104);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(51, 23);
+            this.label2.Size = new System.Drawing.Size(51, 21);
             this.label2.TabIndex = 8;
             this.label2.Text = "mm";
             // 
             // txtLayer1
             // 
             this.txtLayer1.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLayer1.Location = new System.Drawing.Point(122, 30);
+            this.txtLayer1.Location = new System.Drawing.Point(122, 28);
             this.txtLayer1.Name = "txtLayer1";
             this.txtLayer1.Size = new System.Drawing.Size(72, 24);
             this.txtLayer1.TabIndex = 7;
@@ -274,7 +274,7 @@
             // 
             this.txtHole1.Enabled = false;
             this.txtHole1.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtHole1.Location = new System.Drawing.Point(200, 30);
+            this.txtHole1.Location = new System.Drawing.Point(200, 28);
             this.txtHole1.Name = "txtHole1";
             this.txtHole1.Size = new System.Drawing.Size(72, 24);
             this.txtHole1.TabIndex = 7;
@@ -294,9 +294,9 @@
             this.chart1.Dock = System.Windows.Forms.DockStyle.Bottom;
             legend1.Name = "Legend1";
             this.chart1.Legends.Add(legend1);
-            this.chart1.Location = new System.Drawing.Point(0, 223);
+            this.chart1.Location = new System.Drawing.Point(0, 205);
             this.chart1.Name = "chart1";
-            this.chart1.Size = new System.Drawing.Size(413, 383);
+            this.chart1.Size = new System.Drawing.Size(413, 354);
             this.chart1.TabIndex = 4;
             this.chart1.Text = "chart1";
             title1.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
@@ -333,17 +333,17 @@
             this.panel2.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel2.Location = new System.Drawing.Point(708, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(379, 608);
+            this.panel2.Size = new System.Drawing.Size(379, 561);
             this.panel2.TabIndex = 1;
             // 
             // btnReDo2
             // 
             this.btnReDo2.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btnReDo2.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btnReDo2.Location = new System.Drawing.Point(189, 65);
+            this.btnReDo2.Location = new System.Drawing.Point(189, 60);
             this.btnReDo2.Name = "btnReDo2";
             this.btnReDo2.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(5);
-            this.btnReDo2.Size = new System.Drawing.Size(88, 32);
+            this.btnReDo2.Size = new System.Drawing.Size(88, 30);
             this.btnReDo2.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.btnReDo2.TabIndex = 12;
             this.btnReDo2.Text = "重压ReDo";
@@ -355,10 +355,10 @@
             this.btnStop2.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btnStop2.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
             this.btnStop2.Enabled = false;
-            this.btnStop2.Location = new System.Drawing.Point(97, 65);
+            this.btnStop2.Location = new System.Drawing.Point(97, 60);
             this.btnStop2.Name = "btnStop2";
             this.btnStop2.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(5);
-            this.btnStop2.Size = new System.Drawing.Size(88, 32);
+            this.btnStop2.Size = new System.Drawing.Size(88, 30);
             this.btnStop2.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.btnStop2.TabIndex = 11;
             this.btnStop2.Text = "结束Stop";
@@ -368,9 +368,9 @@
             // label18
             // 
             this.label18.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(199, 7);
+            this.label18.Location = new System.Drawing.Point(199, 6);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(87, 23);
+            this.label18.Size = new System.Drawing.Size(87, 21);
             this.label18.TabIndex = 8;
             this.label18.Text = "洞数 Hole";
             // 
@@ -378,10 +378,10 @@
             // 
             this.btnStart2.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btnStart2.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btnStart2.Location = new System.Drawing.Point(3, 65);
+            this.btnStart2.Location = new System.Drawing.Point(3, 60);
             this.btnStart2.Name = "btnStart2";
             this.btnStart2.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(5);
-            this.btnStart2.Size = new System.Drawing.Size(88, 32);
+            this.btnStart2.Size = new System.Drawing.Size(88, 30);
             this.btnStart2.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.btnStart2.TabIndex = 10;
             this.btnStart2.Text = "开始Start";
@@ -393,28 +393,28 @@
             this.lblToolTip2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblToolTip2.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblToolTip2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.lblToolTip2.Location = new System.Drawing.Point(107, 181);
+            this.lblToolTip2.Location = new System.Drawing.Point(107, 167);
             this.lblToolTip2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblToolTip2.Name = "lblToolTip2";
-            this.lblToolTip2.Size = new System.Drawing.Size(134, 40);
+            this.lblToolTip2.Size = new System.Drawing.Size(134, 52);
             this.lblToolTip2.TabIndex = 6;
             this.lblToolTip2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label17
             // 
             this.label17.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(3, 7);
+            this.label17.Location = new System.Drawing.Point(3, 6);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(87, 23);
+            this.label17.Size = new System.Drawing.Size(87, 21);
             this.label17.TabIndex = 8;
             this.label17.Text = "工件号 S/N";
             // 
             // label16
             // 
             this.label16.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(121, 7);
+            this.label16.Location = new System.Drawing.Point(121, 6);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(87, 23);
+            this.label16.Size = new System.Drawing.Size(87, 21);
             this.label16.TabIndex = 8;
             this.label16.Text = "层数 Layer";
             // 
@@ -433,9 +433,9 @@
             this.chart2.Dock = System.Windows.Forms.DockStyle.Bottom;
             legend2.Name = "Legend1";
             this.chart2.Legends.Add(legend2);
-            this.chart2.Location = new System.Drawing.Point(0, 241);
+            this.chart2.Location = new System.Drawing.Point(0, 222);
             this.chart2.Name = "chart2";
-            this.chart2.Size = new System.Drawing.Size(377, 365);
+            this.chart2.Size = new System.Drawing.Size(377, 337);
             this.chart2.TabIndex = 7;
             this.chart2.Text = "chart2";
             title2.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
@@ -450,7 +450,7 @@
             // 
             this.txtHole2.Enabled = false;
             this.txtHole2.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtHole2.Location = new System.Drawing.Point(199, 30);
+            this.txtHole2.Location = new System.Drawing.Point(199, 28);
             this.txtHole2.Name = "txtHole2";
             this.txtHole2.Size = new System.Drawing.Size(72, 24);
             this.txtHole2.TabIndex = 7;
@@ -459,9 +459,9 @@
             // 
             this.lbly2.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.lbly2.ForeColor = System.Drawing.Color.Red;
-            this.lbly2.Location = new System.Drawing.Point(234, 113);
+            this.lbly2.Location = new System.Drawing.Point(234, 104);
             this.lbly2.Name = "lbly2";
-            this.lbly2.Size = new System.Drawing.Size(77, 23);
+            this.lbly2.Size = new System.Drawing.Size(77, 21);
             this.lbly2.TabIndex = 8;
             this.lbly2.Text = "0.00";
             // 
@@ -469,9 +469,9 @@
             // 
             this.lblInformation2.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.lblInformation2.ForeColor = System.Drawing.Color.Red;
-            this.lblInformation2.Location = new System.Drawing.Point(282, 29);
+            this.lblInformation2.Location = new System.Drawing.Point(282, 27);
             this.lblInformation2.Name = "lblInformation2";
-            this.lblInformation2.Size = new System.Drawing.Size(126, 23);
+            this.lblInformation2.Size = new System.Drawing.Size(126, 21);
             this.lblInformation2.TabIndex = 8;
             this.lblInformation2.Text = "正在压制中！";
             this.lblInformation2.Visible = false;
@@ -479,7 +479,7 @@
             // txtLayer2
             // 
             this.txtLayer2.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLayer2.Location = new System.Drawing.Point(121, 30);
+            this.txtLayer2.Location = new System.Drawing.Point(121, 28);
             this.txtLayer2.Name = "txtLayer2";
             this.txtLayer2.Size = new System.Drawing.Size(72, 24);
             this.txtLayer2.TabIndex = 7;
@@ -487,25 +487,25 @@
             // label10
             // 
             this.label10.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label10.Location = new System.Drawing.Point(134, 113);
+            this.label10.Location = new System.Drawing.Point(134, 104);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(51, 23);
+            this.label10.Size = new System.Drawing.Size(51, 21);
             this.label10.TabIndex = 8;
             this.label10.Text = "mm";
             // 
             // label14
             // 
             this.label14.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label14.Location = new System.Drawing.Point(196, 113);
+            this.label14.Location = new System.Drawing.Point(196, 104);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(32, 23);
+            this.label14.Size = new System.Drawing.Size(32, 21);
             this.label14.TabIndex = 8;
             this.label14.Text = "Y:";
             // 
             // txtSN2
             // 
             this.txtSN2.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSN2.Location = new System.Drawing.Point(3, 30);
+            this.txtSN2.Location = new System.Drawing.Point(3, 28);
             this.txtSN2.Name = "txtSN2";
             this.txtSN2.Size = new System.Drawing.Size(112, 24);
             this.txtSN2.TabIndex = 7;
@@ -513,9 +513,9 @@
             // label11
             // 
             this.label11.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label11.Location = new System.Drawing.Point(3, 113);
+            this.label11.Location = new System.Drawing.Point(3, 104);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(32, 23);
+            this.label11.Size = new System.Drawing.Size(32, 21);
             this.label11.TabIndex = 8;
             this.label11.Text = "X:";
             // 
@@ -523,27 +523,27 @@
             // 
             this.lblx2.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.lblx2.ForeColor = System.Drawing.Color.Red;
-            this.lblx2.Location = new System.Drawing.Point(46, 113);
+            this.lblx2.Location = new System.Drawing.Point(46, 104);
             this.lblx2.Name = "lblx2";
-            this.lblx2.Size = new System.Drawing.Size(85, 23);
+            this.lblx2.Size = new System.Drawing.Size(85, 21);
             this.lblx2.TabIndex = 8;
             this.lblx2.Text = "000.00";
             // 
             // label12
             // 
             this.label12.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label12.Location = new System.Drawing.Point(310, 113);
+            this.label12.Location = new System.Drawing.Point(310, 104);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(64, 23);
+            this.label12.Size = new System.Drawing.Size(64, 21);
             this.label12.TabIndex = 8;
             this.label12.Text = "Mpa";
             // 
             // FrmTest
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkGray;
-            this.ClientSize = new System.Drawing.Size(1087, 608);
+            this.ClientSize = new System.Drawing.Size(1087, 561);
             this.ControlBox = false;
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);

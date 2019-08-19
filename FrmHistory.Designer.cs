@@ -457,7 +457,7 @@
             this.lblToolTip1.Location = new System.Drawing.Point(50, 150);
             this.lblToolTip1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblToolTip1.Name = "lblToolTip1";
-            this.lblToolTip1.Size = new System.Drawing.Size(134, 37);
+            this.lblToolTip1.Size = new System.Drawing.Size(134, 51);
             this.lblToolTip1.TabIndex = 8;
             this.lblToolTip1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 

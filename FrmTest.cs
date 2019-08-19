@@ -41,7 +41,7 @@ namespace DrillTest
             chart2.Height = this.Height - 160;
             //this.chart1.ChartAreas[0].AxisY.Minimum = 0;
             //this.chart1.ChartAreas[0].AxisY.Maximum = 12;
-            this.chart1.ChartAreas[0].AxisX.Minimum = 200;
+            this.chart1.ChartAreas[0].AxisX.Minimum = 180;
             this.chart1.ChartAreas[0].AxisX.Maximum = 350;
             this.chart1.ChartAreas[0].AxisX.Interval = 10;
             this.chart1.ChartAreas[0].AxisY.Interval = 1;
@@ -56,7 +56,7 @@ namespace DrillTest
             this.chart1.Series[0].Color = Color.Red;
             this.chart1.Series[0].ToolTip = "#VAL{N3}Mpa;#VALX{N3}mm";
             lblToolTip1.Visible = false;
-            this.chart2.ChartAreas[0].AxisX.Minimum = 200;
+            this.chart2.ChartAreas[0].AxisX.Minimum = 180;
             this.chart2.ChartAreas[0].AxisX.Maximum = 350;
             this.chart2.ChartAreas[0].AxisX.Interval = 10;
             this.chart2.ChartAreas[0].AxisY.Interval = 1;
@@ -77,8 +77,8 @@ namespace DrillTest
             Thread Thread2 = new Thread(ShowCurrent2);
             Thread2.IsBackground = true;
             Thread2.Start();
-            btnReDo1.Enabled = false;
-            btnReDo2.Enabled = false;
+            btnReDo1.Enabled = Global.SubWorking1;
+            btnReDo2.Enabled = Global.SubWorking2;
             if (Global.Working1)
             {
                 txtHole1.Text = Global.HoleNumber1.ToString();
@@ -175,19 +175,23 @@ namespace DrillTest
                             x.Add(px);
                             y.Add(py);
                         }
-                        if (Global.IsShow2)
-                        {
-                            Invoke(new Action(() =>
-                            {
-                                chart2.Series[0].Points.Clear();
-                                chart2.Series[0].Points.DataBindXY(x, y);
-                                lblInformation2.Visible = Global.SubWorking2;
-                            }));
-                        }
                     }
                 }
-                if (!Global.IsShow2) break;
+                if (Global.IsShow2)
+                {
+                    BeginInvoke(new Action(() =>
+                    {
+                        if (x.Count > 0)
+                        {
+                            chart2.Series[0].Points.Clear();
+                            chart2.Series[0].Points.DataBindXY(x, y);
+                        }
+                        lblInformation2.Visible = Global.SubWorking2;
+                    }));
+                }
+                
                 Thread.Sleep(200);
+                if (!Global.IsShow2) break;
             }
             AutoResetEvent2.Set();
         }
@@ -199,6 +203,7 @@ namespace DrillTest
             Global.IsShow1 = true;
             while (Global.IsShow1)
             {
+
                 if (Global.SubWorking1)
                 {
                     x.Clear();
@@ -213,19 +218,23 @@ namespace DrillTest
                             x.Add(px);
                             y.Add(py);
                         }
-                        if (Global.IsShow1)
-                        {
-                            Invoke(new Action(() =>
-                            {
-                                chart1.Series[0].Points.Clear();
-                                chart1.Series[0].Points.DataBindXY(x, y);
-                                lblInformation1.Visible = Global.SubWorking1;
-                            }));
-                        }
                     }
                 }
-                if (!Global.IsShow1) break;
+                if (Global.IsShow1)
+                {
+                    BeginInvoke(new Action(() =>
+                    {
+                        if (x.Count > 0)
+                        {
+                            chart1.Series[0].Points.Clear();
+                            chart1.Series[0].Points.DataBindXY(x, y);
+                        }
+                        lblInformation1.Visible = Global.SubWorking1;
+                    }));
+                }
+                else break;
                 Thread.Sleep(200);
+                if (!Global.IsShow1) break;
             }
            AutoResetEvent1.Set();
         }
@@ -388,6 +397,9 @@ namespace DrillTest
             Global.WorkRecord1.Layer = Convert.ToInt16(txtLayer1.Text);
             Global.WorkRecord1.HoleCount = Global.HoleNumber1;
             Global.Working1 = true;
+            ReadValue.Distance = 50;
+            ReadValue.Pressure = 350;
+            ReadValue.IsMax = false;
             Global.DateFileName1 = WorkId + ".xls";
             ControlEnable(true, Global.Working1);
         }
