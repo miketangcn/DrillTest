@@ -11,6 +11,7 @@ namespace DrillTest.Model
     {
         public string Id { get; set; } //零件编号
         public Int16 Layer { get; set; }//层数
+        public Int16 MachineId { get; set; } //测试机器编号
         public DateTime LastTime { get; set; }//记录时间
         public Int16 HoleCount { get; set; }//洞数
     }
@@ -19,7 +20,7 @@ namespace DrillTest.Model
     {
         public string Id { get; set; } //零件编号
         public Int16 HoleNumber { get; set; } //洞编号
-        //public float MaxPressure { get; set; } //最大压力
+        public float MaxPressure { get; set; } //最大压力
         public DateTime TestTime { get; set; }//记录时间
         public string HoleDate { get; set; }
     }

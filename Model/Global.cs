@@ -27,6 +27,7 @@ namespace DrillTest.Model
         public static string DateFileName1;
         public static string DateFileName2;
         public static bool IsShow1, IsShow2;
+        public static Int16 MaxPressure1=0, MaxPressure2=0;//最大压力
         public static CurrentPoint CurrentPoint1=new CurrentPoint();//转换后的显示值
         public static CurrentPoint CurrentPoint2 = new CurrentPoint();//转换后的显示值
         public static CurrentHoleCount CurrentHoleCount1 = new CurrentHoleCount();//显示用的当前洞的编号

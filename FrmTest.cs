@@ -41,8 +41,8 @@ namespace DrillTest
             chart2.Height = this.Height - 160;
             //this.chart1.ChartAreas[0].AxisY.Minimum = 0;
             //this.chart1.ChartAreas[0].AxisY.Maximum = 12;
-            this.chart1.ChartAreas[0].AxisX.Minimum = 180;
-            this.chart1.ChartAreas[0].AxisX.Maximum = 350;
+            this.chart1.ChartAreas[0].AxisX.Minimum = Global.min_x;
+            this.chart1.ChartAreas[0].AxisX.Maximum = Global.max_x;
             this.chart1.ChartAreas[0].AxisX.Interval = 10;
             this.chart1.ChartAreas[0].AxisY.Interval = 1;
             this.chart1.ChartAreas[0].AxisX.MajorGrid.LineColor = System.Drawing.Color.Black;
@@ -56,8 +56,8 @@ namespace DrillTest
             this.chart1.Series[0].Color = Color.Red;
             this.chart1.Series[0].ToolTip = "#VAL{N3}Mpa;#VALX{N3}mm";
             lblToolTip1.Visible = false;
-            this.chart2.ChartAreas[0].AxisX.Minimum = 180;
-            this.chart2.ChartAreas[0].AxisX.Maximum = 350;
+            this.chart2.ChartAreas[0].AxisX.Minimum = Global.min_x;
+            this.chart2.ChartAreas[0].AxisX.Maximum = Global.max_x;
             this.chart2.ChartAreas[0].AxisX.Interval = 10;
             this.chart2.ChartAreas[0].AxisY.Interval = 1;
             this.chart2.ChartAreas[0].AxisX.MajorGrid.LineColor = System.Drawing.Color.Black;

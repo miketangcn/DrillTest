@@ -15,6 +15,7 @@ namespace DrillTest.Lib
     {
         //模板文件全路径
         private static string ModelFileName = System.Windows.Forms.Application.StartupPath + @"\Template\Template.xls";
+        
         #region 读写配置文件
         public static void ReadConfig()
         {
@@ -116,7 +117,11 @@ namespace DrillTest.Lib
                 if (Global.Point1.x >= Global.con_chek_x && Global.Point1.y >= Global.con_chek_y)//进入压洞状态
                 {
                     Global.SubWorking1 = true;
-                    FrmTest.frmtest.SetRedo1Ena(false);        
+                    FrmTest.frmtest.SetRedo1Ena(false);
+                    if (Global.Point1.y>Global.MaxPressure1)
+                    {
+                        Global.MaxPressure1 = Global.Point1.y;
+                    }      
                     Global.lstPoint1.Add(point);
                 }
                 else if (Global.Point1.x <Global.con_chek_x || Global.Point1.y < Global.con_chek_y)//不在压洞状态
@@ -129,9 +134,11 @@ namespace DrillTest.Lib
                     //调用异步写数据库和写数据文件代码
                     Global.WorkRecord1.LastTime = DateTime.Now;
                     Global.WorkRecord1.HoleCount = Global.HoleNumber1;
+                    Global.WorkRecord1.MachineId = 1;
+                    Global.HoleRecod1.MaxPressure = Global.MaxPressure1*Global.con_factor_y-10;
                     Global.HoleRecod1.TestTime = DateTime.Now;
                     Global.HoleRecod1.Id = Global.WorkRecord1.Id;
-                    Global.HoleRecod1.HoleNumber = Global.WorkRecord1.HoleCount;                  
+                    Global.HoleRecod1.HoleNumber = Global.WorkRecord1.HoleCount;
                     WorkTableUpdate(Global.WorkRecord1);
                     Global.HoleRecod1.HoleDate = ToBinary(Global.lstPoint1.ConvertAll(s=>(object)s));
                     HoleRecordUpdate(Global.HoleRecod1);
@@ -140,13 +147,16 @@ namespace DrillTest.Lib
                         NopiExcelHelper<Point>.AddExcel(Global.lstPoint1, FullFileName, "hole" + Global.HoleNumber1.ToString());
                     }
                     FrmTest.frmtest.SetRedo1Ena(true);
+                    Global.MaxPressure1 = 0;
                     Global.HoleNumber1++;
+                    #region 要删除
                     ReadValue.Distance = 50;
                     ReadValue.Pressure = 350;
                     ReadValue.IsMax = false;
                     //Global.i = 800;
                     //Global.j = 120;
                     //Global.flag = false;
+                    #endregion
                 }
                 if (!Global.SubWorking1)
                 {
@@ -173,6 +183,10 @@ namespace DrillTest.Lib
                     Global.SubWorking2 = true;
                     FrmTest.frmtest.SetRedo2Ena(false);
                     Global.lstPoint2.Add(point);
+                    if (Global.Point2.y > Global.MaxPressure2)
+                    {
+                        Global.MaxPressure2 = Global.Point2.y;
+                    }
                 }
                 if (Global.Point2.x < Global.con_chek_x || Global.Point2.y < Global.con_chek_y)//不在压洞状态
                 {
@@ -184,6 +198,7 @@ namespace DrillTest.Lib
                     Global.WorkRecord2.LastTime = DateTime.Now;
                     Global.WorkRecord2.HoleCount = Global.HoleNumber2;
                     Global.HoleRecod2.TestTime = DateTime.Now;
+                    Global.HoleRecod2.MaxPressure = Global.MaxPressure2*Global.con_factor_y - 10;
                     Global.HoleRecod2.Id = Global.WorkRecord2.Id;
                     Global.HoleRecod2.HoleNumber = Global.WorkRecord2.HoleCount;
                     WorkTableUpdate(Global.WorkRecord2);
@@ -194,6 +209,7 @@ namespace DrillTest.Lib
                         NopiExcelHelper<Point>.AddExcel(Global.lstPoint2, FullFileName, "hole" + Global.HoleNumber2.ToString());
                     }
                     FrmTest.frmtest.SetRedo2Ena(true);
+                    Global.MaxPressure2 = 0;
                     Global.HoleNumber2++;
                 }
                 if (!Global.SubWorking2)
@@ -214,23 +230,25 @@ namespace DrillTest.Lib
 
         private static void WorkTableUpdate(WorkRecord workRecord)
         {
-            string sql = @"MERGE Work AS target USING (SELECT @SerialNO as SerialNO, @Layer as Layer, @HoleCount as HoleCount, 
+            string sql = @"MERGE Work AS target USING (SELECT @SerialNO as SerialNO,@MachineId as MachineId @Layer as Layer, @HoleCount as HoleCount, 
                         @LastTime as LastTime)  AS source ON (target.SerialNO = source.SerialNO) WHEN MATCHED THEN UPDATE SET 
-                        HoleCount = source.HoleCount  WHEN NOT MATCHED THEN INSERT (SerialNO, Layer, HoleCount, LastTime) 
-                        VALUES (source.SerialNO, source.Layer, source.HoleCount, source.LastTime);";
-            SqlParameter[] param = { new SqlParameter("@SerialNO",workRecord.Id), new SqlParameter("@Layer", workRecord.Layer ),
+                        HoleCount = source.HoleCount  WHEN NOT MATCHED THEN INSERT (SerialNO, MachineId, Layer, HoleCount, LastTime) 
+                        VALUES (source.SerialNO, source.MachineId, source.Layer, source.HoleCount, source.LastTime);";
+            SqlParameter[] param = { new SqlParameter("@SerialNO",workRecord.Id), new SqlParameter("@MachineId", workRecord.MachineId ), new SqlParameter("@Layer", workRecord.Layer ),
                         new SqlParameter("@HoleCount",workRecord.HoleCount ), new SqlParameter( "@LastTime",workRecord.LastTime ) };
             SQLHelper.Update(sql, param);
         }
         private static void HoleRecordUpdate(HoleRecod holeRecod)
         {
-            string sql = @"MERGE HoleTestRec AS target USING (SELECT @SerialNO as SerialNO , @HoleNumber as HoleNumber, @TestTime as TestTime , 
-                        @Data as Data)  AS source ON (target.SerialNO = source.SerialNO  and target.HoleNumber = source.HoleNumber )
-                        WHEN MATCHED THEN UPDATE SET TestTime=source.TestTime, Data = source.Data 
-                        WHEN NOT MATCHED THEN INSERT (SerialNO, HoleNumber, TestTime, Data) 
-                        VALUES (source.SerialNO, source.HoleNumber, source.TestTime,source.Data);";
+            string sql = @"MERGE HoleTestRec AS target USING (SELECT @SerialNO as SerialNO , @HoleNumber as HoleNumber, 
+                        @MaxPressure as MaxPressure, @TestTime as TestTime , @Data as Data)  AS source ON               
+                        (target.SerialNO = source.SerialNO  and target.HoleNumber = source.HoleNumber )
+                        WHEN MATCHED THEN UPDATE SET TestTime=source.TestTime, Data = source.Data, MaxPressure=source.MaxPressure
+                        WHEN NOT MATCHED THEN INSERT (SerialNO, HoleNumber, MaxPressure  TestTime, Data) 
+                        VALUES (source.SerialNO, source.HoleNumber, source.MaxPressure, source.TestTime,source.Data);";
             SqlParameter[] param = { new SqlParameter("@SerialNO",holeRecod.Id), new SqlParameter("@HoleNumber",holeRecod.HoleNumber ),
-                        new SqlParameter("@TestTime",holeRecod.TestTime ), new SqlParameter( "@Data",holeRecod.HoleDate) };
+                       new SqlParameter("@MaxPressure",holeRecod.MaxPressure ), new SqlParameter("@TestTime",holeRecod.TestTime ),
+                       new SqlParameter( "@Data",holeRecod.HoleDate) };
             SQLHelper.Update(sql, param);
         }
         #endregion
