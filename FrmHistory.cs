@@ -1,16 +1,12 @@
-﻿using System;
+﻿using DrillTest.Lib;
+using DrillTest.Model;
+using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Data.SqlClient;
 using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows.Forms.DataVisualization.Charting;
-using DrillTest.Lib;
-using DrillTest.Model;
 
 namespace DrillTest
 {
@@ -66,8 +62,9 @@ namespace DrillTest
             dataGridView2.AutoGenerateColumns = false;
             dataGridView1.Columns[0].DataPropertyName = "SerialNO";
             dataGridView1.Columns[1].DataPropertyName = "Layer";
-            dataGridView1.Columns[2].DataPropertyName = "HoleCount";
-            dataGridView1.Columns[3].DataPropertyName = "LastTime";
+            dataGridView1.Columns[2].DataPropertyName = "MachineId";
+            dataGridView1.Columns[3].DataPropertyName = "HoleCount";
+            dataGridView1.Columns[4].DataPropertyName = "LastTime";
             dataGridView2.Width = splitContainer1.Panel1.Width;
             dataGridView1.RowHeadersVisible = false;
             dataGridView2.Columns[0].DataPropertyName = "SerialNO";
@@ -397,11 +394,6 @@ namespace DrillTest
                 }
                 
             }
-
-        }
-
-        private void Chart2_Click(object sender, EventArgs e)
-        {
 
         }
     }

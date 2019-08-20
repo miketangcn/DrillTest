@@ -177,6 +177,35 @@ namespace DrillTest
                 CommonMethods.WriteConfig(dialog.SelectedPath);
             }
         }
+        #region 拦截主窗口X按钮事件
+        protected override void WndProc(ref Message msg)
+        {
+            const int WM_SYSCOMMAND = 0x0112;
+            const int SC_CLOSE = 0xF060;
+
+            if (msg.Msg == WM_SYSCOMMAND && ((int)msg.WParam == SC_CLOSE))  // 点击winform右上关闭按钮 ，加入想要的逻辑处理
+            { 
+                if (Global.SubWorking1 || Global.SubWorking2)
+                {
+                    MessageBox.Show("还有工件在测试请等待测试结束后退出！", "信息", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                DialogResult result = MessageBox.Show("确定要退出测试系统", "提示", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+                if (result == DialogResult.Cancel)
+                {
+                    return;
+                }
+                Global.Working1 = false;
+                Global.Working2 = false;
+                Global.IsShow1 = false;
+                Global.IsShow2 = false;
+                Application.Exit();
+            }
+            base.WndProc(ref msg);
+        }
+        #endregion
+
     }
 
 }
