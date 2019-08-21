@@ -250,9 +250,8 @@ namespace DrillTest
                int index = dataGridView1.SelectedCells[0].RowIndex;
                 // dataGridView1.CurrentCell = dataGridView1[0, index];
                 SelectedWorkId = dataGridView1.CurrentRow.Cells[0].Value.ToString();
-                if (SelectedWorkId==LastWorkId) return;
-
-               LastWorkId = SelectedWorkId;
+               // if (SelectedWorkId==LastWorkId) return;
+               //LastWorkId = SelectedWorkId;
                QueryHoleRec(SelectedWorkId);
             }
            
@@ -280,6 +279,7 @@ namespace DrillTest
                 string Id = txtSN.Text.Trim();
                 QueryWorkBySN(Id);
             }
+            //DataGridView1_SelectionChanged(null, null);
         }
 
         private void BtnDeleteHole_Click(object sender, EventArgs e)

@@ -140,7 +140,7 @@ namespace DrillTest.Lib
                     Global.HoleRecod1.Id = Global.WorkRecord1.Id;
                     Global.HoleRecod1.HoleNumber = Global.WorkRecord1.HoleCount;
                     WorkTableUpdate(Global.WorkRecord1);
-                    Global.HoleRecod1.HoleDate = ToBinary(Global.lstPoint1.ConvertAll(s=>(object)s));
+                    Global.HoleRecod1.HoleDate = ToBinary(Global.lstPoint1.ConvertAll(s => (object)s));
                     HoleRecordUpdate(Global.HoleRecod1);
                     if (GetFilePath(FullFileName))
                     {
@@ -230,7 +230,7 @@ namespace DrillTest.Lib
 
         private static void WorkTableUpdate(WorkRecord workRecord)
         {
-            string sql = @"MERGE Work AS target USING (SELECT @SerialNO as SerialNO,@MachineId as MachineId @Layer as Layer, @HoleCount as HoleCount, 
+            string sql = @"MERGE Work AS target USING (SELECT @SerialNO as SerialNO, @MachineId as MachineId, @Layer as Layer, @HoleCount as HoleCount, 
                         @LastTime as LastTime)  AS source ON (target.SerialNO = source.SerialNO) WHEN MATCHED THEN UPDATE SET 
                         HoleCount = source.HoleCount  WHEN NOT MATCHED THEN INSERT (SerialNO, MachineId, Layer, HoleCount, LastTime) 
                         VALUES (source.SerialNO, source.MachineId, source.Layer, source.HoleCount, source.LastTime);";
@@ -244,7 +244,7 @@ namespace DrillTest.Lib
                         @MaxPressure as MaxPressure, @TestTime as TestTime , @Data as Data)  AS source ON               
                         (target.SerialNO = source.SerialNO  and target.HoleNumber = source.HoleNumber )
                         WHEN MATCHED THEN UPDATE SET TestTime=source.TestTime, Data = source.Data, MaxPressure=source.MaxPressure
-                        WHEN NOT MATCHED THEN INSERT (SerialNO, HoleNumber, MaxPressure  TestTime, Data) 
+                        WHEN NOT MATCHED THEN INSERT (SerialNO, HoleNumber, MaxPressure,  TestTime, Data) 
                         VALUES (source.SerialNO, source.HoleNumber, source.MaxPressure, source.TestTime,source.Data);";
             SqlParameter[] param = { new SqlParameter("@SerialNO",holeRecod.Id), new SqlParameter("@HoleNumber",holeRecod.HoleNumber ),
                        new SqlParameter("@MaxPressure",holeRecod.MaxPressure ), new SqlParameter("@TestTime",holeRecod.TestTime ),

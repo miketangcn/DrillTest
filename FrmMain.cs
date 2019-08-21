@@ -202,6 +202,16 @@ namespace DrillTest
                 Global.IsShow2 = false;
                 Application.Exit();
             }
+            #region 拦截双击标题栏，拖动窗口
+            if (msg.Msg == 0X00A1 && msg.WParam.ToInt32() == 2)//拖动窗口
+            {
+                return;
+            }
+            if (msg.Msg == 0xA3)//双击窗口
+            {
+                return;
+            }
+            #endregion
             base.WndProc(ref msg);
         }
         #endregion
