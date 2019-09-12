@@ -122,32 +122,46 @@ namespace DrillTest
         {
             if (btnReDo1.InvokeRequired)//指示是否必须调用invoke方法
             {
-                Invoke(new Action(() => btnReDo1.Enabled =Ena));
+                Invoke(new Action(() =>
+                {
+                    btnReDo1.Enabled = Ena;
+                    btnStop1.Enabled = Ena;
+                }));
             } 
         }
         public void SetRedo2Ena(bool Ena)
         {
             if (btnReDo2.InvokeRequired)
             {
-                Invoke(new Action(() => btnReDo2.Enabled = Ena));
+                Invoke(new Action(() =>
+                {
+                    btnReDo2.Enabled = Ena;
+                    btnStop2.Enabled = Ena;
+                }));
             }
         }
         private void ControlEnable(bool Is1, bool Ena)
         {
             if (Is1)
             {
-
-                btnStart1.Enabled = !Ena;
-                btnStop1.Enabled = Ena;
-                txtLayer1.Enabled = !Ena;
-                txtSN1.Enabled = !Ena;
+                Invoke(new Action(() =>
+                {
+                    btnStart1.Enabled = !Ena;
+                    btnStop1.Enabled = Ena;
+                    txtLayer1.Enabled = !Ena;
+                    txtSN1.Enabled = !Ena;
+                }));
             }
             else
             {
-                btnStop2.Enabled = Ena;
-                btnStart2.Enabled = !Ena;
-                txtLayer2.Enabled = !Ena;
-                txtSN2.Enabled = !Ena;
+                Invoke(new Action(() =>
+                {
+                    btnStop2.Enabled = Ena;
+                    btnStart2.Enabled = !Ena;
+                    txtLayer2.Enabled = !Ena;
+                    txtSN2.Enabled = !Ena;
+                }));
+
             }
         }
         #endregion
@@ -369,7 +383,7 @@ namespace DrillTest
               Global.HoleNumber1 = 1;
               if (ds != null && ds.Tables.Count != 0 && ds.Tables[0].Rows.Count != 0)
               {
-                  DialogResult dialogResult = MessageBox.Show("测试工件号已存在，继续测试还是变更工件号", "警告", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                  DialogResult dialogResult = MessageBox.Show("测试工件号已存在，继续以此工件号测试请按'Yes'变更请按'No'", "警告", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
                   if (dialogResult == DialogResult.No)
                   {
                       Invoke(new Action(()=>
@@ -389,19 +403,22 @@ namespace DrillTest
                      }
                   }
               }
-              });
+  //            Global.CurrentHoleCount1.Count = Global.HoleNumber1.ToString();
+                Global.WorkRecord1.Id = WorkId;
+                Global.WorkRecord1.Layer = Convert.ToInt16(txtLayer1.Text);
+                Global.WorkRecord1.HoleCount = Global.HoleNumber1;
+                Global.Working1 = true;
+                #region  //测试用正式要删掉
+                ReadValue.Distance = 50;
+                ReadValue.Pressure = 350;
+                ReadValue.IsMax = false;
+                #endregion
+                Global.DateFileName1 = WorkId + ".xls";
+                ControlEnable(true, Global.Working1);
+            });
             task.Start();
             await task;
-            Global.CurrentHoleCount1.Count= Global.HoleNumber1.ToString();
-            Global.WorkRecord1.Id = WorkId;
-            Global.WorkRecord1.Layer = Convert.ToInt16(txtLayer1.Text);
-            Global.WorkRecord1.HoleCount = Global.HoleNumber1;
-            Global.Working1 = true;
-            ReadValue.Distance = 50;
-            ReadValue.Pressure = 350;
-            ReadValue.IsMax = false;
-            Global.DateFileName1 = WorkId + ".xls";
-            ControlEnable(true, Global.Working1);
+           
         }
 
         private void BtnStop1_Click(object sender, EventArgs e)
@@ -478,16 +495,16 @@ namespace DrillTest
                         }
                     }
                 }
+//              Global.CurrentHoleCount2.Count = Global.HoleNumber1.ToString();
+                Global.WorkRecord2.Id = WorkId;
+                Global.WorkRecord2.Layer = Convert.ToInt16(txtLayer2.Text);
+                Global.WorkRecord2.HoleCount = Global.HoleNumber2;
+                Global.Working2 = true;
+                Global.DateFileName2 = WorkId + ".xls";
+                ControlEnable(false, Global.Working2);
             });
             task.Start();
             await task;
-            Global.CurrentHoleCount2.Count = Global.HoleNumber1.ToString();
-            Global.WorkRecord2.Id = WorkId;
-            Global.WorkRecord2.Layer = Convert.ToInt16(txtLayer2.Text);
-            Global.WorkRecord2.HoleCount = Global.HoleNumber2;
-            Global.Working2 = true;
-            Global.DateFileName2 = WorkId + ".xls";
-            ControlEnable(false, Global.Working2);
         }
         #endregion
     }

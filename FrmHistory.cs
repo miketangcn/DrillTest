@@ -134,8 +134,16 @@ namespace DrillTest
             dataGridView2.DataSource = ds.Tables[0];
             if (dataGridView2.Rows.Count>0)
             {
-               chart2.Series.Clear();
-               ShowAllCurve();   
+                try
+                {
+                    chart2.Series.Clear();
+                    ShowAllCurve();
+                }
+                catch (Exception)
+                {
+
+                }
+ 
             }    
         }
         private async void ShowAllCurve()
@@ -170,7 +178,16 @@ namespace DrillTest
                           List<float> y = new List<float>();
                           var lstSingleCurve = new List<Model.Point>();
                           string strings = ds.Tables[0].Rows[k]["Data"].ToString();
-                          lstSingleCurve = CommonMethods.FromBinary(strings).ConvertAll(s => (Model.Point)s);
+                          try
+                          {
+                              lstSingleCurve = CommonMethods.DesirializeListCompress(strings).ConvertAll(s => (Model.Point)s);
+                          }
+                          catch (Exception)
+                          {
+
+                             
+                          }
+//                          lstSingleCurve = CommonMethods.FromBinary(strings).ConvertAll(s => (Model.Point)s);
                           x.Clear();
                           y.Clear();
                           if (lstSingleCurve.Count > 0)
@@ -204,12 +221,17 @@ namespace DrillTest
             List<float> y = new List<float>();
               var lstSingleCurve = new List<Model.Point>();
               string strings = ds.Tables[0].Rows[index]["Data"].ToString();
-              lstSingleCurve = CommonMethods.FromBinary(strings).ConvertAll(s => (Model.Point)s);
-              //string test= CommonMethods.SerializeList(lstSingleCurve.ConvertAll(s => (object)s));
-              //var testlst = new List<Model.Point>();
-              //testlst = CommonMethods.DesirializeList(test).ConvertAll(s => (Model.Point)s);
+              try
+              {
+                  lstSingleCurve = CommonMethods.DesirializeListCompress(strings).ConvertAll(s => (Model.Point)s);
+              }
+              catch (Exception)
+              {
+              }
+            
+//            lstSingleCurve = CommonMethods.FromBinary(strings).ConvertAll(s => (Model.Point)s);
               x.Clear();
-            y.Clear();
+              y.Clear();
             if (lstSingleCurve.Count > 0)
             {
                 for (int i = 0; i < lstSingleCurve.Count; i++)
@@ -261,8 +283,16 @@ namespace DrillTest
         {
             if (dataGridView2.SelectedCells.Count > 0)
             {
-                int index = dataGridView2.SelectedCells[0].RowIndex;
-                ShowSingleCurve(index);
+                try
+                {
+                    int index = dataGridView2.SelectedCells[0].RowIndex;
+                    ShowSingleCurve(index);
+                }
+                catch (Exception)
+                {
+
+                }
+
             }
         }
 
@@ -385,7 +415,7 @@ namespace DrillTest
                             int k = i + 1;
                             var lstSingleCurve = new List<Model.Point>();
                             string strings = ds.Tables[0].Rows[i]["Data"].ToString();
-                            lstSingleCurve = CommonMethods.FromBinary(strings).ConvertAll(s => (Model.Point)s);
+                            lstSingleCurve = CommonMethods.DesirializeListCompress(strings).ConvertAll(s => (Model.Point)s);
                             NopiExcelHelper<Model.Point>.AddExcel(lstSingleCurve, dialog.FileName, "hole" + k.ToString());
                         }
                         

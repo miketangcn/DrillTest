@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.IO.Compression;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,6 +9,7 @@ using System.Data.SqlClient;
 using DrillTest.Model;
 using System.Configuration;
 using System.Runtime.Serialization.Formatters.Binary;
+
 
 namespace DrillTest.Lib
 {
@@ -135,12 +137,13 @@ namespace DrillTest.Lib
                     Global.WorkRecord1.LastTime = DateTime.Now;
                     Global.WorkRecord1.HoleCount = Global.HoleNumber1;
                     Global.WorkRecord1.MachineId = 1;
-                    Global.HoleRecod1.MaxPressure = Global.MaxPressure1*Global.con_factor_y-10;
+                    Global.HoleRecod1.MaxPressure = (float)Math.Round((Global.MaxPressure1 * Global.con_factor_y - 10), 2);
                     Global.HoleRecod1.TestTime = DateTime.Now;
                     Global.HoleRecod1.Id = Global.WorkRecord1.Id;
                     Global.HoleRecod1.HoleNumber = Global.WorkRecord1.HoleCount;
                     WorkTableUpdate(Global.WorkRecord1);
-                    Global.HoleRecod1.HoleDate = ToBinary(Global.lstPoint1.ConvertAll(s => (object)s));
+                    Global.HoleRecod1.HoleDate = SerializeListCompress(Global.lstPoint1.ConvertAll(s => (object)s));
+                   // Global.HoleRecod1.HoleDate = ToBinary(Global.lstPoint1.ConvertAll(s => (object)s));
                     HoleRecordUpdate(Global.HoleRecod1);
                     if (GetFilePath(FullFileName))
                     {
@@ -153,9 +156,6 @@ namespace DrillTest.Lib
                     ReadValue.Distance = 50;
                     ReadValue.Pressure = 350;
                     ReadValue.IsMax = false;
-                    //Global.i = 800;
-                    //Global.j = 120;
-                    //Global.flag = false;
                     #endregion
                 }
                 if (!Global.SubWorking1)
@@ -197,12 +197,13 @@ namespace DrillTest.Lib
                     //调用异步写数据库和写数据文件代码
                     Global.WorkRecord2.LastTime = DateTime.Now;
                     Global.WorkRecord2.HoleCount = Global.HoleNumber2;
+                    Global.WorkRecord2.MachineId = 2;
                     Global.HoleRecod2.TestTime = DateTime.Now;
-                    Global.HoleRecod2.MaxPressure = Global.MaxPressure2*Global.con_factor_y - 10;
+                    Global.HoleRecod2.MaxPressure =(float)Math.Round((Global.MaxPressure2 * Global.con_factor_y - 10), 2);
                     Global.HoleRecod2.Id = Global.WorkRecord2.Id;
                     Global.HoleRecod2.HoleNumber = Global.WorkRecord2.HoleCount;
                     WorkTableUpdate(Global.WorkRecord2);
-                    Global.HoleRecod2.HoleDate = ToBinary(Global.lstPoint2.ConvertAll(s => (object)s));
+                    Global.HoleRecod2.HoleDate = SerializeListCompress(Global.lstPoint2.ConvertAll(s => (object)s));
                     HoleRecordUpdate(Global.HoleRecod2);
                     if (GetFilePath(FullFileName))
                     {
@@ -230,11 +231,17 @@ namespace DrillTest.Lib
 
         private static void WorkTableUpdate(WorkRecord workRecord)
         {
-            string sql = @"MERGE Work AS target USING (SELECT @SerialNO as SerialNO, @MachineId as MachineId, @Layer as Layer, @HoleCount as HoleCount, 
+            //string sql = @"MERGE Work AS target USING (SELECT @SerialNO as SerialNO, @MachineId as MachineId, @Layer as Layer, @HoleCount as HoleCount, 
+            //            @LastTime as LastTime)  AS source ON (target.SerialNO = source.SerialNO) WHEN MATCHED THEN UPDATE SET 
+            //            HoleCount = source.HoleCount  WHEN NOT MATCHED THEN INSERT (SerialNO, MachineId, Layer, HoleCount, LastTime) 
+            //            VALUES (source.SerialNO, source.MachineId, source.Layer, source.HoleCount, source.LastTime);";
+            //SqlParameter[] param = { new SqlParameter("@SerialNO",workRecord.Id), new SqlParameter("@MachineId", workRecord.MachineId ), new SqlParameter("@Layer", workRecord.Layer ),
+            //            new SqlParameter("@HoleCount",workRecord.HoleCount ), new SqlParameter( "@LastTime",workRecord.LastTime ) };
+            string sql = @"MERGE Work AS target USING (SELECT @SerialNO as SerialNO, @Layer as Layer, @HoleCount as HoleCount, 
                         @LastTime as LastTime)  AS source ON (target.SerialNO = source.SerialNO) WHEN MATCHED THEN UPDATE SET 
                         HoleCount = source.HoleCount  WHEN NOT MATCHED THEN INSERT (SerialNO, MachineId, Layer, HoleCount, LastTime) 
                         VALUES (source.SerialNO, source.MachineId, source.Layer, source.HoleCount, source.LastTime);";
-            SqlParameter[] param = { new SqlParameter("@SerialNO",workRecord.Id), new SqlParameter("@MachineId", workRecord.MachineId ), new SqlParameter("@Layer", workRecord.Layer ),
+            SqlParameter[] param = { new SqlParameter("@SerialNO",workRecord.Id),  new SqlParameter("@Layer", workRecord.Layer ),
                         new SqlParameter("@HoleCount",workRecord.HoleCount ), new SqlParameter( "@LastTime",workRecord.LastTime ) };
             SQLHelper.Update(sql, param);
         }
@@ -254,13 +261,95 @@ namespace DrillTest.Lib
         #endregion
 
         #region list对象序列化到字符串和字符串反序列化 两种方法
+        /// <summary>
+        /// 压缩字节数组
+        /// </summary>
+        /// <param name="str"></param>
+        public static byte[] Compress(byte[] inputBytes)
+        {
+            using (MemoryStream outStream = new MemoryStream())
+            {
+                using (GZipStream zipStream = new GZipStream(outStream, CompressionMode.Compress, true))
+                {
+                    zipStream.Write(inputBytes, 0, inputBytes.Length);
+                    zipStream.Close(); //很重要，必须关闭，否则无法正确解压
+                    return outStream.ToArray();
+                }
+            }
+        }
+
+        /// <summary>
+        /// 解压缩字节数组
+        /// </summary>
+        /// <param name="str"></param>
+        public static byte[] Decompress(byte[] inputBytes)
+        {
+
+            using (MemoryStream inputStream = new MemoryStream(inputBytes))
+            {
+                using (MemoryStream outStream = new MemoryStream())
+                {
+                    using (GZipStream zipStream = new GZipStream(inputStream, CompressionMode.Decompress))
+                    {
+                        zipStream.CopyTo(outStream);
+                        zipStream.Close();
+                        return outStream.ToArray();
+                    }
+                }
+
+            }
+        }
+
+        public static string SerializeListCompress(List<object> list)
+        {
+            BinaryFormatter bf = new BinaryFormatter();
+            using (var stream = new MemoryStream())
+            {
+                bf.Serialize(stream, list);
+                stream.Position = 0;
+                byte[] bytes = new byte[stream.Length];
+                stream.Read(bytes, 0, bytes.Length);
+                stream.Flush();
+                stream.Close();
+                byte[] compressAfterByte = Compress(bytes);
+                return Convert.ToBase64String(compressAfterByte);
+                //byte[] bytes=stream.GetBuffer();
+                //return Encoding.ASCII.GetString(bytes,0,bytes.Length);
+            }
+        }
+        public static List<object> DesirializeListCompress(String data)
+        {
+            if (string.IsNullOrEmpty(data))
+                return null;
+            BinaryFormatter bf = new BinaryFormatter();
+            byte[] bytes = Convert.FromBase64String(data);
+            bytes= Decompress(bytes);
+            try
+            {
+                using (var stream = new MemoryStream())
+                {
+                    stream.Write(bytes, 0, bytes.Length);
+                    stream.Position = 0;
+                    List<object> list = bf.Deserialize(stream) as List<object>;
+                    stream.Flush();
+                    stream.Close();
+                    return list;
+                }
+
+            }
+            catch
+            {
+                return null;
+            }
+            //byte[] bytes = Encoding.ASCII.GetBytes(data);
+        }
 
         public static string SerializeList(List<object> list)
         {
             BinaryFormatter bf = new BinaryFormatter();
             using (var stream = new MemoryStream())
             {
-                bf.Serialize(stream, list);
+                bf.Serialize(stream,list);
                 stream.Position = 0;
                 byte[] bytes = new byte[stream.Length];
                 stream.Read(bytes, 0, bytes.Length);
@@ -293,17 +382,26 @@ namespace DrillTest.Lib
             return null;
             BinaryFormatter bf = new BinaryFormatter();
             byte[] bytes = Convert.FromBase64String(data);
+            try
+            {
+                using (var stream = new MemoryStream())
+                {
+                    stream.Write(bytes, 0, bytes.Length);
+                    stream.Position = 0;
+                    List<object> list = bf.Deserialize(stream) as List<object>;
+                    stream.Flush();
+                    stream.Close();
+                    //string compress= SerializeListCompress(list);
+                    //List<object> ListCompress = DesirializeListCompress(compress);
+                    //return ListCompress;
+                    return list;
+                }
+            }
+            catch 
+            {
+                return null;
+            }
             //byte[] bytes = Encoding.ASCII.GetBytes(data);
-
-            using (var stream = new MemoryStream())
-            { 
-                stream.Write(bytes, 0, bytes.Length);
-                stream.Position = 0;
-                List<object> list = bf.Deserialize(stream) as List<object>;
-                stream.Flush();
-                stream.Close();
-                return list ;
-            }      
         }
         /// <summary>
         /// BinaryFormatter反序列化
