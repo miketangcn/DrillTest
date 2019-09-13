@@ -157,7 +157,7 @@ namespace DrillTest.Lib
                     //设置读写标志为false   
                     Global.ConnectStatus1 = false;
                 }
-               Thread.Sleep(5);   
+               Thread.Sleep(2);   
             }
         }
         private static void ThreadBackgroundRead2()

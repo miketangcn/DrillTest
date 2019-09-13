@@ -81,12 +81,14 @@ namespace DrillTest.Lib
                             if (i == 0)
                             {
                                 dataRow.CreateCell(i).SetCellValue(column.GetValue(item, null) == null ? "" :
-                               (Convert.ToInt16(column.GetValue(item, null)) * Global.con_factor_x).ToString("000.00"));
+                             //  (Convert.ToInt16(column.GetValue(item, null)) * Global.con_factor_x).ToString("000.00"));
+                                (Convert.ToInt16(column.GetValue(item, null)) * 1).ToString());
                             }
                             else
                             {
                                 dataRow.CreateCell(i).SetCellValue(column.GetValue(item, null) == null ? "" :
-                               (Convert.ToInt16(column.GetValue(item, null)) * Global.con_factor_y).ToString("000.00"));
+                              // (Convert.ToInt16(column.GetValue(item, null)) * Global.con_factor_y).ToString("000.00"));
+                                (Convert.ToInt16(column.GetValue(item, null)) * 1).ToString());
                             }
                         }
 

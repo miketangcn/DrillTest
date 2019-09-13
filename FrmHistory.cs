@@ -183,7 +183,8 @@ namespace DrillTest
                           string strings = ds.Tables[0].Rows[k]["Data"].ToString();
                           try
                           {
-                              lstSingleCurve = CommonMethods.DesirializeListCompress(strings).ConvertAll(s => (Model.Point)s);
+                              //lstSingleCurve = CommonMethods.DesirializeListCompress(strings).ConvertAll(s => (Model.Point)s);
+                              lstSingleCurve = CommonMethods.StringToList(strings);
                           }
                           catch (Exception)
                           {
@@ -226,7 +227,8 @@ namespace DrillTest
               string strings = ds.Tables[0].Rows[index]["Data"].ToString();
               try
               {
-                  lstSingleCurve = CommonMethods.DesirializeListCompress(strings).ConvertAll(s => (Model.Point)s);
+                  //lstSingleCurve = CommonMethods.DesirializeListCompress(strings).ConvertAll(s => (Model.Point)s);
+                  lstSingleCurve = CommonMethods.StringToList(strings);
               }
               catch (Exception)
               {
@@ -259,7 +261,7 @@ namespace DrillTest
         {
             panel1.Width = splitContainer1.Panel2.Width / 2 - 1;
             panel2.Width = panel1.Width;
-            dataGridView1.Top = 250;
+            dataGridView1.Top = BtnxDeleteWork.Bottom+15;
             dataGridView1.Left = 0;
             dataGridView1.Height = (this.Height - 200) / 2 - 2;
             dataGridView2.Top = dataGridView1.Bottom + 2;
@@ -418,7 +420,8 @@ namespace DrillTest
                             int k = i + 1;
                             var lstSingleCurve = new List<Model.Point>();
                             string strings = ds.Tables[0].Rows[i]["Data"].ToString();
-                            lstSingleCurve = CommonMethods.DesirializeListCompress(strings).ConvertAll(s => (Model.Point)s);
+                            //lstSingleCurve = CommonMethods.DesirializeListCompress(strings).ConvertAll(s => (Model.Point)s);
+                            lstSingleCurve = CommonMethods.StringToList(strings);
                             NopiExcelHelper<Model.Point>.AddExcel(lstSingleCurve, dialog.FileName, "hole" + k.ToString());
                         }
                         
