@@ -39,8 +39,6 @@ namespace DrillTest
             panel2.Width = this.Width / 2;
             chart1.Height = this.Height - 160;
             chart2.Height = this.Height - 160;
-            //this.chart1.ChartAreas[0].AxisY.Minimum = 0;
-            //this.chart1.ChartAreas[0].AxisY.Maximum = 12;
             this.chart1.ChartAreas[0].AxisX.Minimum = Global.min_x;
             this.chart1.ChartAreas[0].AxisX.Maximum = Global.max_x;
             this.chart1.ChartAreas[0].AxisX.Interval = 10;
@@ -84,6 +82,7 @@ namespace DrillTest
                 txtHole1.Text = Global.HoleNumber1.ToString();
                 txtSN1.Text = Global.WorkRecord1.Id;
                 txtLayer1.Text = Global.WorkRecord1.Layer.ToString();
+                txtLayerNO1.Text = Global.HoleRecod1.LayerNo.ToString();
                 ControlEnable(true, Global.Working1);
             }
             if (Global.Working2)
@@ -91,6 +90,7 @@ namespace DrillTest
                 txtHole2.Text = Global.HoleNumber2.ToString();
                 txtSN2.Text = Global.WorkRecord2.Id;
                 txtLayer2.Text = Global.WorkRecord2.Layer.ToString();
+                txtLayerNO2.Text = Global.HoleRecod2.LayerNo.ToString();
                 ControlEnable(false, Global.Working2);
             }
 
@@ -150,6 +150,7 @@ namespace DrillTest
                     btnStop1.Enabled = Ena;
                     txtLayer1.Enabled = !Ena;
                     txtSN1.Enabled = !Ena;
+                    txtLayerNO1.Enabled = !Ena;
                 }));
             }
             else
@@ -160,6 +161,7 @@ namespace DrillTest
                     btnStart2.Enabled = !Ena;
                     txtLayer2.Enabled = !Ena;
                     txtSN2.Enabled = !Ena;
+                    txtLayerNO2.Enabled = !Ena;
                 }));
 
             }
@@ -357,6 +359,10 @@ namespace DrillTest
         {
             Global.HoleNumber1 = 0;
             string WorkId = txtSN1.Text.Trim();
+            if (txtLayerNO1.Text.Trim() == "")
+            {
+                txtLayerNO1.Text = "1";
+            }
             if (txtLayer1.Text.Trim()=="")
             {
                 txtLayer1.Text = "1";
@@ -407,6 +413,7 @@ namespace DrillTest
                 Global.WorkRecord1.Id = WorkId;
                 Global.WorkRecord1.Layer = Convert.ToInt16(txtLayer1.Text);
                 Global.WorkRecord1.HoleCount = Global.HoleNumber1;
+                Global.HoleRecod1.LayerNo = Convert.ToInt16(txtLayerNO1.Text);
                 Global.Working1 = true;
                 #region  //测试用正式要删掉
                 ReadValue.Distance = 50;
@@ -449,6 +456,10 @@ namespace DrillTest
         {
             Global.HoleNumber2 = 0;
             string WorkId = txtSN2.Text.Trim();
+            if (txtLayerNO2.Text.Trim()=="")
+            {
+                txtLayerNO2.Text = "1";
+            }
             if (txtLayer2.Text.Trim() == "")
             {
                 txtLayer2.Text = "1";
@@ -499,6 +510,7 @@ namespace DrillTest
                 Global.WorkRecord2.Id = WorkId;
                 Global.WorkRecord2.Layer = Convert.ToInt16(txtLayer2.Text);
                 Global.WorkRecord2.HoleCount = Global.HoleNumber2;
+                Global.HoleRecod2.LayerNo = Convert.ToInt16(txtLayerNO2.Text);
                 Global.Working2 = true;
                 Global.DateFileName2 = WorkId + ".xls";
                 ControlEnable(false, Global.Working2);

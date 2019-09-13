@@ -190,7 +190,7 @@ namespace DrillTest.Lib
                     //设置读写标志为false  
                     Global.ConnectStatus2 = false;
                 }
-                Thread.Sleep(10);
+                Thread.Sleep(5);
             }
         }
     }

@@ -14,7 +14,7 @@ namespace DrillTest
     {
         private string SelectedWorkId;
         private DataSet ds = new DataSet();
-        private string LastWorkId;
+ //     private string LastWorkId;
         public FrmHistory()
         {
             InitializeComponent();
@@ -62,14 +62,14 @@ namespace DrillTest
             dataGridView2.AutoGenerateColumns = false;
             dataGridView1.Columns[0].DataPropertyName = "SerialNO";
             dataGridView1.Columns[1].DataPropertyName = "Layer";
-            dataGridView1.Columns[2].DataPropertyName = "MachineId";
-            dataGridView1.Columns[3].DataPropertyName = "HoleCount";
-            dataGridView1.Columns[4].DataPropertyName = "LastTime";
+            dataGridView1.Columns[2].DataPropertyName = "HoleCount";
+            dataGridView1.Columns[3].DataPropertyName = "LastTime";
             dataGridView2.Width = splitContainer1.Panel1.Width;
             dataGridView1.RowHeadersVisible = false;
-            dataGridView2.Columns[0].DataPropertyName = "SerialNO";
+            dataGridView2.Columns[0].DataPropertyName = "LayerNo";
             dataGridView2.Columns[1].DataPropertyName = "HoleNumber";
             dataGridView2.Columns[2].DataPropertyName = "MaxPressure";
+            dataGridView2.Columns[4].DataPropertyName = "MacId";
             dataGridView2.Columns[3].DataPropertyName = "TestTime";
             dataGridView2.RowHeadersVisible = false;
             dataGridView2.Width = splitContainer1.Panel1.Width;
@@ -78,6 +78,8 @@ namespace DrillTest
             this.chart1.ChartAreas[0].AxisX.Maximum = 350;
             this.chart1.ChartAreas[0].AxisX.Interval = 10;
             this.chart1.ChartAreas[0].AxisY.Interval = 1;
+            this.chart1.ChartAreas[0].AxisY.Maximum = 10;
+            this.chart2.ChartAreas[0].AxisY.Maximum = 10;
             this.chart1.ChartAreas[0].AxisX.MajorGrid.LineColor = System.Drawing.Color.Black;
             this.chart1.ChartAreas[0].AxisX.MajorGrid.LineDashStyle = ChartDashStyle.DashDot;
             this.chart1.ChartAreas[0].AxisY.MajorGrid.LineDashStyle = ChartDashStyle.DashDot;
@@ -161,6 +163,7 @@ namespace DrillTest
                       this.chart2.ChartAreas[0].AxisX.MajorGrid.LineDashStyle = ChartDashStyle.DashDot;
                       this.chart2.ChartAreas[0].AxisY.MajorGrid.LineDashStyle = ChartDashStyle.DashDot;
                       this.chart2.ChartAreas[0].AxisY.MajorGrid.LineColor = System.Drawing.Color.Black;
+                      this.chart2.Series.Clear();
                       for (int i = 0; i < n; i++)
                       {
                           string Name = "S" + i.ToString();
