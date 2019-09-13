@@ -259,7 +259,7 @@ namespace DrillTest
         {
             panel1.Width = splitContainer1.Panel2.Width / 2 - 1;
             panel2.Width = panel1.Width;
-            dataGridView1.Top = 200;
+            dataGridView1.Top = 250;
             dataGridView1.Left = 0;
             dataGridView1.Height = (this.Height - 200) / 2 - 2;
             dataGridView2.Top = dataGridView1.Bottom + 2;

@@ -126,11 +126,23 @@
     <Compile Include="MVVMBase\ViewModelsBase.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmHistory.en-US.resx">
+      <DependentUpon>FrmHistory.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmHistory.resx">
       <DependentUpon>FrmHistory.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmMain.en-US.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmMain.resx">
       <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTest.en-001.resx">
+      <DependentUpon>FrmTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTest.en-US.resx">
+      <DependentUpon>FrmTest.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmTest.resx">
       <DependentUpon>FrmTest.cs</DependentUpon>
