@@ -33,6 +33,11 @@ namespace DrillTest.Lib
             float.TryParse(System.Configuration.ConfigurationManager.AppSettings["con_factor_y"], out Model.Global.con_factor_y);
             Global.SavePath = System.Configuration.ConfigurationManager.AppSettings["SavePath"];
             Global.OutputPath = System.Configuration.ConfigurationManager.AppSettings["OutputDirect"];
+            if (System.Configuration.ConfigurationManager.AppSettings["AutoOut"] =="0")
+            {
+                Model.Global.AutoOut = false;
+            }
+            else Model.Global.AutoOut = true;
         }
         public static void WriteConfig(string OutputDirect)
         {
@@ -46,9 +51,28 @@ namespace DrillTest.Lib
             }
             catch (Exception)
             {
-                throw;
+               // throw;
             }
           
+        }
+        public static void WriteConfig(bool AutoOut)
+        {
+            try
+            {
+                Configuration config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
+                if (Model.Global.AutoOut)
+                {
+                    config.AppSettings.Settings["AutoOut"].Value = "1";
+                }
+                else config.AppSettings.Settings["AutoOut"].Value = "0";
+                config.Save();
+                ConfigurationManager.RefreshSection("AutoOut");
+            }
+            catch (Exception)
+            {
+                // throw;
+            }
+
         }
         #endregion
 
@@ -152,16 +176,20 @@ namespace DrillTest.Lib
                    // Global.HoleRecod1.HoleDate = ToBinary(Global.lstPoint1.ConvertAll(s => (object)s));
                     HoleRecordUpdate(Global.HoleRecod1);
                     WorkTableUpdate(Global.WorkRecord1);
-                    if (GetFilePath(FullFileName))
+                    if (Model.Global.AutoOut)
                     {
-                        NopiExcelHelper<Point>.AddExcel(Global.lstPoint1, FullFileName, "hole" + Global.HoleNumber1.ToString());
+                        if (GetFilePath(FullFileName))
+                        {
+                            NopiExcelHelper<Point>.AddExcel(Global.lstPoint1, FullFileName, "hole" + Global.HoleRecod1.HoleNumber.ToString(),
+                                                            Global.HoleRecod1.MaxPressure);
+                        }
                     }
                     FrmTest.frmtest.SetRedo1Ena(true);
                     Global.MaxPressure1 = 0;
                     Global.HoleNumber1++;
                     #region 要删除
-                    ReadValue.Distance = 50;
-                    ReadValue.Pressure = 350;
+                    ReadValue.Distance = 0;
+                    ReadValue.Pressure = 320;
                     ReadValue.IsMax = false;
                     #endregion
                 }
@@ -208,14 +236,20 @@ namespace DrillTest.Lib
                     Global.HoleRecod2.MaxPressure =(float)Math.Round((Global.MaxPressure2 * Global.con_factor_y - 10), 2);
                     Global.HoleRecod2.Id = Global.WorkRecord2.Id;
                     Global.HoleRecod2.HoleNumber = Global.WorkRecord2.HoleCount;
-                    Global.HoleRecod2.HoleDate = SerializeListCompress(Global.lstPoint2.ConvertAll(s => (object)s));
+                   // Global.HoleRecod2.HoleDate = SerializeListCompress(Global.lstPoint2.ConvertAll(s => (object)s));
+                    Global.HoleRecod2.HoleDate = ListToString(Global.lstPoint2);
                     Global.HoleRecod2.MacId = 1;
                     WorkTableUpdate(Global.WorkRecord2);
                     HoleRecordUpdate(Global.HoleRecod2);
-                    if (GetFilePath(FullFileName))
+                    if ( Model.Global.AutoOut)
                     {
-                        NopiExcelHelper<Point>.AddExcel(Global.lstPoint2, FullFileName, "hole" + Global.HoleNumber2.ToString());
+                        if (GetFilePath(FullFileName))
+                        {
+                            NopiExcelHelper<Point>.AddExcel(Global.lstPoint2, FullFileName, "hole" + Global.HoleRecod2.HoleNumber.ToString(),
+                                                            Global.HoleRecod2.MaxPressure);
+                        }
                     }
+
                     FrmTest.frmtest.SetRedo2Ena(true);
                     Global.MaxPressure2 = 0;
                     Global.HoleNumber2++;

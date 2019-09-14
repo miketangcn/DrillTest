@@ -147,19 +147,19 @@
     <value>Arial, 12pt</value>
   </data>
   <data name="检测界面ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>196, 38</value>
+    <value>156, 38</value>
   </data>
   <data name="检测界面ToolStripMenuItem.Text" xml:space="preserve">
     <value>Test</value>
   </data>
   <data name="查看历史ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>196, 38</value>
+    <value>156, 38</value>
   </data>
   <data name="查看历史ToolStripMenuItem.Text" xml:space="preserve">
     <value>QueryHis</value>
   </data>
   <data name="退出ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>196, 38</value>
+    <value>156, 38</value>
   </data>
   <data name="退出ToolStripMenuItem.Text" xml:space="preserve">
     <value>Quit</value>
@@ -171,10 +171,16 @@
     <value>Func</value>
   </data>
   <data name="导出文件设置ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>196, 38</value>
+    <value>171, 38</value>
   </data>
   <data name="导出文件设置ToolStripMenuItem.Text" xml:space="preserve">
     <value>OutPutPath</value>
+  </data>
+  <data name="autoOutXlsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>171, 38</value>
+  </data>
+  <data name="autoOutXlsToolStripMenuItem.Text" xml:space="preserve">
+    <value>AutoOutXls</value>
   </data>
   <data name="设置ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>44, 22</value>

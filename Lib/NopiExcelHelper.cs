@@ -17,7 +17,7 @@ namespace DrillTest.Lib
 {
     public class NopiExcelHelper<T>
     {
-        public static void AddExcel(List<T> lists, string workbookFile,string SheetNumber)
+        public static void AddExcel(List<T> lists, string workbookFile,string SheetNumber,float MaxPressure)
         {
             try
             {
@@ -64,6 +64,7 @@ namespace DrillTest.Lib
                         if (!h)
                         {
                             HeadRow.CreateCell(i).SetCellValue(column.Name);//在第一行数据前加入列标签
+                            HeadRow.CreateCell(2).SetCellValue("MaxPressure");
                             if (i == 0)
                             {
                                 dataRow.CreateCell(i).SetCellValue(column.GetValue(item, null) == null ? "" :
@@ -72,7 +73,8 @@ namespace DrillTest.Lib
                             else
                             {
                                 dataRow.CreateCell(i).SetCellValue(column.GetValue(item, null) == null ? "" :
-                               (Convert.ToInt16(column.GetValue(item, null)) * Global.con_factor_y).ToString("000.00"));
+                               (Convert.ToInt16(column.GetValue(item, null)) * Global.con_factor_y).ToString("00.00"));
+                                dataRow.CreateCell(2).SetCellValue(MaxPressure.ToString("00.00"));
                             }
 
                         }
@@ -81,14 +83,12 @@ namespace DrillTest.Lib
                             if (i == 0)
                             {
                                 dataRow.CreateCell(i).SetCellValue(column.GetValue(item, null) == null ? "" :
-                             //  (Convert.ToInt16(column.GetValue(item, null)) * Global.con_factor_x).ToString("000.00"));
-                                (Convert.ToInt16(column.GetValue(item, null)) * 1).ToString());
+                               (Convert.ToInt16(column.GetValue(item, null)) * Global.con_factor_x).ToString("000.00"));
                             }
                             else
                             {
                                 dataRow.CreateCell(i).SetCellValue(column.GetValue(item, null) == null ? "" :
-                              // (Convert.ToInt16(column.GetValue(item, null)) * Global.con_factor_y).ToString("000.00"));
-                                (Convert.ToInt16(column.GetValue(item, null)) * 1).ToString());
+                                (Convert.ToInt16(column.GetValue(item, null)) * Global.con_factor_y).ToString("00.00"));                             
                             }
                         }
 

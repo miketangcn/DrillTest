@@ -107,12 +107,14 @@ namespace DrillTest.Lib
                         Distance = (short)(Distance + 2);
                         if (Pressure < 650 && !IsMax)
                         {
-                            Pressure = (short)(Pressure + 1);
+                            Random random = new Random();
+                            Pressure = (short)(Pressure +random.Next(3));
                         }
                         else
                         {
+                            Random random = new Random();
                             IsMax = true;
-                            Pressure = (short)(Pressure - 4);
+                            Pressure = (short)(Pressure -random.Next(2,8));
                         }
                         byte[] buffer = new byte[4];
                         ModbusTcpNet1.ByteTransform.TransByte(Distance).CopyTo(buffer, 0);//

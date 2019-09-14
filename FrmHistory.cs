@@ -322,7 +322,7 @@ namespace DrillTest
 
             if (dataGridView2.SelectedCells.Count>0)
             {
-                string Id = dataGridView2.CurrentRow.Cells[0].Value.ToString();
+                string Id = dataGridView1.CurrentRow.Cells[0].Value.ToString();
                 Int16 HoleId=Convert.ToInt16(dataGridView2.CurrentRow.Cells[1].Value);
                 Int16 Count = Convert.ToInt16(dataGridView2.RowCount - 1);
                 string sql1 = "Delete from HoleTestRec where SerialNo = '{0}' and HoleNumber= {1} ";
@@ -415,14 +415,15 @@ namespace DrillTest
                 {
                     if (CommonMethods.GetFilePath(dialog.FileName))
                     {
-                        for (int i = 0; i < n; i++)
+                        for (int i = n-1; i>=0; i--)
                         {
-                            int k = i + 1;
+                            var k = ds.Tables[0].Rows[i]["HoleNumber"];
                             var lstSingleCurve = new List<Model.Point>();
-                            string strings = ds.Tables[0].Rows[i]["Data"].ToString();
+                            var Data = ds.Tables[0].Rows[i]["Data"].ToString();
+                            var MaxPressure =Convert.ToSingle( ds.Tables[0].Rows[i]["MaxPressure"]);
                             //lstSingleCurve = CommonMethods.DesirializeListCompress(strings).ConvertAll(s => (Model.Point)s);
-                            lstSingleCurve = CommonMethods.StringToList(strings);
-                            NopiExcelHelper<Model.Point>.AddExcel(lstSingleCurve, dialog.FileName, "hole" + k.ToString());
+                            lstSingleCurve = CommonMethods.StringToList(Data);
+                            NopiExcelHelper<Model.Point>.AddExcel(lstSingleCurve, dialog.FileName, "hole" + k.ToString(),MaxPressure);
                         }
                         
                     }

@@ -37,6 +37,7 @@ namespace DrillTest
 
             #endregion
             CommonMethods.ReadConfig();
+            autoOutXlsToolStripMenuItem.Checked = Model.Global.AutoOut;
             if (Global.SavePath=="")
             {
                 Global.SavePath = Application.StartupPath + @"\Data\"; 
@@ -216,6 +217,12 @@ namespace DrillTest
         }
         #endregion
 
+        private void AutoOutXlsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Model.Global.AutoOut = !Model.Global.AutoOut;
+            autoOutXlsToolStripMenuItem.Checked = Model.Global.AutoOut;
+            CommonMethods.WriteConfig(Model.Global.AutoOut);
+        }
     }
 
 }

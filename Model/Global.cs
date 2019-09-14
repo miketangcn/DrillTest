@@ -21,6 +21,7 @@ namespace DrillTest.Model
         public static float con_factor_y;
         public static string SavePath;
         public static string OutputPath;
+        public static bool AutoOut;
         #endregion
 
         public static string DateFilePath;
