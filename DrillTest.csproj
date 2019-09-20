@@ -155,6 +155,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="Template\Template.xls" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
