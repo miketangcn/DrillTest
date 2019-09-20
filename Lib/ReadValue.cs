@@ -104,15 +104,17 @@ namespace DrillTest.Lib
                     #region 写AO1,AO2 这一段要删掉
                     if (Global.Working1)
                     {
-                        Distance =(short)( Distance + 2);
+                        Distance = (short)(Distance + 2);
                         if (Pressure < 650 && !IsMax)
                         {
-                            Pressure =(short)(Pressure + 1);
+                            Random random = new Random();
+                            Pressure = (short)(Pressure +random.Next(3));
                         }
                         else
                         {
+                            Random random = new Random();
                             IsMax = true;
-                            Pressure = (short)(Pressure -4);
+                            Pressure = (short)(Pressure -random.Next(2,8));
                         }
                         byte[] buffer = new byte[4];
                         ModbusTcpNet1.ByteTransform.TransByte(Distance).CopyTo(buffer, 0);//
@@ -128,7 +130,7 @@ namespace DrillTest.Lib
                                 Global.Point1.y = ModbusTcpNet1.ByteTransform.TransInt16(result.Content, 2);
                                 Point point = new Point();
                                 point.x = Global.Point1.x;
-                                point.y =(short)( Global.Point1.y-1000);
+                                point.y = (short)(Global.Point1.y - 1000);
                                 CommonMethods.DateTreating1(point);
                             }
                             else Global.ConnectStatus1 = false;
@@ -139,26 +141,25 @@ namespace DrillTest.Lib
                         }
                     }
                     #endregion
-                            //OperateResult<byte[]> result = ModbusTcpNet1.Read(address, ushort.Parse("2"));
-                            //if (result.IsSuccess)
-                            //{
-                            //    Global.ConnectStatus1 = true;
-                            //    Global.Point1.x = ModbusTcpNet1.ByteTransform.TransInt16(result.Content, 0);
-                            //    Global.Point1.y = ModbusTcpNet1.ByteTransform.TransInt16(result.Content, 2);
-                            //    Point point = new Point();
-                            //    point.x = Global.Point1.x;
-                            //    point.y =(short)( Global.Point1.y-1000);
-                            //    CommonMethods.DateTreating1(point);
-                            //}
-                            //else Global.ConnectStatus1 = false; 这段后面要恢复
-                   
+                    //OperateResult<byte[]> result = ModbusTcpNet1.Read(address, ushort.Parse("2"));
+                    //if (result.IsSuccess)
+                    //{
+                    //    Global.ConnectStatus1 = true;
+                    //    Global.Point1.x = ModbusTcpNet1.ByteTransform.TransInt16(result.Content, 0);
+                    //    Global.Point1.y = ModbusTcpNet1.ByteTransform.TransInt16(result.Content, 2);
+                    //    Point point = new Point();
+                    //    point.x = Global.Point1.x;
+                    //    point.y = (short)(Global.Point1.y - 1000);
+                    //    CommonMethods.DateTreating1(point);
+                    //}
+                    //else Global.ConnectStatus1 = false; //这段后面要恢复
                 }
                 catch
                 {
                     //设置读写标志为false   
                     Global.ConnectStatus1 = false;
                 }
-               Thread.Sleep(50);   
+               Thread.Sleep(5);   
             }
         }
         private static void ThreadBackgroundRead2()
@@ -191,7 +192,7 @@ namespace DrillTest.Lib
                     //设置读写标志为false  
                     Global.ConnectStatus2 = false;
                 }
-                Thread.Sleep(10);
+                Thread.Sleep(5);
             }
         }
     }

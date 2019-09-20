@@ -20,9 +20,11 @@ namespace DrillTest.Model
     {
         public string Id { get; set; } //零件编号
         public Int16 HoleNumber { get; set; } //洞编号
+        public Int16 LayerNo { get; set; }  //洞层号
         public float MaxPressure { get; set; } //最大压力
         public DateTime TestTime { get; set; }//记录时间
         public string HoleDate { get; set; }
+        public Int16 MacId { get; set; } //机器编号
     }
     [Serializable]
     public class Point

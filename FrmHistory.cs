@@ -14,7 +14,7 @@ namespace DrillTest
     {
         private string SelectedWorkId;
         private DataSet ds = new DataSet();
-        private string LastWorkId;
+ //     private string LastWorkId;
         public FrmHistory()
         {
             InitializeComponent();
@@ -62,14 +62,14 @@ namespace DrillTest
             dataGridView2.AutoGenerateColumns = false;
             dataGridView1.Columns[0].DataPropertyName = "SerialNO";
             dataGridView1.Columns[1].DataPropertyName = "Layer";
-            dataGridView1.Columns[2].DataPropertyName = "MachineId";
-            dataGridView1.Columns[3].DataPropertyName = "HoleCount";
-            dataGridView1.Columns[4].DataPropertyName = "LastTime";
+            dataGridView1.Columns[2].DataPropertyName = "HoleCount";
+            dataGridView1.Columns[3].DataPropertyName = "LastTime";
             dataGridView2.Width = splitContainer1.Panel1.Width;
             dataGridView1.RowHeadersVisible = false;
-            dataGridView2.Columns[0].DataPropertyName = "SerialNO";
+            dataGridView2.Columns[0].DataPropertyName = "LayerNo";
             dataGridView2.Columns[1].DataPropertyName = "HoleNumber";
             dataGridView2.Columns[2].DataPropertyName = "MaxPressure";
+            dataGridView2.Columns[4].DataPropertyName = "MacId";
             dataGridView2.Columns[3].DataPropertyName = "TestTime";
             dataGridView2.RowHeadersVisible = false;
             dataGridView2.Width = splitContainer1.Panel1.Width;
@@ -78,6 +78,8 @@ namespace DrillTest
             this.chart1.ChartAreas[0].AxisX.Maximum = 350;
             this.chart1.ChartAreas[0].AxisX.Interval = 10;
             this.chart1.ChartAreas[0].AxisY.Interval = 1;
+            this.chart1.ChartAreas[0].AxisY.Maximum = 10;
+            this.chart2.ChartAreas[0].AxisY.Maximum = 10;
             this.chart1.ChartAreas[0].AxisX.MajorGrid.LineColor = System.Drawing.Color.Black;
             this.chart1.ChartAreas[0].AxisX.MajorGrid.LineDashStyle = ChartDashStyle.DashDot;
             this.chart1.ChartAreas[0].AxisY.MajorGrid.LineDashStyle = ChartDashStyle.DashDot;
@@ -134,8 +136,16 @@ namespace DrillTest
             dataGridView2.DataSource = ds.Tables[0];
             if (dataGridView2.Rows.Count>0)
             {
-               chart2.Series.Clear();
-               ShowAllCurve();   
+                try
+                {
+                    chart2.Series.Clear();
+                    ShowAllCurve();
+                }
+                catch (Exception)
+                {
+
+                }
+ 
             }    
         }
         private async void ShowAllCurve()
@@ -153,6 +163,7 @@ namespace DrillTest
                       this.chart2.ChartAreas[0].AxisX.MajorGrid.LineDashStyle = ChartDashStyle.DashDot;
                       this.chart2.ChartAreas[0].AxisY.MajorGrid.LineDashStyle = ChartDashStyle.DashDot;
                       this.chart2.ChartAreas[0].AxisY.MajorGrid.LineColor = System.Drawing.Color.Black;
+                      this.chart2.Series.Clear();
                       for (int i = 0; i < n; i++)
                       {
                           string Name = "S" + i.ToString();
@@ -170,7 +181,17 @@ namespace DrillTest
                           List<float> y = new List<float>();
                           var lstSingleCurve = new List<Model.Point>();
                           string strings = ds.Tables[0].Rows[k]["Data"].ToString();
-                          lstSingleCurve = CommonMethods.FromBinary(strings).ConvertAll(s => (Model.Point)s);
+                          try
+                          {
+                              //lstSingleCurve = CommonMethods.DesirializeListCompress(strings).ConvertAll(s => (Model.Point)s);
+                              lstSingleCurve = CommonMethods.StringToList(strings);
+                          }
+                          catch (Exception)
+                          {
+
+                             
+                          }
+//                          lstSingleCurve = CommonMethods.FromBinary(strings).ConvertAll(s => (Model.Point)s);
                           x.Clear();
                           y.Clear();
                           if (lstSingleCurve.Count > 0)
@@ -204,12 +225,18 @@ namespace DrillTest
             List<float> y = new List<float>();
               var lstSingleCurve = new List<Model.Point>();
               string strings = ds.Tables[0].Rows[index]["Data"].ToString();
-              lstSingleCurve = CommonMethods.FromBinary(strings).ConvertAll(s => (Model.Point)s);
-              //string test= CommonMethods.SerializeList(lstSingleCurve.ConvertAll(s => (object)s));
-              //var testlst = new List<Model.Point>();
-              //testlst = CommonMethods.DesirializeList(test).ConvertAll(s => (Model.Point)s);
+              try
+              {
+                  //lstSingleCurve = CommonMethods.DesirializeListCompress(strings).ConvertAll(s => (Model.Point)s);
+                  lstSingleCurve = CommonMethods.StringToList(strings);
+              }
+              catch (Exception)
+              {
+              }
+            
+//            lstSingleCurve = CommonMethods.FromBinary(strings).ConvertAll(s => (Model.Point)s);
               x.Clear();
-            y.Clear();
+              y.Clear();
             if (lstSingleCurve.Count > 0)
             {
                 for (int i = 0; i < lstSingleCurve.Count; i++)
@@ -234,7 +261,7 @@ namespace DrillTest
         {
             panel1.Width = splitContainer1.Panel2.Width / 2 - 1;
             panel2.Width = panel1.Width;
-            dataGridView1.Top = 200;
+            dataGridView1.Top = BtnxDeleteWork.Bottom+15;
             dataGridView1.Left = 0;
             dataGridView1.Height = (this.Height - 200) / 2 - 2;
             dataGridView2.Top = dataGridView1.Bottom + 2;
@@ -261,8 +288,16 @@ namespace DrillTest
         {
             if (dataGridView2.SelectedCells.Count > 0)
             {
-                int index = dataGridView2.SelectedCells[0].RowIndex;
-                ShowSingleCurve(index);
+                try
+                {
+                    int index = dataGridView2.SelectedCells[0].RowIndex;
+                    ShowSingleCurve(index);
+                }
+                catch (Exception)
+                {
+
+                }
+
             }
         }
 
@@ -287,7 +322,7 @@ namespace DrillTest
 
             if (dataGridView2.SelectedCells.Count>0)
             {
-                string Id = dataGridView2.CurrentRow.Cells[0].Value.ToString();
+                string Id = dataGridView1.CurrentRow.Cells[0].Value.ToString();
                 Int16 HoleId=Convert.ToInt16(dataGridView2.CurrentRow.Cells[1].Value);
                 Int16 Count = Convert.ToInt16(dataGridView2.RowCount - 1);
                 string sql1 = "Delete from HoleTestRec where SerialNo = '{0}' and HoleNumber= {1} ";
@@ -380,13 +415,15 @@ namespace DrillTest
                 {
                     if (CommonMethods.GetFilePath(dialog.FileName))
                     {
-                        for (int i = 0; i < n; i++)
+                        for (int i = n-1; i>=0; i--)
                         {
-                            int k = i + 1;
+                            var k = ds.Tables[0].Rows[i]["HoleNumber"];
                             var lstSingleCurve = new List<Model.Point>();
-                            string strings = ds.Tables[0].Rows[i]["Data"].ToString();
-                            lstSingleCurve = CommonMethods.FromBinary(strings).ConvertAll(s => (Model.Point)s);
-                            NopiExcelHelper<Model.Point>.AddExcel(lstSingleCurve, dialog.FileName, "hole" + k.ToString());
+                            var Data = ds.Tables[0].Rows[i]["Data"].ToString();
+                            var MaxPressure =Convert.ToSingle( ds.Tables[0].Rows[i]["MaxPressure"]);
+                            //lstSingleCurve = CommonMethods.DesirializeListCompress(strings).ConvertAll(s => (Model.Point)s);
+                            lstSingleCurve = CommonMethods.StringToList(Data);
+                            NopiExcelHelper<Model.Point>.AddExcel(lstSingleCurve, dialog.FileName, "hole" + k.ToString(),MaxPressure);
                         }
                         
                     }
