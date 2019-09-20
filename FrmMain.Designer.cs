@@ -124,6 +124,7 @@
             // 
             this.autoOutXlsToolStripMenuItem.Checked = true;
             this.autoOutXlsToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.autoOutXlsToolStripMenuItem.Image = global::DrillTest.Properties.Resources.CHECKMRK;
             this.autoOutXlsToolStripMenuItem.Name = "autoOutXlsToolStripMenuItem";
             resources.ApplyResources(this.autoOutXlsToolStripMenuItem, "autoOutXlsToolStripMenuItem");
             this.autoOutXlsToolStripMenuItem.Click += new System.EventHandler(this.AutoOutXlsToolStripMenuItem_Click);

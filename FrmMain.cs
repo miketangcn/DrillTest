@@ -38,6 +38,10 @@ namespace DrillTest
             #endregion
             CommonMethods.ReadConfig();
             autoOutXlsToolStripMenuItem.Checked = Model.Global.AutoOut;
+            if (autoOutXlsToolStripMenuItem.Checked)
+            {
+                autoOutXlsToolStripMenuItem.BackColor = Color.Green;
+            }
             if (Global.SavePath=="")
             {
                 Global.SavePath = Application.StartupPath + @"\Data\"; 
@@ -222,6 +226,11 @@ namespace DrillTest
             Model.Global.AutoOut = !Model.Global.AutoOut;
             autoOutXlsToolStripMenuItem.Checked = Model.Global.AutoOut;
             CommonMethods.WriteConfig(Model.Global.AutoOut);
+            if (autoOutXlsToolStripMenuItem.Checked)
+            {
+                autoOutXlsToolStripMenuItem.BackColor = Color.Green;
+            }
+            else autoOutXlsToolStripMenuItem.BackColor = Color.White;
         }
     }
 
