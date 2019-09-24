@@ -416,9 +416,9 @@ namespace DrillTest
                 Global.HoleRecod1.LayerNo = Convert.ToInt16(txtLayerNO1.Text);
                 Global.Working1 = true;
                 #region  //测试用正式要删掉
-                ReadValue.Distance = 50;
-                ReadValue.Pressure = 350;
-                ReadValue.IsMax = false;
+                //ReadValue.Distance = 50;
+                //ReadValue.Pressure = 350;
+                //ReadValue.IsMax = false;
                 #endregion
                 Global.DateFileName1 = WorkId + ".xls";
                 ControlEnable(true, Global.Working1);

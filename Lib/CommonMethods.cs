@@ -188,9 +188,9 @@ namespace DrillTest.Lib
                     Global.MaxPressure1 = 0;
                     Global.HoleNumber1++;
                     #region 要删除
-                    ReadValue.Distance = 0;
-                    ReadValue.Pressure = 320;
-                    ReadValue.IsMax = false;
+                    //ReadValue.Distance = 0;
+                    //ReadValue.Pressure = 320;
+                    //ReadValue.IsMax = false;
                     #endregion
                 }
                 if (!Global.SubWorking1)
