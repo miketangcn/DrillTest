@@ -118,84 +118,105 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="txtLayer1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft YaHei UI, 12pt, style=Bold</value>
+  </data>
   <data name="txtLayer1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>225, 50</value>
+    <value>193, 50</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="txtLayer1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 4, 3, 4</value>
   </data>
   <data name="txtLayer1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>83, 34</value>
+    <value>83, 28</value>
   </data>
-  <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>897, 97</value>
-  </data>
-  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>103, 46</value>
-  </data>
-  <data name="label5.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="label7.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft YaHei UI, 15.75pt, style=Bold</value>
   </data>
-  <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>362, 8</value>
+  <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>585, 100</value>
   </data>
-  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>124, 49</value>
+  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 46</value>
   </data>
-  <data name="label5.Text" xml:space="preserve">
+  <data name="label19.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft YaHei UI, 15.75pt, style=Bold</value>
+  </data>
+  <data name="label19.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label19.Size" type="System.Drawing.Size, System.Drawing">
+    <value>103, 30</value>
+  </data>
+  <data name="label19.Text" xml:space="preserve">
     <value>LayerNo</value>
   </data>
+  <data name="btnReDo1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft YaHei UI, 14.25pt, style=Bold</value>
+  </data>
   <data name="btnReDo1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>367, 95</value>
+    <value>231, 95</value>
   </data>
   <data name="btnReDo1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 4, 3, 4</value>
   </data>
   <data name="btnReDo1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>154, 51</value>
+    <value>110, 41</value>
   </data>
   <data name="btnReDo1.Text" xml:space="preserve">
     <value>ReDo</value>
   </data>
+  <data name="btnStop1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft YaHei UI, 14.25pt, style=Bold</value>
+  </data>
   <data name="btnStop1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>195, 95</value>
+    <value>118, 95</value>
   </data>
   <data name="btnStop1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 4, 3, 4</value>
   </data>
   <data name="btnStop1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>154, 51</value>
+    <value>110, 41</value>
   </data>
   <data name="btnStop1.Text" xml:space="preserve">
     <value>Stop</value>
   </data>
+  <data name="btnStart1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft YaHei UI, 14.25pt, style=Bold</value>
+  </data>
   <data name="btnStart1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>23, 95</value>
+    <value>5, 95</value>
   </data>
   <data name="btnStart1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 4, 3, 4</value>
   </data>
   <data name="btnStart1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>154, 51</value>
+    <value>110, 41</value>
   </data>
   <data name="btnStart1.Text" xml:space="preserve">
     <value>Start</value>
   </data>
-  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>518, 5</value>
+  <data name="label18.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft YaHei UI, 15.75pt, style=Bold</value>
   </data>
-  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>145, 49</value>
+  <data name="label18.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="label4.Text" xml:space="preserve">
+  <data name="label18.Size" type="System.Drawing.Size, System.Drawing">
+    <value>104, 30</value>
+  </data>
+  <data name="label18.Text" xml:space="preserve">
     <value>HoleNo</value>
   </data>
+  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft YaHei UI, 15.75pt, style=Bold</value>
+  </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>31, 8</value>
+    <value>40, 8</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>173, 30</value>
+    <value>119, 30</value>
   </data>
   <data name="label1.Text" xml:space="preserve">
     <value>WorkSN</value>
@@ -204,34 +225,43 @@
     <value>Microsoft YaHei UI, 15.75pt, style=Bold</value>
   </data>
   <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>225, 8</value>
+    <value>193, 8</value>
   </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>132, 49</value>
+    <value>78, 30</value>
   </data>
   <data name="label3.Text" xml:space="preserve">
     <value>Layers</value>
   </data>
+  <data name="lbly1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft YaHei UI, 15.75pt, style=Bold</value>
+  </data>
   <data name="lbly1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>810, 97</value>
+    <value>527, 100</value>
   </data>
   <data name="lbly1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>101, 46</value>
+    <value>81, 46</value>
+  </data>
+  <data name="label8.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft YaHei UI, 15.75pt, style=Bold</value>
   </data>
   <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>765, 97</value>
+    <value>501, 100</value>
   </data>
   <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>51, 46</value>
+    <value>39, 46</value>
   </data>
   <data name="lblInformation1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 18pt, style=Bold</value>
+    <value>Microsoft YaHei UI, 15.75pt, style=Bold</value>
+  </data>
+  <data name="lblInformation1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="lblInformation1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>642, 50</value>
+    <value>486, 46</value>
   </data>
   <data name="lblInformation1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>185, 38</value>
+    <value>160, 38</value>
   </data>
   <data name="lblInformation1.Text" xml:space="preserve">
     <value>It's Working!</value>
@@ -239,11 +269,14 @@
   <data name="lblInformation1.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
   </data>
+  <data name="lblx1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft YaHei UI, 15.75pt, style=Bold</value>
+  </data>
   <data name="lblx1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>582, 97</value>
+    <value>376, 100</value>
   </data>
   <data name="lblx1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>108, 46</value>
+    <value>85, 36</value>
   </data>
   <data name="lblToolTip1.Location" type="System.Drawing.Point, System.Drawing">
     <value>167, 581</value>
@@ -251,11 +284,17 @@
   <data name="lblToolTip1.Size" type="System.Drawing.Size, System.Drawing">
     <value>156, 55</value>
   </data>
+  <data name="label6.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft YaHei UI, 15.75pt, style=Bold</value>
+  </data>
   <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>528, 97</value>
+    <value>347, 100</value>
   </data>
   <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>50, 46</value>
+    <value>33, 36</value>
+  </data>
+  <data name="txtSN1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft YaHei UI, 12pt, style=Bold</value>
   </data>
   <data name="txtSN1.Location" type="System.Drawing.Point, System.Drawing">
     <value>13, 50</value>
@@ -264,55 +303,94 @@
     <value>3, 4, 3, 4</value>
   </data>
   <data name="txtSN1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>205, 34</value>
+    <value>176, 28</value>
   </data>
-  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>688, 97</value>
+  <data name="label2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft YaHei UI, 15.75pt, style=Bold</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>84, 46</value>
+    <value>58, 46</value>
+  </data>
+  <data name="txtLayerNO1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft YaHei UI, 12pt, style=Bold</value>
   </data>
   <data name="txtLayerNO1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>367, 50</value>
+    <value>282, 50</value>
   </data>
   <data name="txtLayerNO1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 4, 3, 4</value>
   </data>
   <data name="txtLayerNO1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>83, 34</value>
+    <value>83, 28</value>
+  </data>
+  <data name="txtHole1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft YaHei UI, 12pt, style=Bold</value>
   </data>
   <data name="txtHole1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>513, 50</value>
+    <value>370, 50</value>
   </data>
   <data name="txtHole1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 4, 3, 4</value>
   </data>
   <data name="txtHole1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>109, 34</value>
+    <value>109, 28</value>
   </data>
   <data name="chart1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 301</value>
+    <value>0, 368</value>
   </data>
   <data name="chart1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 4, 3, 4</value>
   </data>
   <data name="chart1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>987, 398</value>
+    <value>649, 398</value>
   </data>
   <data name="panel1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 4, 3, 4</value>
   </data>
   <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>989, 701</value>
+    <value>651, 768</value>
+  </data>
+  <data name="lbly2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft YaHei UI, 15.75pt, style=Bold</value>
+  </data>
+  <data name="lbly2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>542, 100</value>
+  </data>
+  <data name="lbly2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 46</value>
+  </data>
+  <data name="label14.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft YaHei UI, 15.75pt, style=Bold</value>
+  </data>
+  <data name="label14.Location" type="System.Drawing.Point, System.Drawing">
+    <value>507, 100</value>
+  </data>
+  <data name="label14.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 46</value>
+  </data>
+  <data name="lblx2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft YaHei UI, 15.75pt, style=Bold</value>
+  </data>
+  <data name="lblx2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>371, 100</value>
+  </data>
+  <data name="lblx2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>92, 46</value>
+  </data>
+  <data name="label12.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft YaHei UI, 15.75pt, style=Bold</value>
   </data>
   <data name="label12.Location" type="System.Drawing.Point, System.Drawing">
-    <value>930, 97</value>
+    <value>605, 102</value>
   </data>
   <data name="label12.Size" type="System.Drawing.Size, System.Drawing">
     <value>80, 46</value>
   </data>
+  <data name="label9.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft YaHei UI, 15.75pt, style=Bold</value>
+  </data>
   <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>481, 8</value>
+    <value>367, 8</value>
   </data>
   <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
     <value>127, 30</value>
@@ -320,23 +398,26 @@
   <data name="label9.Text" xml:space="preserve">
     <value>HoleNo</value>
   </data>
+  <data name="txtLayerNO2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft YaHei UI, 12pt, style=Bold</value>
+  </data>
   <data name="txtLayerNO2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>355, 50</value>
+    <value>276, 50</value>
   </data>
   <data name="txtLayerNO2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 4, 3, 4</value>
   </data>
   <data name="txtLayerNO2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>83, 34</value>
+    <value>83, 28</value>
   </data>
   <data name="label13.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft YaHei UI, 15.75pt, style=Bold</value>
   </data>
   <data name="label13.Location" type="System.Drawing.Point, System.Drawing">
-    <value>349, 8</value>
+    <value>271, 8</value>
   </data>
   <data name="label13.Size" type="System.Drawing.Size, System.Drawing">
-    <value>115, 30</value>
+    <value>103, 30</value>
   </data>
   <data name="label13.Text" xml:space="preserve">
     <value>LayerNo</value>
@@ -345,46 +426,46 @@
     <value>Microsoft YaHei UI, 15.75pt, style=Bold</value>
   </data>
   <data name="label15.Location" type="System.Drawing.Point, System.Drawing">
-    <value>225, 8</value>
+    <value>179, 8</value>
   </data>
   <data name="label15.Size" type="System.Drawing.Size, System.Drawing">
-    <value>132, 30</value>
+    <value>89, 30</value>
   </data>
   <data name="label15.Text" xml:space="preserve">
     <value>Layers</value>
   </data>
   <data name="btnReDo2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>366, 95</value>
+    <value>228, 95</value>
   </data>
   <data name="btnReDo2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 4, 3, 4</value>
   </data>
   <data name="btnReDo2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>154, 51</value>
+    <value>110, 41</value>
   </data>
   <data name="btnReDo2.Text" xml:space="preserve">
     <value>ReDo</value>
   </data>
   <data name="btnStop2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>195, 95</value>
+    <value>115, 95</value>
   </data>
   <data name="btnStop2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 4, 3, 4</value>
   </data>
   <data name="btnStop2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>154, 51</value>
+    <value>110, 41</value>
   </data>
   <data name="btnStop2.Text" xml:space="preserve">
     <value>Stop</value>
   </data>
   <data name="btnStart2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>23, 95</value>
+    <value>3, 95</value>
   </data>
   <data name="btnStart2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 4, 3, 4</value>
   </data>
   <data name="btnStart2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>154, 51</value>
+    <value>110, 41</value>
   </data>
   <data name="btnStart2.Text" xml:space="preserve">
     <value>Start</value>
@@ -395,35 +476,35 @@
   <data name="lblToolTip2.Size" type="System.Drawing.Size, System.Drawing">
     <value>156, 65</value>
   </data>
+  <data name="label17.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft YaHei UI, 15.75pt, style=Bold</value>
+  </data>
   <data name="label17.Location" type="System.Drawing.Point, System.Drawing">
     <value>33, 8</value>
   </data>
   <data name="label17.Size" type="System.Drawing.Size, System.Drawing">
-    <value>146, 30</value>
+    <value>119, 30</value>
   </data>
   <data name="label17.Text" xml:space="preserve">
     <value>WorkSN</value>
   </data>
+  <data name="txtHole2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft YaHei UI, 12pt, style=Bold</value>
+  </data>
   <data name="txtHole2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>486, 50</value>
+    <value>372, 50</value>
   </data>
   <data name="txtHole2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 4, 3, 4</value>
   </data>
   <data name="txtHole2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>109, 34</value>
-  </data>
-  <data name="lbly2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>833, 97</value>
-  </data>
-  <data name="lbly2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>94, 46</value>
+    <value>109, 28</value>
   </data>
   <data name="lblInformation2.Font" type="System.Drawing.Font, System.Drawing">
     <value>Arial, 18pt, style=Bold</value>
   </data>
   <data name="lblInformation2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>600, 55</value>
+    <value>488, 50</value>
   </data>
   <data name="lblInformation2.Size" type="System.Drawing.Size, System.Drawing">
     <value>185, 38</value>
@@ -431,26 +512,29 @@
   <data name="lblInformation2.Text" xml:space="preserve">
     <value>It' s Working!</value>
   </data>
+  <data name="txtLayer2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft YaHei UI, 12pt, style=Bold</value>
+  </data>
   <data name="txtLayer2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>231, 50</value>
+    <value>185, 50</value>
   </data>
   <data name="txtLayer2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 4, 3, 4</value>
   </data>
   <data name="txtLayer2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>83, 34</value>
+    <value>83, 28</value>
+  </data>
+  <data name="label10.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft YaHei UI, 15.75pt, style=Bold</value>
   </data>
   <data name="label10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>680, 97</value>
+    <value>459, 100</value>
   </data>
   <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>86, 46</value>
+    <value>65, 46</value>
   </data>
-  <data name="label14.Location" type="System.Drawing.Point, System.Drawing">
-    <value>777, 97</value>
-  </data>
-  <data name="label14.Size" type="System.Drawing.Size, System.Drawing">
-    <value>52, 46</value>
+  <data name="txtSN2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft YaHei UI, 12pt, style=Bold</value>
   </data>
   <data name="txtSN2.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 50</value>
@@ -459,43 +543,37 @@
     <value>3, 4, 3, 4</value>
   </data>
   <data name="txtSN2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>220, 34</value>
+    <value>176, 28</value>
+  </data>
+  <data name="label11.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft YaHei UI, 15.75pt, style=Bold</value>
   </data>
   <data name="label11.Location" type="System.Drawing.Point, System.Drawing">
-    <value>527, 97</value>
+    <value>341, 100</value>
   </data>
   <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
     <value>43, 46</value>
   </data>
-  <data name="lblx2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>577, 97</value>
-  </data>
-  <data name="lblx2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>96, 46</value>
-  </data>
   <data name="chart2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 278</value>
+    <value>0, 345</value>
   </data>
   <data name="chart2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 4, 3, 4</value>
   </data>
   <data name="chart2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>944, 421</value>
+    <value>711, 421</value>
   </data>
   <data name="panel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>978, 0</value>
+    <value>653, 0</value>
   </data>
   <data name="panel2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 4, 3, 4</value>
   </data>
   <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>946, 701</value>
+    <value>713, 768</value>
   </data>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>7, 15</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1924, 701</value>
   </data>
   <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
     <value>Arial, 9pt, style=Bold</value>

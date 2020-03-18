@@ -219,7 +219,7 @@ namespace DrillTest
         private async void ShowSingleCurve(int index)
         {
 
-            Task task=new Task(() =>
+          Task task=new Task(() =>
           {
             List<float> x = new List<float>();
             List<float> y = new List<float>();

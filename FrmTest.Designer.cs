@@ -38,16 +38,13 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.txtLayer1 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.btnReDo1 = new DevComponents.DotNetBar.ButtonX();
             this.btnStop1 = new DevComponents.DotNetBar.ButtonX();
             this.btnStart1 = new DevComponents.DotNetBar.ButtonX();
-            this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.lbly1 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.lblInformation1 = new System.Windows.Forms.Label();
             this.lblx1 = new System.Windows.Forms.Label();
             this.lblToolTip1 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -57,6 +54,7 @@
             this.txtHole1 = new System.Windows.Forms.TextBox();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.lblx2 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.txtLayerNO2 = new System.Windows.Forms.TextBox();
@@ -75,8 +73,10 @@
             this.label14 = new System.Windows.Forms.Label();
             this.txtSN2 = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.lblx2 = new System.Windows.Forms.Label();
             this.chart2 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.lblInformation1 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -85,14 +85,15 @@
             // 
             // panel1
             // 
+            resources.ApplyResources(this.panel1, "panel1");
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.txtLayer1);
             this.panel1.Controls.Add(this.label7);
-            this.panel1.Controls.Add(this.label5);
+            this.panel1.Controls.Add(this.label19);
             this.panel1.Controls.Add(this.btnReDo1);
             this.panel1.Controls.Add(this.btnStop1);
             this.panel1.Controls.Add(this.btnStart1);
-            this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.label18);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.lbly1);
@@ -106,7 +107,6 @@
             this.panel1.Controls.Add(this.txtLayerNO1);
             this.panel1.Controls.Add(this.txtHole1);
             this.panel1.Controls.Add(this.chart1);
-            resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
             // 
             // txtLayer1
@@ -119,16 +119,11 @@
             resources.ApplyResources(this.label7, "label7");
             this.label7.Name = "label7";
             // 
-            // label5
-            // 
-            resources.ApplyResources(this.label5, "label5");
-            this.label5.Name = "label5";
-            // 
             // btnReDo1
             // 
+            resources.ApplyResources(this.btnReDo1, "btnReDo1");
             this.btnReDo1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btnReDo1.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            resources.ApplyResources(this.btnReDo1, "btnReDo1");
             this.btnReDo1.Name = "btnReDo1";
             this.btnReDo1.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(5);
             this.btnReDo1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
@@ -136,9 +131,9 @@
             // 
             // btnStop1
             // 
+            resources.ApplyResources(this.btnStop1, "btnStop1");
             this.btnStop1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btnStop1.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            resources.ApplyResources(this.btnStop1, "btnStop1");
             this.btnStop1.Name = "btnStop1";
             this.btnStop1.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(5);
             this.btnStop1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
@@ -146,18 +141,13 @@
             // 
             // btnStart1
             // 
+            resources.ApplyResources(this.btnStart1, "btnStart1");
             this.btnStart1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btnStart1.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            resources.ApplyResources(this.btnStart1, "btnStart1");
             this.btnStart1.Name = "btnStart1";
             this.btnStart1.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(5);
             this.btnStart1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.btnStart1.Click += new System.EventHandler(this.BtnStart1_Click);
-            // 
-            // label4
-            // 
-            resources.ApplyResources(this.label4, "label4");
-            this.label4.Name = "label4";
             // 
             // label1
             // 
@@ -180,12 +170,6 @@
             resources.ApplyResources(this.label8, "label8");
             this.label8.Name = "label8";
             // 
-            // lblInformation1
-            // 
-            resources.ApplyResources(this.lblInformation1, "lblInformation1");
-            this.lblInformation1.ForeColor = System.Drawing.Color.Red;
-            this.lblInformation1.Name = "lblInformation1";
-            // 
             // lblx1
             // 
             resources.ApplyResources(this.lblx1, "lblx1");
@@ -194,8 +178,8 @@
             // 
             // lblToolTip1
             // 
-            this.lblToolTip1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             resources.ApplyResources(this.lblToolTip1, "lblToolTip1");
+            this.lblToolTip1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblToolTip1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.lblToolTip1.Name = "lblToolTip1";
             // 
@@ -226,6 +210,7 @@
             // 
             // chart1
             // 
+            resources.ApplyResources(this.chart1, "chart1");
             chartArea1.AxisX.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash;
             chartArea1.AxisX.Title = "位移Travel(mm)";
             chartArea1.AxisY.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash;
@@ -235,7 +220,6 @@
             chartArea1.CursorY.LineColor = System.Drawing.Color.Green;
             chartArea1.Name = "ChartArea1";
             this.chart1.ChartAreas.Add(chartArea1);
-            resources.ApplyResources(this.chart1, "chart1");
             legend1.Name = "Legend1";
             this.chart1.Legends.Add(legend1);
             this.chart1.Name = "chart1";
@@ -249,8 +233,12 @@
             // 
             // panel2
             // 
+            resources.ApplyResources(this.panel2, "panel2");
             this.panel2.BackColor = System.Drawing.Color.DarkGray;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.lbly2);
+            this.panel2.Controls.Add(this.label14);
+            this.panel2.Controls.Add(this.lblx2);
             this.panel2.Controls.Add(this.label12);
             this.panel2.Controls.Add(this.label9);
             this.panel2.Controls.Add(this.txtLayerNO2);
@@ -262,17 +250,19 @@
             this.panel2.Controls.Add(this.lblToolTip2);
             this.panel2.Controls.Add(this.label17);
             this.panel2.Controls.Add(this.txtHole2);
-            this.panel2.Controls.Add(this.lbly2);
             this.panel2.Controls.Add(this.lblInformation2);
             this.panel2.Controls.Add(this.txtLayer2);
             this.panel2.Controls.Add(this.label10);
-            this.panel2.Controls.Add(this.label14);
             this.panel2.Controls.Add(this.txtSN2);
             this.panel2.Controls.Add(this.label11);
-            this.panel2.Controls.Add(this.lblx2);
             this.panel2.Controls.Add(this.chart2);
-            resources.ApplyResources(this.panel2, "panel2");
             this.panel2.Name = "panel2";
+            // 
+            // lblx2
+            // 
+            resources.ApplyResources(this.lblx2, "lblx2");
+            this.lblx2.ForeColor = System.Drawing.Color.Red;
+            this.lblx2.Name = "lblx2";
             // 
             // label12
             // 
@@ -301,9 +291,9 @@
             // 
             // btnReDo2
             // 
+            resources.ApplyResources(this.btnReDo2, "btnReDo2");
             this.btnReDo2.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btnReDo2.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            resources.ApplyResources(this.btnReDo2, "btnReDo2");
             this.btnReDo2.Name = "btnReDo2";
             this.btnReDo2.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(5);
             this.btnReDo2.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
@@ -311,9 +301,9 @@
             // 
             // btnStop2
             // 
+            resources.ApplyResources(this.btnStop2, "btnStop2");
             this.btnStop2.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btnStop2.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            resources.ApplyResources(this.btnStop2, "btnStop2");
             this.btnStop2.Name = "btnStop2";
             this.btnStop2.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(5);
             this.btnStop2.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
@@ -321,9 +311,9 @@
             // 
             // btnStart2
             // 
+            resources.ApplyResources(this.btnStart2, "btnStart2");
             this.btnStart2.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btnStart2.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            resources.ApplyResources(this.btnStart2, "btnStart2");
             this.btnStart2.Name = "btnStart2";
             this.btnStart2.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(5);
             this.btnStart2.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
@@ -331,8 +321,8 @@
             // 
             // lblToolTip2
             // 
-            this.lblToolTip2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             resources.ApplyResources(this.lblToolTip2, "lblToolTip2");
+            this.lblToolTip2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblToolTip2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.lblToolTip2.Name = "lblToolTip2";
             // 
@@ -383,14 +373,9 @@
             resources.ApplyResources(this.label11, "label11");
             this.label11.Name = "label11";
             // 
-            // lblx2
-            // 
-            resources.ApplyResources(this.lblx2, "lblx2");
-            this.lblx2.ForeColor = System.Drawing.Color.Red;
-            this.lblx2.Name = "lblx2";
-            // 
             // chart2
             // 
+            resources.ApplyResources(this.chart2, "chart2");
             chartArea2.AxisX.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash;
             chartArea2.AxisX.Title = "位移Travel(mm)";
             chartArea2.AxisY.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash;
@@ -400,7 +385,6 @@
             chartArea2.CursorY.LineColor = System.Drawing.Color.Green;
             chartArea2.Name = "ChartArea1";
             this.chart2.ChartAreas.Add(chartArea2);
-            resources.ApplyResources(this.chart2, "chart2");
             legend2.Name = "Legend1";
             this.chart2.Legends.Add(legend2);
             this.chart2.Name = "chart2";
@@ -411,6 +395,22 @@
             this.chart2.MouseEnter += new System.EventHandler(this.Chart2_MouseEnter);
             this.chart2.MouseLeave += new System.EventHandler(this.Chart2_MouseLeave);
             this.chart2.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Chart2_MouseMove);
+            // 
+            // lblInformation1
+            // 
+            resources.ApplyResources(this.lblInformation1, "lblInformation1");
+            this.lblInformation1.ForeColor = System.Drawing.Color.Red;
+            this.lblInformation1.Name = "lblInformation1";
+            // 
+            // label18
+            // 
+            resources.ApplyResources(this.label18, "label18");
+            this.label18.Name = "label18";
+            // 
+            // label19
+            // 
+            resources.ApplyResources(this.label19, "label19");
+            this.label19.Name = "label19";
             // 
             // FrmTest
             // 
@@ -442,7 +442,6 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
         private System.Windows.Forms.Label lblToolTip1;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtHole1;
@@ -465,7 +464,6 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label lblx2;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label lblInformation1;
         private System.Windows.Forms.Label lblInformation2;
         private DevComponents.DotNetBar.ButtonX btnStart1;
         private DevComponents.DotNetBar.ButtonX btnReDo1;
@@ -473,12 +471,14 @@
         private DevComponents.DotNetBar.ButtonX btnReDo2;
         private DevComponents.DotNetBar.ButtonX btnStop2;
         private DevComponents.DotNetBar.ButtonX btnStart2;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtLayerNO1;
         private System.Windows.Forms.TextBox txtLayerNO2;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox txtLayer1;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label lblInformation1;
     }
 }

@@ -118,1176 +118,1233 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="txtLayer1.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="btnStart1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft YaHei UI, 15.75pt, style=Bold</value>
   </data>
-  <data name="txtLayer1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>207, 48</value>
-  </data>
-  <data name="txtLayer1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>72, 34</value>
-  </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="txtLayer1.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
+  <data name="panel2.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
   </data>
-  <data name="&gt;&gt;txtLayer1.Name" xml:space="preserve">
-    <value>txtLayer1</value>
+  <data name="lbly2.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
   </data>
-  <data name="&gt;&gt;txtLayer1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="btnStop1.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
   </data>
-  <data name="&gt;&gt;txtLayer1.Parent" xml:space="preserve">
-    <value>panel1</value>
+  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
+    <value>6</value>
   </data>
-  <data name="&gt;&gt;txtLayer1.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="label13.Location" type="System.Drawing.Point, System.Drawing">
+    <value>270, 6</value>
   </data>
-  <data name="label7.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="label8.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft YaHei UI, 18pt, style=Bold</value>
   </data>
-  <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>769, 101</value>
+  <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
+    <value>14</value>
   </data>
-  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>88, 37</value>
-  </data>
-  <data name="label7.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
+  <data name="&gt;&gt;txtSN1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="label7.Text" xml:space="preserve">
     <value>Mpa</value>
   </data>
-  <data name="&gt;&gt;label7.Name" xml:space="preserve">
-    <value>label7</value>
-  </data>
-  <data name="&gt;&gt;label7.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label7.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="label5.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft YaHei UI, 14.25pt, style=Bold</value>
-  </data>
-  <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>289, 6</value>
-  </data>
-  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>143, 39</value>
-  </data>
-  <data name="label5.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
-  </data>
-  <data name="label5.Text" xml:space="preserve">
-    <value>层号LayerNO</value>
-  </data>
-  <data name="&gt;&gt;label5.Name" xml:space="preserve">
-    <value>label5</value>
-  </data>
-  <data name="&gt;&gt;label5.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label5.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
   <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="btnReDo1.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="&gt;&gt;lbly2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtLayerNO1.Name" xml:space="preserve">
+    <value>txtLayerNO1</value>
+  </data>
+  <data name="label12.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft YaHei UI, 18pt, style=Bold</value>
   </data>
-  <data name="btnReDo1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>315, 97</value>
+  <data name="&gt;&gt;label15.Name" xml:space="preserve">
+    <value>label15</value>
   </data>
-  <data name="btnReDo1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>132, 41</value>
+  <data name="btnStop2.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="lblInformation1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft YaHei UI, 18pt, style=Bold</value>
+  </data>
+  <data name="chart1.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;txtHole1.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="panel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="&gt;&gt;lblx2.Name" xml:space="preserve">
+    <value>lblx2</value>
+  </data>
+  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 37</value>
+  </data>
+  <data name="&gt;&gt;btnReDo2.Name" xml:space="preserve">
+    <value>btnReDo2</value>
+  </data>
+  <data name="label10.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
   </data>
   <data name="btnReDo1.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
   </data>
-  <data name="btnReDo1.Text" xml:space="preserve">
-    <value>重压ReDo</value>
+  <data name="btnReDo2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>229, 97</value>
   </data>
-  <data name="btnReDo1.Tooltip" xml:space="preserve">
-    <value>Stop</value>
+  <data name="lblInformation2.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;txtLayerNO2.Name" xml:space="preserve">
+    <value>txtLayerNO2</value>
+  </data>
+  <data name="&gt;&gt;label14.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblx1.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="lblToolTip2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft YaHei UI, 10.125pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;btnStop1.Name" xml:space="preserve">
+    <value>btnStop1</value>
+  </data>
+  <data name="&gt;&gt;btnStop2.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="label11.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;lbly2.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="label18.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;label15.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lblx2.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;lbly2.Name" xml:space="preserve">
+    <value>lbly2</value>
   </data>
   <data name="&gt;&gt;btnReDo1.Name" xml:space="preserve">
     <value>btnReDo1</value>
   </data>
-  <data name="&gt;&gt;btnReDo1.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonX, DevComponents.DotNetBar2, Version=14.0.0.15, Culture=neutral, PublicKeyToken=c39c3242a43eee2b</value>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>166, 6</value>
   </data>
-  <data name="&gt;&gt;btnReDo1.Parent" xml:space="preserve">
+  <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>63, 37</value>
+  </data>
+  <data name="txtLayerNO2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft YaHei UI, 14.25pt, style=Bold</value>
+  </data>
+  <data name="label15.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft YaHei UI, 14.25pt, style=Bold</value>
+  </data>
+  <data name="btnStop1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft YaHei UI, 15.75pt, style=Bold</value>
+  </data>
+  <data name="label12.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 37</value>
+  </data>
+  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
     <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;lblInformation1.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>341, 101</value>
+  </data>
+  <data name="label11.Text" xml:space="preserve">
+    <value>X:</value>
+  </data>
+  <data name="&gt;&gt;label10.Name" xml:space="preserve">
+    <value>label10</value>
+  </data>
+  <data name="&gt;&gt;label5.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="chart1.Text" xml:space="preserve">
+    <value>chart1</value>
+  </data>
+  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>848, 768</value>
+  </data>
+  <data name="txtHole1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>94, 32</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>FrmTest</value>
+  </data>
+  <data name="txtLayerNO1.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;label11.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;label4.Name" xml:space="preserve">
+    <value>label4</value>
+  </data>
+  <data name="&gt;&gt;txtHole2.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;btnStop2.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonX, DevComponents.DotNetBar2, Version=14.0.0.15, Culture=neutral, PublicKeyToken=c39c3242a43eee2b</value>
   </data>
   <data name="&gt;&gt;btnReDo1.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+  <data name="&gt;&gt;label11.Name" xml:space="preserve">
+    <value>label11</value>
+  </data>
+  <data name="txtLayer2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft YaHei UI, 14.25pt, style=Bold</value>
+  </data>
+  <data name="txtLayer1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>187, 48</value>
+  </data>
+  <data name="txtLayer2.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="lblToolTip1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
+  </data>
+  <data name="&gt;&gt;label7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="btnReDo2.Text" xml:space="preserve">
+    <value>重压ReDo</value>
+  </data>
+  <data name="lblInformation2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft YaHei UI, 18pt, style=Bold</value>
+  </data>
+  <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>614, 101</value>
+  </data>
+  <data name="&gt;&gt;label7.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;label16.Name" xml:space="preserve">
+    <value>label16</value>
+  </data>
+  <data name="&gt;&gt;lblToolTip1.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;label10.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lblToolTip1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>134, 44</value>
+  </data>
+  <data name="lblInformation1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>519, 52</value>
+  </data>
+  <data name="&gt;&gt;btnReDo1.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="txtLayer1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 32</value>
+  </data>
+  <data name="btnReDo2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft YaHei UI, 15.75pt, style=Bold</value>
+  </data>
+  <data name="label7.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft YaHei UI, 18pt, style=Bold</value>
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 37</value>
+  </data>
+  <data name="&gt;&gt;lbly1.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="label2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft YaHei UI, 18pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;lblInformation2.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="label11.Location" type="System.Drawing.Point, System.Drawing">
+    <value>338, 101</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 12</value>
+  </data>
+  <data name="&gt;&gt;label11.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label9.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;btnReDo2.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonX, DevComponents.DotNetBar2, Version=14.0.0.15, Culture=neutral, PublicKeyToken=c39c3242a43eee2b</value>
+  </data>
+  <data name="&gt;&gt;label17.Name" xml:space="preserve">
+    <value>label17</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="&gt;&gt;lblToolTip1.Name" xml:space="preserve">
+    <value>lblToolTip1</value>
+  </data>
+  <data name="&gt;&gt;btnStop2.Name" xml:space="preserve">
+    <value>btnStop2</value>
+  </data>
+  <data name="&gt;&gt;chart2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataVisualization.Charting.Chart, System.Windows.Forms.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35</value>
+  </data>
+  <data name="label14.Size" type="System.Drawing.Size, System.Drawing">
+    <value>45, 37</value>
+  </data>
+  <data name="&gt;&gt;btnStart1.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="btnStart1.Tooltip" xml:space="preserve">
+    <value>Start</value>
+  </data>
+  <data name="btnStart1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 97</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>456, 100</value>
+  </data>
+  <data name="lbly2.Text" xml:space="preserve">
+    <value>0.00</value>
+  </data>
+  <data name="&gt;&gt;label16.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label5.Text" xml:space="preserve">
+    <value>层号LayerNO</value>
+  </data>
+  <data name="label19.Location" type="System.Drawing.Point, System.Drawing">
+    <value>277, 8</value>
+  </data>
+  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>148, 39</value>
+  </data>
+  <data name="&gt;&gt;lblx1.Name" xml:space="preserve">
+    <value>lblx1</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label14.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="label4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft YaHei UI, 14.25pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;txtSN2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtLayer2.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="lblToolTip2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>107, 167</value>
+  </data>
+  <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 37</value>
+  </data>
+  <data name="label9.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft YaHei UI, 14.25pt, style=Bold</value>
+  </data>
+  <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>400, 6</value>
+  </data>
+  <data name="&gt;&gt;label17.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnStart1.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="lblToolTip1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft YaHei UI, 10.125pt, style=Bold</value>
+  </data>
+  <data name="label15.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;lblInformation2.Name" xml:space="preserve">
+    <value>lblInformation2</value>
+  </data>
+  <data name="&gt;&gt;btnStop1.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="lblToolTip1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>143, 465</value>
+  </data>
+  <data name="&gt;&gt;txtSN2.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="label16.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="lblToolTip2.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="btnStart2.Text" xml:space="preserve">
+    <value>开始Start</value>
+  </data>
+  <data name="&gt;&gt;txtLayer2.Name" xml:space="preserve">
+    <value>txtLayer2</value>
+  </data>
+  <data name="btnStart2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft YaHei UI, 15.75pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;label12.Name" xml:space="preserve">
+    <value>label12</value>
+  </data>
+  <data name="&gt;&gt;txtLayer2.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>洞号 HoleNO</value>
+  </data>
+  <data name="label12.Location" type="System.Drawing.Point, System.Drawing">
+    <value>609, 101</value>
+  </data>
+  <data name="&gt;&gt;chart1.Name" xml:space="preserve">
+    <value>chart1</value>
+  </data>
+  <data name="&gt;&gt;label14.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="label12.Text" xml:space="preserve">
+    <value>Mpa</value>
+  </data>
+  <data name="lbly1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>541, 101</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;btnStart2.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;label12.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>133, 39</value>
+  </data>
+  <data name="&gt;&gt;label5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label8.Name" xml:space="preserve">
+    <value>label8</value>
+  </data>
+  <data name="&gt;&gt;label13.Name" xml:space="preserve">
+    <value>label13</value>
+  </data>
+  <data name="chart1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="btnReDo1.Tooltip" xml:space="preserve">
+    <value>Stop</value>
+  </data>
+  <data name="lblx2.Text" xml:space="preserve">
+    <value>000.00</value>
+  </data>
+  <data name="&gt;&gt;label15.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="lblInformation1.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="btnStop1.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="btnStop1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft YaHei UI, 18pt, style=Bold</value>
+  <data name="&gt;&gt;lblToolTip1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label14.Location" type="System.Drawing.Point, System.Drawing">
+    <value>505, 100</value>
+  </data>
+  <data name="lbly2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>88, 37</value>
+  </data>
+  <data name="lblInformation2.Text" xml:space="preserve">
+    <value>正在压制中！</value>
+  </data>
+  <data name="&gt;&gt;btnStart2.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;label18.Name" xml:space="preserve">
+    <value>label18</value>
+  </data>
+  <data name="btnStop1.Tooltip" xml:space="preserve">
+    <value>Stop</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="label7.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="txtHole1.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;lblx2.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;txtLayerNO2.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;btnStop1.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonX, DevComponents.DotNetBar2, Version=14.0.0.15, Culture=neutral, PublicKeyToken=c39c3242a43eee2b</value>
+  </data>
+  <data name="&gt;&gt;label10.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="lblx1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>372, 101</value>
+  </data>
+  <data name="&gt;&gt;txtLayerNO1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lbly1.Text" xml:space="preserve">
+    <value>0.00</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>工件号 S/N</value>
+  </data>
+  <data name="&gt;&gt;txtSN1.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;label19.Name" xml:space="preserve">
+    <value>label19</value>
+  </data>
+  <data name="&gt;&gt;lblInformation1.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>43, 37</value>
+  </data>
+  <data name="&gt;&gt;lblToolTip2.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;label6.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="chart2.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;label12.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label13.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblx1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtLayer1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>687, 768</value>
+  </data>
+  <data name="&gt;&gt;btnReDo2.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;btnStart1.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonX, DevComponents.DotNetBar2, Version=14.0.0.15, Culture=neutral, PublicKeyToken=c39c3242a43eee2b</value>
+  </data>
+  <data name="&gt;&gt;txtLayerNO2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="txtSN1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>155, 32</value>
+  </data>
+  <data name="txtLayer1.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="lblInformation1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>159, 30</value>
   </data>
   <data name="btnStop1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>167, 97</value>
+    <value>116, 97</value>
   </data>
-  <data name="btnStop1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>132, 41</value>
+  <data name="&gt;&gt;btnReDo1.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonX, DevComponents.DotNetBar2, Version=14.0.0.15, Culture=neutral, PublicKeyToken=c39c3242a43eee2b</value>
   </data>
-  <data name="btnStop1.TabIndex" type="System.Int32, mscorlib">
+  <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="panel2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft YaHei UI, 9.75pt</value>
+  </data>
+  <data name="label16.Location" type="System.Drawing.Point, System.Drawing">
+    <value>486, 46</value>
+  </data>
+  <data name="btnReDo1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>112, 41</value>
+  </data>
+  <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>275, 6</value>
+  </data>
+  <data name="&gt;&gt;lblInformation2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label10.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="btnStart2.Tooltip" xml:space="preserve">
+    <value>Start</value>
+  </data>
+  <data name="label3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft YaHei UI, 14.25pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="&gt;&gt;lblToolTip2.Name" xml:space="preserve">
+    <value>lblToolTip2</value>
+  </data>
+  <data name="btnStart2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 97</value>
+  </data>
+  <data name="&gt;&gt;label16.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 37</value>
+  </data>
+  <data name="lblx2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>82, 37</value>
+  </data>
+  <data name="btnStart1.Text" xml:space="preserve">
+    <value>开始Start</value>
+  </data>
+  <data name="&gt;&gt;btnReDo2.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="txtLayerNO2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>300, 48</value>
+  </data>
+  <data name="label13.Size" type="System.Drawing.Size, System.Drawing">
+    <value>142, 39</value>
+  </data>
+  <data name="txtSN2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft YaHei UI, 14.25pt, style=Bold</value>
+  </data>
+  <data name="label19.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="btnStart1.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;label19.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="txtHole1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft YaHei UI, 14.25pt, style=Bold</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>mm</value>
+  </data>
+  <data name="&gt;&gt;label17.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;chart2.Name" xml:space="preserve">
+    <value>chart2</value>
+  </data>
+  <data name="&gt;&gt;btnStart2.Name" xml:space="preserve">
+    <value>btnStart2</value>
+  </data>
+  <data name="lblx1.Text" xml:space="preserve">
+    <value>000.00</value>
+  </data>
+  <data name="txtLayerNO1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 32</value>
+  </data>
+  <data name="&gt;&gt;panel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label3.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="lbly1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>87, 37</value>
+  </data>
+  <data name="&gt;&gt;label16.ZOrder" xml:space="preserve">
     <value>11</value>
   </data>
   <data name="btnStop1.Text" xml:space="preserve">
     <value>结束Stop</value>
   </data>
-  <data name="btnStop1.Tooltip" xml:space="preserve">
-    <value>Stop</value>
-  </data>
-  <data name="&gt;&gt;btnStop1.Name" xml:space="preserve">
-    <value>btnStop1</value>
-  </data>
-  <data name="&gt;&gt;btnStop1.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonX, DevComponents.DotNetBar2, Version=14.0.0.15, Culture=neutral, PublicKeyToken=c39c3242a43eee2b</value>
-  </data>
-  <data name="&gt;&gt;btnStop1.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;btnStop1.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="btnStart1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft YaHei UI, 18pt, style=Bold</value>
-  </data>
-  <data name="btnStart1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>20, 97</value>
-  </data>
-  <data name="btnStart1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>132, 41</value>
-  </data>
-  <data name="btnStart1.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="btnStart1.Text" xml:space="preserve">
-    <value>开始Start</value>
-  </data>
-  <data name="btnStart1.Tooltip" xml:space="preserve">
-    <value>Start</value>
-  </data>
-  <data name="&gt;&gt;btnStart1.Name" xml:space="preserve">
-    <value>btnStart1</value>
-  </data>
-  <data name="&gt;&gt;btnStart1.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonX, DevComponents.DotNetBar2, Version=14.0.0.15, Culture=neutral, PublicKeyToken=c39c3242a43eee2b</value>
-  </data>
-  <data name="&gt;&gt;btnStart1.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;btnStart1.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="label4.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft YaHei UI, 15.75pt, style=Bold</value>
-  </data>
-  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>428, 6</value>
-  </data>
-  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>147, 39</value>
-  </data>
-  <data name="label4.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="label4.Text" xml:space="preserve">
-    <value>洞号 HoleNO</value>
-  </data>
-  <data name="&gt;&gt;label4.Name" xml:space="preserve">
-    <value>label4</value>
-  </data>
-  <data name="&gt;&gt;label4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft YaHei UI, 15.75pt, style=Bold</value>
-  </data>
-  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>27, 6</value>
-  </data>
-  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>148, 39</value>
-  </data>
-  <data name="label1.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="label1.Text" xml:space="preserve">
-    <value>工件号 S/N</value>
-  </data>
-  <data name="&gt;&gt;label1.Name" xml:space="preserve">
-    <value>label1</value>
-  </data>
-  <data name="&gt;&gt;label1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="label3.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft YaHei UI, 14.25pt, style=Bold</value>
-  </data>
-  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>177, 6</value>
-  </data>
-  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>113, 39</value>
-  </data>
-  <data name="label3.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="label3.Text" xml:space="preserve">
-    <value>层数Layers</value>
-  </data>
-  <data name="&gt;&gt;label3.Name" xml:space="preserve">
-    <value>label3</value>
-  </data>
-  <data name="&gt;&gt;label3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="lbly1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft YaHei UI, 18pt, style=Bold</value>
-  </data>
-  <data name="lbly1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>694, 101</value>
-  </data>
-  <data name="lbly1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>87, 37</value>
-  </data>
-  <data name="lbly1.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="lbly1.Text" xml:space="preserve">
-    <value>0.00</value>
-  </data>
-  <data name="&gt;&gt;lbly1.Name" xml:space="preserve">
-    <value>lbly1</value>
-  </data>
-  <data name="&gt;&gt;lbly1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lbly1.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;lbly1.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="label8.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft YaHei UI, 18pt, style=Bold</value>
-  </data>
-  <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>656, 101</value>
-  </data>
-  <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 37</value>
-  </data>
-  <data name="label8.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
   <data name="label8.Text" xml:space="preserve">
     <value>Y:</value>
   </data>
-  <data name="&gt;&gt;label8.Name" xml:space="preserve">
-    <value>label8</value>
-  </data>
-  <data name="&gt;&gt;label8.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label8.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="lblInformation1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft YaHei UI, 18pt, style=Bold</value>
-  </data>
-  <data name="lblInformation1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>532, 52</value>
-  </data>
-  <data name="lblInformation1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>159, 30</value>
-  </data>
-  <data name="lblInformation1.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="lblInformation1.Text" xml:space="preserve">
-    <value>正在压制中！</value>
-  </data>
-  <data name="lblInformation1.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;lblInformation1.Name" xml:space="preserve">
-    <value>lblInformation1</value>
-  </data>
-  <data name="&gt;&gt;lblInformation1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblInformation1.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;lblInformation1.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="lblx1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft YaHei UI, 18pt, style=Bold</value>
-  </data>
-  <data name="lblx1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>499, 101</value>
-  </data>
-  <data name="lblx1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>93, 37</value>
-  </data>
-  <data name="lblx1.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="lblx1.Text" xml:space="preserve">
-    <value>000.00</value>
-  </data>
-  <data name="&gt;&gt;lblx1.Name" xml:space="preserve">
-    <value>lblx1</value>
-  </data>
-  <data name="&gt;&gt;lblx1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblx1.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;lblx1.ZOrder" xml:space="preserve">
-    <value>12</value>
-  </data>
-  <data name="lblToolTip1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft YaHei UI, 10.125pt, style=Bold</value>
-  </data>
-  <data name="lblToolTip1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>143, 465</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="lblToolTip1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
-  </data>
-  <data name="lblToolTip1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>134, 44</value>
-  </data>
-  <data name="lblToolTip1.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="lblToolTip1.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;lblToolTip1.Name" xml:space="preserve">
-    <value>lblToolTip1</value>
-  </data>
-  <data name="&gt;&gt;lblToolTip1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblToolTip1.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;lblToolTip1.ZOrder" xml:space="preserve">
-    <value>13</value>
-  </data>
-  <data name="label6.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft YaHei UI, 18pt, style=Bold</value>
-  </data>
-  <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>453, 101</value>
-  </data>
-  <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>43, 37</value>
-  </data>
-  <data name="label6.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="label6.Text" xml:space="preserve">
-    <value>X:</value>
-  </data>
-  <data name="&gt;&gt;label6.Name" xml:space="preserve">
-    <value>label6</value>
-  </data>
-  <data name="&gt;&gt;label6.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label6.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
-    <value>14</value>
-  </data>
-  <data name="txtSN1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft YaHei UI, 15.75pt, style=Bold</value>
-  </data>
-  <data name="txtSN1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 48</value>
-  </data>
-  <data name="txtSN1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>176, 34</value>
-  </data>
-  <data name="txtSN1.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
+  <data name="lblInformation2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>514, 52</value>
   </data>
   <data name="&gt;&gt;txtSN1.Name" xml:space="preserve">
     <value>txtSN1</value>
   </data>
-  <data name="&gt;&gt;txtSN1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="panel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>679, 0</value>
   </data>
-  <data name="&gt;&gt;txtSN1.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;txtSN1.ZOrder" xml:space="preserve">
-    <value>15</value>
-  </data>
-  <data name="label2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft YaHei UI, 18pt, style=Bold</value>
-  </data>
-  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>590, 101</value>
-  </data>
-  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>72, 37</value>
-  </data>
-  <data name="label2.TabIndex" type="System.Int32, mscorlib">
+  <data name="label14.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
   </data>
-  <data name="label2.Text" xml:space="preserve">
-    <value>mm</value>
+  <data name="&gt;&gt;lbly1.Name" xml:space="preserve">
+    <value>lbly1</value>
   </data>
-  <data name="&gt;&gt;label2.Name" xml:space="preserve">
-    <value>label2</value>
+  <data name="btnStart2.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
   </data>
-  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+  <data name="&gt;&gt;label17.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;label15.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="label8.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="txtHole2.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>133, 39</value>
+  </data>
+  <data name="&gt;&gt;lbly1.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;label2.Parent" xml:space="preserve">
     <value>panel1</value>
   </data>
-  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>16</value>
-  </data>
-  <data name="txtLayerNO1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft YaHei UI, 15.75pt, style=Bold</value>
-  </data>
-  <data name="txtLayerNO1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>315, 48</value>
-  </data>
-  <data name="txtLayerNO1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>72, 34</value>
-  </data>
-  <data name="txtLayerNO1.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
-  </data>
-  <data name="&gt;&gt;txtLayerNO1.Name" xml:space="preserve">
-    <value>txtLayerNO1</value>
-  </data>
-  <data name="&gt;&gt;txtLayerNO1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;txtLayerNO1.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;txtLayerNO1.ZOrder" xml:space="preserve">
-    <value>17</value>
-  </data>
-  <data name="txtHole1.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="txtHole1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft YaHei UI, 15.75pt, style=Bold</value>
-  </data>
-  <data name="txtHole1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>440, 48</value>
-  </data>
-  <data name="txtHole1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>94, 34</value>
-  </data>
-  <data name="txtHole1.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;txtHole1.Name" xml:space="preserve">
-    <value>txtHole1</value>
-  </data>
-  <data name="&gt;&gt;txtHole1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;txtHole1.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;txtHole1.ZOrder" xml:space="preserve">
-    <value>18</value>
-  </data>
-  <data name="chart1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Bottom</value>
-  </data>
-  <data name="chart1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 241</value>
-  </data>
-  <data name="chart1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>846, 318</value>
-  </data>
-  <data name="chart1.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="chart1.Text" xml:space="preserve">
-    <value>chart1</value>
-  </data>
-  <data name="&gt;&gt;chart1.Name" xml:space="preserve">
-    <value>chart1</value>
-  </data>
-  <data name="&gt;&gt;chart1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataVisualization.Charting.Chart, System.Windows.Forms.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35</value>
-  </data>
-  <data name="&gt;&gt;chart1.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;chart1.ZOrder" xml:space="preserve">
-    <value>19</value>
-  </data>
-  <data name="panel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Left</value>
-  </data>
-  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>848, 561</value>
-  </data>
-  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="label12.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft YaHei UI, 18pt, style=Bold</value>
-  </data>
-  <data name="label12.Location" type="System.Drawing.Point, System.Drawing">
-    <value>797, 101</value>
-  </data>
-  <data name="label12.Size" type="System.Drawing.Size, System.Drawing">
-    <value>69, 37</value>
-  </data>
-  <data name="label12.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="label12.Text" xml:space="preserve">
-    <value>Mpa</value>
-  </data>
-  <data name="&gt;&gt;label12.Name" xml:space="preserve">
-    <value>label12</value>
-  </data>
-  <data name="&gt;&gt;label12.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label12.Parent" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="&gt;&gt;label12.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="label9.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft YaHei UI, 15.75pt, style=Bold</value>
-  </data>
-  <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>414, 6</value>
-  </data>
-  <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>158, 39</value>
-  </data>
-  <data name="label9.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
-  </data>
-  <data name="label9.Text" xml:space="preserve">
-    <value>洞号 HoleNO</value>
-  </data>
-  <data name="&gt;&gt;label9.Name" xml:space="preserve">
-    <value>label9</value>
-  </data>
-  <data name="&gt;&gt;label9.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label9.Parent" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="&gt;&gt;label9.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="txtLayerNO2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft YaHei UI, 15.75pt, style=Bold</value>
-  </data>
-  <data name="txtLayerNO2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>313, 48</value>
-  </data>
-  <data name="txtLayerNO2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>72, 34</value>
-  </data>
-  <data name="txtLayerNO2.TabIndex" type="System.Int32, mscorlib">
-    <value>17</value>
-  </data>
-  <data name="&gt;&gt;txtLayerNO2.Name" xml:space="preserve">
-    <value>txtLayerNO2</value>
-  </data>
-  <data name="&gt;&gt;txtLayerNO2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;txtLayerNO2.Parent" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="&gt;&gt;txtLayerNO2.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="label13.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="label5.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft YaHei UI, 14.25pt, style=Bold</value>
-  </data>
-  <data name="label13.Location" type="System.Drawing.Point, System.Drawing">
-    <value>283, 6</value>
-  </data>
-  <data name="label13.Size" type="System.Drawing.Size, System.Drawing">
-    <value>142, 39</value>
-  </data>
-  <data name="label13.TabIndex" type="System.Int32, mscorlib">
-    <value>16</value>
-  </data>
-  <data name="label13.Text" xml:space="preserve">
-    <value>层号LayerNO</value>
-  </data>
-  <data name="&gt;&gt;label13.Name" xml:space="preserve">
-    <value>label13</value>
-  </data>
-  <data name="&gt;&gt;label13.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label13.Parent" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="&gt;&gt;label13.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="label15.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft YaHei UI, 14.25pt, style=Bold</value>
-  </data>
-  <data name="label15.Location" type="System.Drawing.Point, System.Drawing">
-    <value>172, 6</value>
   </data>
   <data name="label15.Size" type="System.Drawing.Size, System.Drawing">
     <value>113, 39</value>
   </data>
-  <data name="label15.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
-  </data>
-  <data name="label15.Text" xml:space="preserve">
-    <value>层数Layers</value>
-  </data>
-  <data name="&gt;&gt;label15.Name" xml:space="preserve">
-    <value>label15</value>
-  </data>
-  <data name="&gt;&gt;label15.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label15.Parent" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="&gt;&gt;label15.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="btnReDo2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft YaHei UI, 18pt, style=Bold</value>
-  </data>
-  <data name="btnReDo2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>314, 97</value>
-  </data>
-  <data name="btnReDo2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>132, 41</value>
+  <data name="btnStop2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft YaHei UI, 15.75pt, style=Bold</value>
   </data>
   <data name="btnReDo2.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
   </data>
-  <data name="btnReDo2.Text" xml:space="preserve">
-    <value>重压ReDo</value>
-  </data>
-  <data name="btnReDo2.Tooltip" xml:space="preserve">
-    <value>Stop</value>
-  </data>
-  <data name="&gt;&gt;btnReDo2.Name" xml:space="preserve">
-    <value>btnReDo2</value>
-  </data>
-  <data name="&gt;&gt;btnReDo2.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonX, DevComponents.DotNetBar2, Version=14.0.0.15, Culture=neutral, PublicKeyToken=c39c3242a43eee2b</value>
-  </data>
-  <data name="&gt;&gt;btnReDo2.Parent" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="&gt;&gt;btnReDo2.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="btnStop2.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="btnStop2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft YaHei UI, 18pt, style=Bold</value>
-  </data>
-  <data name="btnStop2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>167, 97</value>
-  </data>
-  <data name="btnStop2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>132, 41</value>
-  </data>
-  <data name="btnStop2.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="btnStop2.Text" xml:space="preserve">
-    <value>结束Stop</value>
-  </data>
-  <data name="btnStop2.Tooltip" xml:space="preserve">
-    <value>Stop</value>
-  </data>
-  <data name="&gt;&gt;btnStop2.Name" xml:space="preserve">
-    <value>btnStop2</value>
-  </data>
-  <data name="&gt;&gt;btnStop2.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonX, DevComponents.DotNetBar2, Version=14.0.0.15, Culture=neutral, PublicKeyToken=c39c3242a43eee2b</value>
-  </data>
-  <data name="&gt;&gt;btnStop2.Parent" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="&gt;&gt;btnStop2.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="btnStart2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft YaHei UI, 18pt, style=Bold</value>
-  </data>
-  <data name="btnStart2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>20, 97</value>
-  </data>
-  <data name="btnStart2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>132, 41</value>
-  </data>
-  <data name="btnStart2.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="btnStart2.Text" xml:space="preserve">
-    <value>开始Start</value>
-  </data>
-  <data name="btnStart2.Tooltip" xml:space="preserve">
-    <value>Start</value>
-  </data>
-  <data name="&gt;&gt;btnStart2.Name" xml:space="preserve">
-    <value>btnStart2</value>
-  </data>
-  <data name="&gt;&gt;btnStart2.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonX, DevComponents.DotNetBar2, Version=14.0.0.15, Culture=neutral, PublicKeyToken=c39c3242a43eee2b</value>
-  </data>
-  <data name="&gt;&gt;btnStart2.Parent" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="&gt;&gt;btnStart2.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="lblToolTip2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft YaHei UI, 10.125pt, style=Bold</value>
-  </data>
-  <data name="lblToolTip2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>107, 167</value>
-  </data>
-  <data name="lblToolTip2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
-  </data>
-  <data name="lblToolTip2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>134, 52</value>
-  </data>
-  <data name="lblToolTip2.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="lblToolTip2.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;lblToolTip2.Name" xml:space="preserve">
-    <value>lblToolTip2</value>
-  </data>
-  <data name="&gt;&gt;lblToolTip2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblToolTip2.Parent" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="&gt;&gt;lblToolTip2.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="label17.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft YaHei UI, 15.75pt, style=Bold</value>
-  </data>
-  <data name="label17.Location" type="System.Drawing.Point, System.Drawing">
-    <value>28, 6</value>
-  </data>
-  <data name="label17.Size" type="System.Drawing.Size, System.Drawing">
-    <value>125, 39</value>
-  </data>
-  <data name="label17.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="label17.Text" xml:space="preserve">
-    <value>工件号 S/N</value>
-  </data>
-  <data name="&gt;&gt;label17.Name" xml:space="preserve">
-    <value>label17</value>
-  </data>
-  <data name="&gt;&gt;label17.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label17.Parent" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="&gt;&gt;label17.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="txtHole2.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="txtHole2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft YaHei UI, 15.75pt, style=Bold</value>
-  </data>
-  <data name="txtHole2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>417, 48</value>
-  </data>
-  <data name="txtHole2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>94, 34</value>
-  </data>
-  <data name="txtHole2.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;txtHole2.Name" xml:space="preserve">
-    <value>txtHole2</value>
-  </data>
-  <data name="&gt;&gt;txtHole2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;txtHole2.Parent" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="&gt;&gt;txtHole2.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="lbly2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft YaHei UI, 18pt, style=Bold</value>
-  </data>
-  <data name="lbly2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>714, 101</value>
-  </data>
-  <data name="lbly2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>81, 37</value>
-  </data>
-  <data name="lbly2.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="lbly2.Text" xml:space="preserve">
-    <value>0.00</value>
-  </data>
-  <data name="&gt;&gt;lbly2.Name" xml:space="preserve">
-    <value>lbly2</value>
-  </data>
-  <data name="&gt;&gt;lbly2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lbly2.Parent" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="&gt;&gt;lbly2.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="lblInformation2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft YaHei UI, 18pt, style=Bold</value>
-  </data>
-  <data name="lblInformation2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>514, 52</value>
-  </data>
-  <data name="lblInformation2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>159, 30</value>
-  </data>
-  <data name="lblInformation2.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="lblInformation2.Text" xml:space="preserve">
-    <value>正在压制中！</value>
-  </data>
-  <data name="lblInformation2.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;lblInformation2.Name" xml:space="preserve">
-    <value>lblInformation2</value>
-  </data>
-  <data name="&gt;&gt;lblInformation2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblInformation2.Parent" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="&gt;&gt;lblInformation2.ZOrder" xml:space="preserve">
-    <value>12</value>
-  </data>
-  <data name="txtLayer2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft YaHei UI, 15.75pt, style=Bold</value>
-  </data>
-  <data name="txtLayer2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>211, 48</value>
-  </data>
-  <data name="txtLayer2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>72, 34</value>
-  </data>
-  <data name="txtLayer2.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;txtLayer2.Name" xml:space="preserve">
-    <value>txtLayer2</value>
+  <data name="&gt;&gt;lblInformation1.Name" xml:space="preserve">
+    <value>lblInformation1</value>
+  </data>
+  <data name="lblx2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>368, 101</value>
   </data>
   <data name="&gt;&gt;txtLayer2.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;txtLayer2.Parent" xml:space="preserve">
-    <value>panel2</value>
+  <data name="&gt;&gt;lblToolTip1.Parent" xml:space="preserve">
+    <value>panel1</value>
   </data>
-  <data name="&gt;&gt;txtLayer2.ZOrder" xml:space="preserve">
-    <value>13</value>
+  <data name="label13.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
   </data>
-  <data name="label10.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft YaHei UI, 18pt, style=Bold</value>
+  <data name="txtSN2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>155, 32</value>
   </data>
-  <data name="label10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>583, 101</value>
+  <data name="txtHole2.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
   </data>
-  <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>74, 37</value>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>27, 6</value>
   </data>
-  <data name="label10.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
+  <data name="lblInformation2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>159, 30</value>
   </data>
-  <data name="label10.Text" xml:space="preserve">
-    <value>mm</value>
+  <data name="label17.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft YaHei UI, 14.25pt, style=Bold</value>
   </data>
-  <data name="&gt;&gt;label10.Name" xml:space="preserve">
-    <value>label10</value>
-  </data>
-  <data name="&gt;&gt;label10.Type" xml:space="preserve">
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label10.Parent" xml:space="preserve">
-    <value>panel2</value>
+  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+    <value>panel1</value>
   </data>
-  <data name="&gt;&gt;label10.ZOrder" xml:space="preserve">
-    <value>14</value>
+  <data name="lblInformation1.Text" xml:space="preserve">
+    <value>正在压制中！</value>
   </data>
-  <data name="label14.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft YaHei UI, 18pt, style=Bold</value>
-  </data>
-  <data name="label14.Location" type="System.Drawing.Point, System.Drawing">
-    <value>666, 101</value>
-  </data>
-  <data name="label14.Size" type="System.Drawing.Size, System.Drawing">
-    <value>45, 37</value>
-  </data>
-  <data name="label14.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="label14.Text" xml:space="preserve">
-    <value>Y:</value>
-  </data>
-  <data name="&gt;&gt;label14.Name" xml:space="preserve">
-    <value>label14</value>
-  </data>
-  <data name="&gt;&gt;label14.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label14.Parent" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="&gt;&gt;label14.ZOrder" xml:space="preserve">
-    <value>15</value>
-  </data>
-  <data name="txtSN2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft YaHei UI, 15.75pt, style=Bold</value>
+  <data name="&gt;&gt;txtLayer1.Name" xml:space="preserve">
+    <value>txtLayer1</value>
   </data>
   <data name="txtSN2.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 48</value>
   </data>
-  <data name="txtSN2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>189, 34</value>
+  <data name="&gt;&gt;txtLayerNO1.Parent" xml:space="preserve">
+    <value>panel1</value>
   </data>
-  <data name="txtSN2.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
+  <data name="&gt;&gt;btnStop1.ZOrder" xml:space="preserve">
+    <value>4</value>
   </data>
-  <data name="&gt;&gt;txtSN2.Name" xml:space="preserve">
-    <value>txtSN2</value>
+  <data name="lblToolTip2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>134, 52</value>
   </data>
-  <data name="&gt;&gt;txtSN2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="txtSN1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 48</value>
   </data>
-  <data name="&gt;&gt;txtSN2.Parent" xml:space="preserve">
-    <value>panel2</value>
+  <data name="btnStop1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>112, 41</value>
   </data>
-  <data name="&gt;&gt;txtSN2.ZOrder" xml:space="preserve">
-    <value>16</value>
+  <data name="label3.Text" xml:space="preserve">
+    <value>层数Layers</value>
   </data>
-  <data name="label11.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft YaHei UI, 18pt, style=Bold</value>
-  </data>
-  <data name="label11.Location" type="System.Drawing.Point, System.Drawing">
-    <value>452, 101</value>
-  </data>
-  <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
-    <value>37, 37</value>
-  </data>
-  <data name="label11.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="label11.Text" xml:space="preserve">
-    <value>X:</value>
-  </data>
-  <data name="&gt;&gt;label11.Name" xml:space="preserve">
-    <value>label11</value>
-  </data>
-  <data name="&gt;&gt;label11.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label11.Parent" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="&gt;&gt;label11.ZOrder" xml:space="preserve">
-    <value>17</value>
-  </data>
-  <data name="lblx2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft YaHei UI, 18pt, style=Bold</value>
-  </data>
-  <data name="lblx2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>495, 101</value>
-  </data>
-  <data name="lblx2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>82, 37</value>
-  </data>
-  <data name="lblx2.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="lblx2.Text" xml:space="preserve">
-    <value>000.00</value>
-  </data>
-  <data name="&gt;&gt;lblx2.Name" xml:space="preserve">
-    <value>lblx2</value>
-  </data>
-  <data name="&gt;&gt;lblx2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblx2.Parent" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="&gt;&gt;lblx2.ZOrder" xml:space="preserve">
-    <value>18</value>
-  </data>
-  <data name="chart2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Bottom</value>
-  </data>
-  <data name="chart2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 222</value>
-  </data>
-  <data name="chart2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1065, 337</value>
-  </data>
-  <data name="chart2.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="chart2.Text" xml:space="preserve">
-    <value>chart2</value>
-  </data>
-  <data name="&gt;&gt;chart2.Name" xml:space="preserve">
-    <value>chart2</value>
-  </data>
-  <data name="&gt;&gt;chart2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataVisualization.Charting.Chart, System.Windows.Forms.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35</value>
-  </data>
-  <data name="&gt;&gt;chart2.Parent" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="&gt;&gt;chart2.ZOrder" xml:space="preserve">
-    <value>19</value>
-  </data>
-  <data name="panel2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Right</value>
-  </data>
-  <data name="panel2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft YaHei UI, 9.75pt</value>
-  </data>
-  <data name="panel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>853, 0</value>
-  </data>
-  <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1067, 561</value>
-  </data>
-  <data name="panel2.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;panel2.Name" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="&gt;&gt;panel2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel2.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 12</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1920, 561</value>
-  </data>
-  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>FrmTest</value>
+  <data name="btnReDo1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>228, 97</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>FrmTest</value>
   </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="txtLayerNO1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>300, 48</value>
   </data>
+  <data name="&gt;&gt;txtSN2.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;label13.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft YaHei UI, 14.25pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;chart2.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="lblToolTip1.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="txtSN2.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;lblx2.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="label17.Text" xml:space="preserve">
+    <value>工件号 S/N</value>
+  </data>
+  <data name="btnReDo2.Tooltip" xml:space="preserve">
+    <value>Stop</value>
+  </data>
+  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;label9.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="lblx1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>93, 37</value>
+  </data>
+  <data name="&gt;&gt;chart1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataVisualization.Charting.Chart, System.Windows.Forms.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35</value>
+  </data>
+  <data name="&gt;&gt;label9.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lbly1.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="btnStop2.Tooltip" xml:space="preserve">
+    <value>Stop</value>
+  </data>
+  <data name="label5.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="txtSN1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft YaHei UI, 14.25pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;label18.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="label13.Text" xml:space="preserve">
+    <value>层号LayerNO</value>
+  </data>
+  <data name="&gt;&gt;lblx2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="chart1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>846, 318</value>
+  </data>
+  <data name="&gt;&gt;chart1.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="txtHole2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>410, 48</value>
+  </data>
+  <data name="chart2.Text" xml:space="preserve">
+    <value>chart2</value>
+  </data>
+  <data name="txtHole1.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;label13.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;txtHole1.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;btnStop2.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="txtSN1.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;btnStart2.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonX, DevComponents.DotNetBar2, Version=14.0.0.15, Culture=neutral, PublicKeyToken=c39c3242a43eee2b</value>
+  </data>
+  <data name="label17.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;chart1.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="label6.Text" xml:space="preserve">
+    <value>X:</value>
+  </data>
+  <data name="lblToolTip1.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;label19.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;label7.Name" xml:space="preserve">
+    <value>label7</value>
+  </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>113, 39</value>
+  </data>
+  <data name="&gt;&gt;txtHole2.Name" xml:space="preserve">
+    <value>txtHole2</value>
+  </data>
+  <data name="btnStop2.Text" xml:space="preserve">
+    <value>结束Stop</value>
+  </data>
+  <data name="&gt;&gt;panel2.Name" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;lblToolTip2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label18.Location" type="System.Drawing.Point, System.Drawing">
+    <value>376, 8</value>
+  </data>
+  <data name="&gt;&gt;label18.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="txtHole1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>423, 48</value>
+  </data>
+  <data name="btnStop2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>116, 97</value>
+  </data>
+  <data name="label12.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="label15.Text" xml:space="preserve">
+    <value>层数Layers</value>
+  </data>
+  <data name="label6.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="btnStop2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>112, 41</value>
+  </data>
+  <data name="chart2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="&gt;&gt;txtHole1.Name" xml:space="preserve">
+    <value>txtHole1</value>
+  </data>
+  <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>510, 101</value>
+  </data>
+  <data name="lblx1.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;panel2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lbly1.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label9.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="lblToolTip2.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="btnStart2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>112, 41</value>
+  </data>
+  <data name="lblx2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft YaHei UI, 18pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;label19.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="txtLayerNO2.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;label12.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>143, 39</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;txtLayerNO1.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;lbly2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="txtLayerNO2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 32</value>
+  </data>
+  <data name="&gt;&gt;label4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lbly2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft YaHei UI, 18pt, style=Bold</value>
+  </data>
+  <data name="btnReDo1.Text" xml:space="preserve">
+    <value>重压ReDo</value>
+  </data>
+  <data name="&gt;&gt;label11.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="chart1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 448</value>
+  </data>
+  <data name="label14.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft YaHei UI, 18pt, style=Bold</value>
+  </data>
+  <data name="label2.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="label10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>449, 101</value>
+  </data>
+  <data name="&gt;&gt;lblToolTip2.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;txtLayerNO2.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="txtLayerNO1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft YaHei UI, 14.25pt, style=Bold</value>
+  </data>
+  <data name="label17.Location" type="System.Drawing.Point, System.Drawing">
+    <value>25, 6</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label10.Text" xml:space="preserve">
+    <value>mm</value>
+  </data>
+  <data name="&gt;&gt;chart2.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="label9.Text" xml:space="preserve">
+    <value>洞号 HoleNO</value>
+  </data>
+  <data name="txtLayer2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 32</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1366, 768</value>
+  </data>
+  <data name="btnStop2.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="lbly2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>536, 101</value>
+  </data>
+  <data name="label15.Location" type="System.Drawing.Point, System.Drawing">
+    <value>157, 6</value>
+  </data>
+  <data name="lblInformation2.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="label11.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft YaHei UI, 18pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;txtHole2.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;txtLayer1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtHole1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label5.Name" xml:space="preserve">
+    <value>label5</value>
+  </data>
+  <data name="btnReDo1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft YaHei UI, 15.75pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;lblx1.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;btnStart1.Name" xml:space="preserve">
+    <value>btnStart1</value>
+  </data>
+  <data name="&gt;&gt;label8.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;lblInformation2.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="label13.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft YaHei UI, 14.25pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;label3.Name" xml:space="preserve">
+    <value>label3</value>
+  </data>
+  <data name="chart2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 429</value>
+  </data>
+  <data name="&gt;&gt;label18.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="chart2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>685, 337</value>
+  </data>
+  <data name="&gt;&gt;txtLayer1.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="lblInformation1.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>411, 6</value>
+  </data>
+  <data name="&gt;&gt;txtSN2.Name" xml:space="preserve">
+    <value>txtSN2</value>
+  </data>
+  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="label4.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="lblx1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft YaHei UI, 18pt, style=Bold</value>
+  </data>
+  <data name="txtHole2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft YaHei UI, 14.25pt, style=Bold</value>
+  </data>
+  <data name="label6.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft YaHei UI, 18pt, style=Bold</value>
+  </data>
+  <data name="label10.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft YaHei UI, 18pt, style=Bold</value>
+  </data>
+  <data name="lblToolTip2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
+  </data>
+  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lbly1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft YaHei UI, 18pt, style=Bold</value>
+  </data>
+  <data name="label14.Text" xml:space="preserve">
+    <value>Y:</value>
+  </data>
+  <data name="panel2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="label17.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 39</value>
+  </data>
+  <data name="btnReDo2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>112, 41</value>
+  </data>
+  <data name="txtHole2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>94, 32</value>
+  </data>
+  <data name="txtLayer2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>184, 48</value>
+  </data>
+  <data name="&gt;&gt;txtSN1.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;label6.Name" xml:space="preserve">
+    <value>label6</value>
+  </data>
+  <data name="&gt;&gt;lblInformation1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="btnStart1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>112, 41</value>
+  </data>
+  <data name="&gt;&gt;label9.Name" xml:space="preserve">
+    <value>label9</value>
+  </data>
+  <data name="txtLayer1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft YaHei UI, 14.25pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;txtHole2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;label14.Name" xml:space="preserve">
+    <value>label14</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>en-US</value>
+  </metadata>
 </root>

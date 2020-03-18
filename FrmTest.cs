@@ -114,7 +114,7 @@ namespace DrillTest
 
         }
 
-        #region 设置重新测试按钮使能（在测试线程中调用）
+        #region 设置重新测试按钮使能（在测试线程中调用）后续可以改为读取测试状态后调用事件详见NormalizingApp的类MyValueEvent
         /// <summary>
         /// 修改按钮属性，此处主要用来在其他线程中来设置本控件属性
         /// </summary>
@@ -319,7 +319,11 @@ namespace DrillTest
         #region 画面按钮处理
         private void BtnRedo1_Click(object sender, EventArgs e)
         {
-            btnReDo1.Enabled = false;
+            Invoke(new Action(()=>
+            {
+                btnReDo1.Enabled = false;
+             }));
+
             if (Global.SubWorking1)
             {
                 MessageBox.Show("#1压机正在压制中请稍等停止", "提醒", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -337,8 +341,10 @@ namespace DrillTest
         }
         private void BtnReDo2_Click(object sender, EventArgs e)
         {
-
-            btnReDo2.Enabled = false;
+            Invoke(new Action(() =>
+            {
+                btnReDo2.Enabled = false;
+            }));
             if (Global.SubWorking2)
             {
                 MessageBox.Show("#2压机正在压制中请稍等停止", "提醒", MessageBoxButtons.OK, MessageBoxIcon.Information);
