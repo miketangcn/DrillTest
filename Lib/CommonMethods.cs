@@ -150,7 +150,7 @@ namespace DrillTest.Lib
                     }      
                     Global.lstPoint1.Add(point);
                 }
-                else if (Global.Point1.x <Global.con_chek_x || Global.Point1.y < Global.con_chek_y)//不在压洞状态
+                else if (Global.Point1.x <Global.con_chek_x && Global.Point1.y < Global.con_chek_y)//不在压洞状态
                 {
                     Global.SubWorking1 = false;
                 }
@@ -223,7 +223,7 @@ namespace DrillTest.Lib
                         Global.MaxPressure2 = Global.Point2.y;
                     }
                 }
-                if (Global.Point2.x < Global.con_chek_x || Global.Point2.y < Global.con_chek_y)//不在压洞状态
+                if (Global.Point2.x < Global.con_chek_x && Global.Point2.y < Global.con_chek_y)//不在压洞状态
                 {
                     Global.SubWorking2 = false;
                 }
